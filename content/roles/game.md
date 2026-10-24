@@ -27,6 +27,15 @@ You write the code that makes games run: movement, physics, enemy behaviour, men
 | Simulation and training | Games engines for education, defence and architecture. |
 | Indie and freelance | Build and sell your own games. |
 
+## Year by year
+
+| Year | Focus | Build | Milestone |
+| --- | --- | --- | --- |
+| Year 1 | C# or C++, maths for games (vectors), Git | Pong or a platformer clone | Two playable games |
+| Year 2 | An engine (Unity or Godot), physics, input, animation | A complete small game with menus and sound | A game on itch.io |
+| Year 3 | Game design, AI, optimisation, game jams, an internship | A game jam entry and a polished vertical slice | An internship offer and a demo reel |
+| Year 4 | Specialise (gameplay, graphics, tools), playtesting, interview loops | A final game with feedback from real players | An offer for a game developer role |
+
 ## Study plan
 
 ### Programming and game maths (Months 1–2)
@@ -109,6 +118,14 @@ You write the code that makes games run: movement, physics, enemy behaviour, men
 - Allocating memory every frame, which causes stutter.
 - Ignoring the business side: the market is crowded and finishing counts.
 
+## Engineer's notes
+
+- Make it playable early, then make it good. A fun prototype beats a perfect plan.
+- Profile before optimising. Frame drops often come from one unexpected place.
+- Playtest with people who did not build it. They find problems you cannot see.
+- Keep game logic and engine details separate so changes are less painful.
+- Finish small games. Shipping teaches things that unfinished big games never will.
+
 ## Mistakes juniors make
 
 - Starting a huge project and never finishing it.
@@ -155,6 +172,41 @@ You write the code that makes games run: movement, physics, enemy behaviour, men
 - Explain the game loop and how you would make movement frame-rate independent.
 - Design a system, such as an inventory or an enemy AI.
 - Show a playable build and explain a technical problem you solved in it.
+
+## Interview questions and answers
+
+**Q: What is a game loop?**
+
+A loop that repeats each frame: process input, update game state, then render. Using delta time keeps motion the same on fast and slow machines.
+
+**Q: How does A* pathfinding work?**
+
+It searches a graph using the cost so far plus a heuristic estimate of the remaining distance, always expanding the most promising node. It finds the shortest path if the heuristic never overestimates.
+
+**Q: How do you optimise a game that drops frames?**
+
+Profile first. Common fixes: reduce draw calls, pool objects, avoid allocations in the update loop, simplify physics and lower texture sizes.
+
+**Q: Why use object pooling?**
+
+Creating and destroying many objects causes garbage collection spikes. Reusing a pool avoids allocation during gameplay.
+
+**Q: How do you detect a collision between two circles?**
+
+Compare the distance between their centres with the sum of the radii. If it is smaller, they overlap. Compare squared values to avoid a square root.
+
+## Glossary
+
+| Term | Meaning |
+| --- | --- |
+| Game loop | The cycle of reading input, updating the world and drawing a frame. |
+| Delta time | The time since the last frame, used to keep speed steady. |
+| Collision detection | Finding when objects overlap or touch. |
+| Sprite | A 2D image used for characters and objects. |
+| Shader | A small program that runs on the GPU to draw pixels. |
+| Frame rate | How many frames are drawn each second. |
+| Vertical slice | A small, fully polished piece of the final game. |
+| Pathfinding | Finding a route for a character, often with A*. |
 
 ## Resources
 

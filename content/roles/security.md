@@ -27,6 +27,15 @@ You protect software and systems. That can mean testing applications for flaws, 
 | Security consultancies | Test many clients' systems, with permission. |
 | Bug bounty | Independent testing of programmes that invite it. |
 
+## Year by year
+
+| Year | Focus | Build | Milestone |
+| --- | --- | --- | --- |
+| Year 1 | Networking, Linux, one scripting language, how the web works | Capture-the-flag warm-ups and a home lab | A basic lab and a few CTF solves |
+| Year 2 | Web security (OWASP Top 10), cryptography basics, tools | Find and write up flaws in a deliberately vulnerable app | Public write-ups and CTF ranking |
+| Year 3 | Penetration testing methods, cloud security, defence basics, an internship | A report on a lab target with fixes | An internship offer and a portfolio of write-ups |
+| Year 4 | Specialise (appsec, cloud, blue team), certifications, interview loops | A project on detection or secure design | An offer for a security role |
+
 ## Study plan
 
 ### Fundamentals (Months 1–3)
@@ -109,6 +118,14 @@ You protect software and systems. That can mean testing applications for flaws, 
 - Reporting every low-risk finding as critical.
 - Collecting tools instead of learning concepts.
 
+## Engineer's notes
+
+- Security is about trade-offs and risk, not perfection. Fix the biggest risks first.
+- Work with developers, not against them. The best fixes are easy to adopt.
+- Only test systems you have written permission to test. Keep clear records.
+- Write findings so a busy engineer can act: what, where, impact and how to fix.
+- Assume breach. Plan how you will detect and respond, not only how you will prevent.
+
 ## Mistakes juniors make
 
 - Testing something without clear permission.
@@ -155,6 +172,41 @@ You protect software and systems. That can mean testing applications for flaws, 
 - Scenario: you find a suspicious login in the logs, what do you do?
 - Threat-model a simple login page.
 - Python scripting and DSA at an easy level.
+
+## Interview questions and answers
+
+**Q: How do you prevent SQL injection?**
+
+Use parameterised queries or an ORM, never build SQL by joining strings, validate input and give the database user minimal rights.
+
+**Q: How should passwords be stored?**
+
+Hash them with a slow, salted algorithm such as bcrypt, scrypt or Argon2. Never store them in plain text or with a fast hash.
+
+**Q: What is the difference between symmetric and asymmetric encryption?**
+
+Symmetric uses one shared key and is fast. Asymmetric uses a public and private key pair, and is used for key exchange and signatures.
+
+**Q: What does HTTPS protect against?**
+
+Eavesdropping and tampering on the network, and it proves the server's identity through a certificate. It does not make the app itself secure.
+
+**Q: Walk through what you would do after finding a vulnerability.**
+
+Confirm it, record minimal proof, assess impact, report it responsibly to the owner with steps and a fix suggestion, and test the fix. Only test systems you have permission to test.
+
+## Glossary
+
+| Term | Meaning |
+| --- | --- |
+| Threat model | A structured list of what can go wrong, who attacks and how. |
+| XSS | Injecting script into a page that other users then run. |
+| SQL injection | Tricking an app into running attacker-supplied SQL. |
+| CSRF | Making a user's browser send an unwanted request to a site they are logged in to. |
+| Hash vs encryption | A hash is one-way. Encryption can be reversed with a key. |
+| Least privilege | Giving each person or process only the access it needs. |
+| CVE | A public ID for a known vulnerability. |
+| Red team / blue team | Attackers testing defences / defenders detecting and responding. |
 
 ## Resources
 

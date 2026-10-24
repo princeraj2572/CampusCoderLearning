@@ -27,6 +27,15 @@ You study how people use a product, find where they get stuck, and design the sc
 | Startups | Broad roles: research, design and sometimes front-end code. |
 | In-house teams at banks and large firms | Complex tools and internal products. |
 
+## Year by year
+
+| Year | Focus | Build | Milestone |
+| --- | --- | --- | --- |
+| Year 1 | Design basics (layout, colour, type), Figma, observing users | Redesign a screen of an app you use | A small case study |
+| Year 2 | User research, wireframes, prototypes, design systems | A full case study from research to prototype | Two case studies in a portfolio |
+| Year 3 | Usability testing, accessibility, working with developers, an internship | A tested prototype and a handoff file | An internship offer and a polished portfolio |
+| Year 4 | Product thinking, design critique, interview loops | A design for a real client or product with measured results | An offer for a UI/UX role |
+
 ## Study plan
 
 ### Design fundamentals (Months 1–2)
@@ -109,6 +118,14 @@ You study how people use a product, find where they get stuck, and design the sc
 - Defending a design instead of listening to what testing showed.
 - A portfolio of pretty screens with no problem, process or outcome.
 
+## Engineer's notes
+
+- Watch real people use your design. Five sessions reveal most major problems.
+- Design with real content, not lorem ipsum. Real text and data break layouts in useful ways.
+- Work with engineers early to know what is cheap and what is hard.
+- Document decisions and the reason for them, so the next person does not undo them.
+- Measure the change: did the new design help people finish the task?
+
 ## Mistakes juniors make
 
 - Showing final screens without the problem or the process.
@@ -155,6 +172,41 @@ You study how people use a product, find where they get stuck, and design the sc
 - How you would research a problem and decide what to test.
 - Critique an existing app: what works, what does not, and what you would change.
 - Questions on accessibility, design systems and working with developers.
+
+## Interview questions and answers
+
+**Q: How do you start a design project?**
+
+Define the problem and the user, talk to users or review data, list needs, sketch options, test the best one with a prototype and refine.
+
+**Q: What makes a design accessible?**
+
+Enough colour contrast, text alternatives for images, keyboard use, clear focus states, readable type sizes and not relying on colour alone.
+
+**Q: How do you handle feedback you disagree with?**
+
+Ask what problem it is solving, tie the decision back to user needs or data, test if unsure, and stay open to changing your mind.
+
+**Q: UX versus UI: what is the difference?**
+
+UX is the whole experience: research, flows and how well it works. UI is the visual layer: layout, colour, type and components.
+
+**Q: How do you measure whether a design worked?**
+
+Task success, time on task, error rate, satisfaction scores, and product metrics such as conversion or retention before and after.
+
+## Glossary
+
+| Term | Meaning |
+| --- | --- |
+| Wireframe | A rough layout of a screen without final visuals. |
+| Prototype | A clickable model used to test an idea. |
+| Design system | Shared components, styles and rules for consistent design. |
+| Persona | A fictional user based on research. |
+| Information architecture | How content is organised and labelled. |
+| Usability test | Watching real users try tasks to find problems. |
+| Contrast ratio | A measure of how readable text is against its background. |
+| Heuristic evaluation | Reviewing a design against known usability rules. |
 
 ## Resources
 

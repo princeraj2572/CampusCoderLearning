@@ -199,3 +199,21 @@ Almost every server runs Linux, and most developer tools are made for the termin
 5. Install a database client and a PostgreSQL instance, and write your first query.
 6. Create a GitHub profile README and pin one repository.
 7. Set up a notes folder and write down today's lesson.
+
+## Which tools to learn in each year
+
+| Year | Tools | Why now |
+| --- | --- | --- |
+| 1 | A good editor, the terminal, Git and GitHub, your language's compiler or runtime | Everything else builds on these. |
+| 2 | A debugger, a package manager, a database client, Postman or curl, basic Linux | You start building apps with a database and APIs. |
+| 3 | Docker, GitHub Actions, a testing framework, logging, a cloud account on a free tier | Interviews and internships ask how your work is built and shipped. |
+| 4 | Whatever your target team uses: Kubernetes basics, monitoring, an issue tracker, code review habits | You will use them in your first job. |
+
+## From an SDE's desk
+
+Tools do not make an engineer, but fluency with them saves hours every week.
+
+- Learn your debugger. Stepping through code finds bugs faster than adding print statements to every line.
+- Know Git well enough to recover from mistakes: reflog, stash, revert and interactive rebase on your own branch.
+- Learn to read logs and stack traces carefully. The answer is often in the first error, not the last.
+- Automate any chore you do three times: a script, an alias or a CI step.

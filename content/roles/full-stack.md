@@ -26,6 +26,15 @@ You build both sides of an application: the pages people use and the server behi
 | Freelance and agencies | Deliver full websites and apps for clients. |
 | Internal tools teams | Build dashboards and admin tools for a company. |
 
+## Year by year
+
+| Year | Focus | Build | Milestone |
+| --- | --- | --- | --- |
+| Year 1 | HTML, CSS, JavaScript, one backend language, Git | A static site and a tiny API | Three small projects online |
+| Year 2 | A frontend framework, a database, authentication | A full app with login and a database, deployed | A deployed full-stack app |
+| Year 3 | Testing, Docker, CI, system design, an internship | A larger product with tests and a pipeline | An internship offer and one strong product |
+| Year 4 | Performance, security, scaling, interview loops | A real product with users and monitoring | An offer for a full-stack role |
+
 ## Study plan
 
 ### Both foundations (Months 1–3)
@@ -106,6 +115,14 @@ You build both sides of an application: the pages people use and the server behi
 - Skipping deployment. 'It works locally' is not finished.
 - Rewriting things for fun that already work.
 
+## Engineer's notes
+
+- Own the whole flow for a feature, from the click to the database and back, so you can find where it breaks.
+- Agree on the API shape first and write it down. Most frontend-backend bugs are mismatched assumptions.
+- Watch the cost of each layer: one extra query per row can freeze a page.
+- Deploys, environment variables and migrations are part of your job, not someone else's.
+- Do not try to be an expert in everything. Be solid across the stack and deep in one part.
+
 ## Mistakes juniors make
 
 - Using a different new tool in every project.
@@ -152,6 +169,41 @@ You build both sides of an application: the pages people use and the server behi
 - SQL and schema questions, plus a frontend question.
 - Explain a project you shipped, including a trade-off you made.
 - Authentication flows and common security mistakes.
+
+## Interview questions and answers
+
+**Q: Where would you store a login session, and why?**
+
+Either a server-side session with an httpOnly, secure cookie, or a signed token. Cookies marked httpOnly resist theft by scripts. Avoid local storage for sensitive tokens.
+
+**Q: What is CORS, and why does it exist?**
+
+Browsers block a page from reading responses from another origin unless the server allows it with CORS headers. It protects users from malicious sites reading their data.
+
+**Q: SSR, SSG or client rendering: how do you choose?**
+
+SSG for content that rarely changes, SSR for pages that depend on each request, and client rendering for highly interactive parts behind a login. Mix them per page.
+
+**Q: How do you validate input?**
+
+On the server always, since the client can be bypassed. Use a schema, reject bad data early, and escape output.
+
+**Q: How do you deploy a small full-stack app?**
+
+Build the frontend, run the API with a managed database, keep secrets in environment variables, set up HTTPS, and add a CI check before deploy.
+
+## Glossary
+
+| Term | Meaning |
+| --- | --- |
+| Monolith | One codebase and deployment that holds the whole app. |
+| ORM | A library that maps database rows to objects in code. |
+| JWT | A signed token that carries identity between client and server. |
+| CORS | Browser rules about which sites may call your API. |
+| SSR | Rendering HTML on the server for each request. |
+| SSG | Rendering pages at build time into static files. |
+| Migration | A versioned change to the database schema. |
+| Environment variable | A setting kept outside the code, such as a secret or URL. |
 
 ## Resources
 

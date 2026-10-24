@@ -27,6 +27,15 @@ You turn designs and ideas into pages that load fast, work on every screen size 
 | SaaS startups | Ship dashboards and tools with design and backend teams. |
 | E-commerce | Speed and accessibility directly affect sales. |
 
+## Year by year
+
+| Year | Focus | Build | Milestone |
+| --- | --- | --- | --- |
+| Year 1 | HTML, CSS, JavaScript, Git, responsive layout | A portfolio site and a small interactive page | Three small pages online |
+| Year 2 | A framework (React), state, fetching data, accessibility | A dashboard that loads live data | A deployed app with routing and forms |
+| Year 3 | TypeScript, testing, performance, Next.js, an internship | A real product UI with tests and good Lighthouse scores | An internship offer and a polished project |
+| Year 4 | Design systems, architecture, interview loops | A component library or a large app with a design system | An offer for a frontend role |
+
 ## Study plan
 
 ### Web foundations (Months 1–2)
@@ -110,6 +119,14 @@ You turn designs and ideas into pages that load fast, work on every screen size 
 - Designing only for your own laptop screen.
 - Chasing every new framework instead of mastering one.
 
+## Engineer's notes
+
+- Test with a slow network and a small phone, not only your fast laptop.
+- Accessibility is part of done. Keyboard, labels and contrast are cheaper to build in than to bolt on.
+- Keep state as local as you can. Global state grows into a hard-to-follow tangle.
+- Measure before optimising. The slow part is rarely where you guess.
+- Design and engineering disagree less when you show a working prototype early.
+
 ## Mistakes juniors make
 
 - Fixing a layout with magic numbers instead of understanding the cause.
@@ -156,6 +173,41 @@ You turn designs and ideas into pages that load fast, work on every screen size 
 - CSS layout questions with flexbox and grid.
 - React: hooks, why keys matter, how to avoid unnecessary renders.
 - How you would make a page fast and accessible.
+
+## Interview questions and answers
+
+**Q: What happens when you type a URL and press enter?**
+
+The browser resolves the domain through DNS, opens a TCP and TLS connection, sends an HTTP request, receives HTML, parses it into the DOM, fetches CSS and JavaScript, builds the render tree, then lays out and paints the page.
+
+**Q: What is the difference between var, let and const?**
+
+var is function-scoped and hoisted. let and const are block-scoped. const stops reassignment of the binding, but an object it holds can still change.
+
+**Q: What is a closure?**
+
+A function that remembers the variables of the scope where it was created, even after that scope has finished.
+
+**Q: How do you make a page faster?**
+
+Send less JavaScript, compress and size images, cache static files, load non-critical code later, and avoid layout shifts. Measure with Lighthouse first.
+
+**Q: How do you make a button accessible?**
+
+Use a real button element, give it a clear label, make it focusable with visible focus styling, and check contrast and keyboard use.
+
+## Glossary
+
+| Term | Meaning |
+| --- | --- |
+| DOM | The tree of elements the browser builds from HTML. |
+| Responsive design | Layouts that adapt to different screen sizes. |
+| Component | A reusable piece of UI with its own markup and logic. |
+| State | Data that changes over time and drives what the UI shows. |
+| Hydration | Attaching JavaScript behaviour to HTML that the server already rendered. |
+| Accessibility (a11y) | Making the UI usable with keyboards, screen readers and other aids. |
+| Bundle | The JavaScript files shipped to the browser. |
+| Core Web Vitals | Google's measures of loading speed, responsiveness and visual stability. |
 
 ## Resources
 

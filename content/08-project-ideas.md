@@ -106,3 +106,21 @@ Pick one project from each level and finish it. A finished, deployed project wit
 - [Kaggle datasets](https://www.kaggle.com/datasets): Data for ML and analysis projects
 - [Frontend Mentor](https://www.frontendmentor.io): Real design challenges to build
 - [CodeCrafters](https://codecrafters.io): Build real tools step by step, with tests
+
+## Project ideas by year
+
+| Year | Ideas | Skills they build |
+| --- | --- | --- |
+| 1 | Number guessing game, unit converter, tic-tac-toe, a typing speed test, a static portfolio | Loops, functions, DOM basics, Git |
+| 2 | Expense tracker, notes app with login, a URL shortener, a movie search using a public API | CRUD, SQL, authentication, API calls |
+| 3 | A student marketplace, a job-application tracker, a chat app, an online judge for small problems | System thinking, caching, real-time features, testing |
+| 4 | A tool for your college with real users, an open-source library, a tool for your target role | Ownership, documentation, users, maintenance |
+
+## From an SDE's desk
+
+When I read a student's resume, a project earns attention if it solves a real problem, runs somewhere I can click, and has a README that explains the decisions.
+
+- Depth beats count. Two projects you can defend for twenty minutes are better than six you cannot explain.
+- Add one hard part on purpose: auth, a background job, a search feature, or real-time updates.
+- Get at least five real users, even friends. Their confusion will teach you more than another feature.
+- Write down trade-offs in the README: what you chose, what you skipped and why.

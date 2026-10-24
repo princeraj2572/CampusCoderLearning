@@ -83,3 +83,75 @@ Both, in short daily slots. DSA gets you through the screening, and projects get
 **Q: My rank is low. Should I worry?**
 
 Rank only shows where you are today. Improve your trend week over week and keep going.
+
+## Year 1 in detail: build the base
+
+Goal: be comfortable writing code, using Git, and solving easy problems without help.
+
+- Learn: one language (C++, Java or Python), variables, loops, functions, arrays, strings, recursion basics, and Big-O at a simple level.
+- Learn: Git and GitHub (init, add, commit, branch, push, pull request) and the terminal basics.
+- Learn: HTML, CSS and a little JavaScript, so you can put a page online.
+- Practise: 150–200 easy problems across arrays, strings, hashing and maths. Join a few beginner contests.
+- Build: a calculator, a to-do app, a quiz game and a personal portfolio page. Put each on GitHub with a README.
+- Milestone by the end of the year: you can solve most easy problems alone, and you have 3–4 small projects online.
+- Avoid: hopping between languages, watching tutorials without typing the code, and skipping maths and logic.
+
+## Year 2 in detail: go deep on the core
+
+Goal: finish the main data structures and algorithms, learn the core subjects, and make your first real projects.
+
+- Learn: arrays, linked lists, stacks, queues, trees, heaps, graphs, hashing, sorting, binary search, recursion, backtracking and starter dynamic programming.
+- Learn: OOP, DBMS with SQL, operating systems and computer networks as your college teaches them. Revise by solving questions, not by re-reading.
+- Practise: 250–350 problems, mostly medium. Take part in every weekly contest you can, and upsolve what you missed.
+- Build: two full projects with a database and login, one of them deployed. Send your first open-source pull request (even a docs fix).
+- Milestone: you recognise common patterns (two pointers, sliding window, BFS/DFS, DP) and have two deployed projects.
+- Avoid: starting a hard topic like advanced DP before the basics are solid, and copying solutions without understanding.
+
+## Year 3 in detail: prepare for internships and interviews
+
+Goal: be interview-ready for an internship at the end of this year. Most placement and internship cycles start early in the year or even before it.
+
+- Learn: system design basics, low-level design, SQL beyond the basics, OS and networks for interviews, and your chosen role's stack.
+- Practise: finish a standard SDE sheet, then solve 150+ more medium problems by pattern. Do timed mock rounds every week from the middle of the year.
+- Build: one larger project that solves a real problem for real users, with tests, a README, a live demo and a short write-up of the trade-offs.
+- Apply: write the resume in the first month, ask seniors for referrals, apply to internships, and keep a tracking sheet of every application.
+- Do: at least five mock interviews with friends or seniors, including a behavioural round.
+- Milestone: a resume with 2–3 strong projects, a profile on LeetCode/Codeforces/GitHub that backs it up, and applications out.
+- Avoid: waiting until you feel ready to apply, and writing a resume that lists tools instead of what you built.
+
+## Year 4 in detail: convert the work into an offer
+
+Goal: get placed or hired, finish your final-year project, and set up your first job well.
+
+- Revise: DSA patterns, core subjects and your projects. Be able to explain every line of every project on your resume.
+- Do: campus placements, off-campus applications, referrals and cold emails in parallel. One channel is rarely enough.
+- Practise: weekly mock interviews, company-specific question lists, and a timed online-assessment routine.
+- Build: a strong final-year project, preferably linked to your target role, with a demo you can show in two minutes.
+- Learn: how offers work: CTC versus in-hand pay, notice periods, joining dates, and what to ask before you accept.
+- Prepare: for the first job. Read the stack of the company you joined, and learn its tools and Git workflow before day one.
+- Milestone: one or more offers, a repo and demo for the final-year project, and a plan for your first 90 days.
+- Avoid: stopping practice after one rejection, accepting the first offer without reading it, and burning out in the last semester.
+
+## A month-by-month checklist for any year
+
+| Month | What to check |
+| --- | --- |
+| 1 | Pick the year's goals. Set up your tools, accounts and a weekly timetable. |
+| 2–3 | Learn the main topic of the year. Solve problems on it every day. |
+| 4 | Build or extend a project that uses what you learned. Push it to GitHub. |
+| 5 | Take a contest every week. Write down the mistakes you made. |
+| 6 | Mid-year review: what is done, what slipped, what to cut. Update your resume. |
+| 7–8 | Second main topic. Take a mock interview or a timed test. |
+| 9 | Ship the second project and write its README and a short post about it. |
+| 10 | Revise old topics with spaced repetition. Fix weak areas. |
+| 11 | Apply: internships, programmes, open-source contributions or competitions. |
+| 12 | Year-end review. Update the plan for next year and rest for a week. |
+
+## From an SDE's desk
+
+Most people I have worked with did not follow a perfect plan. What they shared was a habit of shipping small things and learning from the result.
+
+- Pick a plan and stay with it for a semester before you judge it. Switching every two weeks feels like progress and is not.
+- Get comfortable being stuck. Most of the job is working out what to do when the answer is not written down.
+- A small project that real people use teaches more than three tutorial clones. Aim for one of those by the end of year two.
+- Write things down: what you learned, what broke, what you would do differently. It becomes your resume and your interview stories.

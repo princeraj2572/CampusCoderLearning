@@ -110,3 +110,353 @@ A rule of thumb for time limits: about 10^8 simple operations per second. With n
 - [LeetCode Patterns study plans](https://leetcode.com/studyplan/): Official plans such as Dynamic Programming and Graph theory
 - [Visualgo](https://visualgo.net/en): Animations of sorting, trees and graph algorithms
 - [Big O notation (Wikipedia)](https://en.wikipedia.org/wiki/Big_O_notation): The definition and the common growth rates
+
+## A classic problem for each pattern
+
+Start with one well-known problem per pattern, then do others of the same type until the idea feels natural.
+
+| Pattern | Classic problem to start with | Key idea |
+| --- | --- | --- |
+| Hash map | Two Sum | Store what you have seen so a lookup replaces an inner loop. |
+| Two pointers | Container With Most Water | Move the pointer that limits the answer, from both ends. |
+| Sliding window | Longest Substring Without Repeating Characters | Grow the window to the right, shrink from the left when it breaks the rule. |
+| Prefix sums | Subarray Sum Equals K | Sums of ranges become differences of prefix values. |
+| Binary search | Search in Rotated Sorted Array | Find which half is sorted, then decide where the target lies. |
+| Binary search on answer | Koko Eating Bananas | Search over possible answers when you can check one cheaply. |
+| Stack | Valid Parentheses | The most recent open item must close first. |
+| Monotonic stack | Daily Temperatures | Keep a stack in order so each item is pushed and popped once. |
+| Fast and slow pointers | Linked List Cycle | Two speeds meet inside a cycle. |
+| BFS | Rotting Oranges | Process level by level when distance or time is the answer. |
+| DFS | Number of Islands | Walk every connected cell and mark it visited. |
+| Heap | Top K Frequent Elements | Keep only the k best items in a heap of size k. |
+| Intervals | Merge Intervals | Sort by start, then merge neighbours that overlap. |
+| Backtracking | Subsets | Choose, explore, then undo the choice. |
+| Dynamic programming | Coin Change | Define the state, write the recurrence, then add a table. |
+| Union-find | Number of Provinces | Merge groups and test whether two items share a root. |
+| Topological sort | Course Schedule | Process nodes with no unmet dependencies first. |
+| Trie | Implement Trie (Prefix Tree) | Share prefixes to search words quickly. |
+
+## A weekly pattern routine
+
+- Monday: read the idea for one pattern and solve its classic problem without hints.
+- Tuesday to Thursday: solve three more problems of the same pattern, one easier and two at medium level.
+- Friday: explain the pattern aloud as if teaching a friend. Write the template in your notes.
+- Saturday: take a contest and note which pattern each problem needed.
+- Sunday: redo two problems you failed during the week, then rest.
+
+## From an SDE's desk
+
+Patterns are how experienced engineers recognise a problem fast. The same shapes show up in real code: windows over a stream, graphs of dependencies, intervals in a calendar.
+
+- Dependency order in a build tool is a topological sort. Scheduling meetings is interval merging. Rate limiting is a sliding window.
+- When two approaches both work, pick the one a teammate can read in a minute. Clever code costs more to maintain than it saves.
+- Write the brute force first, state its cost, then improve. It is also how you should approach a real performance problem.
+
+## Code templates: arrays, strings and searching
+
+Learn these as shapes, not as text to copy. Type each one from memory, run it on a small input, then change it to solve a related problem. All examples are Python, and the same shapes work in C++ and Java.
+
+**Two pointers on a sorted array (pair with a given sum): O(n) time, O(1) space**
+
+```python
+def pair_sum(a, target):
+    l, r = 0, len(a) - 1
+    while l < r:
+        s = a[l] + a[r]
+        if s == target:
+            return [l, r]
+        if s < target:
+            l += 1          # need a bigger sum
+        else:
+            r -= 1          # need a smaller sum
+    return []
+```
+
+**Sliding window (longest substring without repeating characters): O(n)**
+
+```python
+def longest_unique(s):
+    last_seen = {}          # char -> most recent index
+    left = best = 0
+    for right, ch in enumerate(s):
+        if ch in last_seen and last_seen[ch] >= left:
+            left = last_seen[ch] + 1   # shrink past the repeat
+        last_seen[ch] = right
+        best = max(best, right - left + 1)
+    return best
+```
+
+**Prefix sums with a hash map (number of subarrays with sum k): O(n)**
+
+```python
+def subarray_sum(nums, k):
+    count = {0: 1}          # prefix sum -> times seen
+    s = result = 0
+    for x in nums:
+        s += x
+        result += count.get(s - k, 0)   # earlier prefix = s - k
+        count[s] = count.get(s, 0) + 1
+    return result
+```
+
+**Binary search (first index with a[i] >= x): O(log n)**
+
+```python
+def lower_bound(a, x):
+    lo, hi = 0, len(a)      # search in [lo, hi)
+    while lo < hi:
+        mid = (lo + hi) // 2
+        if a[mid] < x:
+            lo = mid + 1
+        else:
+            hi = mid
+    return lo               # len(a) if every element is smaller
+```
+
+**Binary search on the answer (minimum eating speed so all piles finish in h hours)**
+
+```python
+def min_speed(piles, h):
+    lo, hi = 1, max(piles)
+    while lo < hi:
+        mid = (lo + hi) // 2
+        hours = sum((p + mid - 1) // mid for p in piles)   # ceil division
+        if hours <= h:
+            hi = mid        # fast enough: try slower
+        else:
+            lo = mid + 1    # too slow: need more speed
+    return lo
+```
+
+**Merge intervals: O(n log n) for the sort**
+
+```python
+def merge(intervals):
+    if not intervals:
+        return []
+    intervals.sort()
+    out = [intervals[0]]
+    for start, end in intervals[1:]:
+        if start <= out[-1][1]:
+            out[-1][1] = max(out[-1][1], end)   # overlap: extend
+        else:
+            out.append([start, end])
+    return out
+```
+
+- Off-by-one errors live in binary search. Decide once whether your range is [lo, hi) or [lo, hi], and keep every line consistent with it.
+- For sliding window, ask: what makes the window invalid, and how do I shrink it? If you cannot answer, it is not a sliding-window problem.
+- Prefix sums turn 'sum of a range' into a subtraction. Whenever you see 'subarray sum', think prefix sums plus a map.
+
+## Code templates: stacks, graphs and ordering
+
+**Monotonic stack (days until a warmer temperature): O(n), each index pushed and popped once**
+
+```python
+def daily_temperatures(t):
+    answer = [0] * len(t)
+    stack = []              # indices with no warmer day found yet
+    for i, x in enumerate(t):
+        while stack and t[stack[-1]] < x:
+            j = stack.pop()
+            answer[j] = i - j
+        stack.append(i)
+    return answer
+```
+
+**BFS (shortest distance in an unweighted graph): O(V + E)**
+
+```python
+from collections import deque
+
+def bfs(graph, start):
+    dist = {start: 0}
+    q = deque([start])
+    while q:
+        u = q.popleft()
+        for v in graph[u]:
+            if v not in dist:           # first visit is the shortest
+                dist[v] = dist[u] + 1
+                q.append(v)
+    return dist
+```
+
+**DFS on a grid (number of islands): O(rows x cols)**
+
+```python
+def count_islands(grid):
+    rows, cols = len(grid), len(grid[0])
+    count = 0
+
+    def dfs(r, c):
+        if r < 0 or c < 0 or r >= rows or c >= cols or grid[r][c] != "1":
+            return
+        grid[r][c] = "0"                # mark visited
+        dfs(r + 1, c); dfs(r - 1, c); dfs(r, c + 1); dfs(r, c - 1)
+
+    for r in range(rows):
+        for c in range(cols):
+            if grid[r][c] == "1":
+                count += 1
+                dfs(r, c)
+    return count
+```
+
+**Topological sort with Kahn's algorithm (course order): O(V + E)**
+
+```python
+from collections import deque
+
+def topo_order(n, edges):               # edge (a, b): a must come before b
+    graph = [[] for _ in range(n)]
+    indegree = [0] * n
+    for a, b in edges:
+        graph[a].append(b)
+        indegree[b] += 1
+    q = deque(i for i in range(n) if indegree[i] == 0)
+    order = []
+    while q:
+        u = q.popleft()
+        order.append(u)
+        for v in graph[u]:
+            indegree[v] -= 1
+            if indegree[v] == 0:
+                q.append(v)
+    return order if len(order) == n else []   # empty list means a cycle
+```
+
+**Dijkstra with a heap (shortest paths, non-negative weights): O((V + E) log V)**
+
+```python
+import heapq
+
+def dijkstra(graph, src):               # graph[u] = [(v, weight), ...]
+    dist = {src: 0}
+    heap = [(0, src)]
+    while heap:
+        d, u = heapq.heappop(heap)
+        if d > dist.get(u, float("inf")):
+            continue                    # stale entry
+        for v, w in graph[u]:
+            nd = d + w
+            if nd < dist.get(v, float("inf")):
+                dist[v] = nd
+                heapq.heappush(heap, (nd, v))
+    return dist
+```
+
+**Union-find with path compression and union by size: near O(1) per operation**
+
+```python
+class DSU:
+    def __init__(self, n):
+        self.parent = list(range(n))
+        self.size = [1] * n
+
+    def find(self, x):
+        while self.parent[x] != x:
+            self.parent[x] = self.parent[self.parent[x]]   # path halving
+            x = self.parent[x]
+        return x
+
+    def union(self, a, b):
+        a, b = self.find(a), self.find(b)
+        if a == b:
+            return False                # already connected
+        if self.size[a] < self.size[b]:
+            a, b = b, a
+        self.parent[b] = a
+        self.size[a] += self.size[b]
+        return True
+```
+
+- Use BFS for fewest steps in an unweighted graph. Use Dijkstra when edges have weights, and never with negative weights.
+- Recursive DFS can overflow the stack on a deep input. Use an explicit stack when depth could reach thousands.
+- A cycle in a dependency graph means no valid order. Topological sort tells you that for free.
+
+## Code templates: backtracking and dynamic programming
+
+1. Define the state in one sentence: 'dp[i] means ...'. If you cannot, you do not have a DP yet.
+2. Write the recurrence: how does dp[i] come from smaller states?
+3. Set the base cases, then choose an order so every dependency is ready.
+4. Check it by hand on a tiny input before you trust it.
+5. Look for space savings: if row i only needs row i-1, keep two rows or one.
+
+**Backtracking (all subsets): choose, explore, un-choose. O(2^n)**
+
+```python
+def subsets(nums):
+    result, path = [], []
+
+    def go(i):
+        if i == len(nums):
+            result.append(path[:])      # copy, the list keeps changing
+            return
+        go(i + 1)                       # skip nums[i]
+        path.append(nums[i])            # take nums[i]
+        go(i + 1)
+        path.pop()                      # undo
+
+    go(0)
+    return result
+```
+
+**1D DP (fewest coins for an amount): O(amount x coins)**
+
+```python
+def coin_change(coins, amount):
+    INF = amount + 1
+    dp = [0] + [INF] * amount           # dp[a] = fewest coins to make a
+    for a in range(1, amount + 1):
+        for c in coins:
+            if c <= a:
+                dp[a] = min(dp[a], dp[a - c] + 1)
+    return dp[amount] if dp[amount] != INF else -1
+```
+
+**2D DP (longest common subsequence): O(m x n)**
+
+```python
+def lcs(a, b):
+    m, n = len(a), len(b)
+    dp = [[0] * (n + 1) for _ in range(m + 1)]   # dp[i][j] for a[:i], b[:j]
+    for i in range(1, m + 1):
+        for j in range(1, n + 1):
+            if a[i - 1] == b[j - 1]:
+                dp[i][j] = dp[i - 1][j - 1] + 1
+            else:
+                dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])
+    return dp[m][n]
+```
+
+**0/1 knapsack with a 1D array: O(n x capacity). Loop the capacity downwards so each item is used once**
+
+```python
+def knapsack(weights, values, capacity):
+    dp = [0] * (capacity + 1)
+    for w, v in zip(weights, values):
+        for c in range(capacity, w - 1, -1):
+            dp[c] = max(dp[c], dp[c - w] + v)
+    return dp[capacity]
+```
+
+## Complexity analysis in depth
+
+| Code shape | Time | Why |
+| --- | --- | --- |
+| One loop over n items | O(n) | Each item is touched once. |
+| Two nested loops over n | O(n²) | n x n pairs. |
+| A loop that halves the range each time | O(log n) | Binary search shape. |
+| Sort, then a single pass | O(n log n) | The sort dominates. |
+| Recursion that branches twice with no overlap, depth n | O(2^n) | Each level doubles the calls. |
+| Recursion with memoisation over k states, constant work each | O(k) | Each state is computed once. |
+| Visit every vertex and edge of a graph | O(V + E) | BFS, DFS, topological sort. |
+| Heap push or pop | O(log n) | Height of the heap. |
+| Build a heap from n items | O(n) | Sift-down work sums to linear. |
+| Hash map get or set | O(1) average | O(n) in a bad worst case. |
+
+- Drop constants and lower-order terms: 3n² + 5n + 2 is O(n²).
+- Multiply for nested work, add for sequential work.
+- Space counts too: recursion depth uses stack space, and a DP table uses O(states).
+- Amortised cost averages over a sequence. Appending to a dynamic array is O(1) amortised.
+- A rough rule for contests: about 10^8 simple operations fit in a second. If n is 10^5, aim for O(n log n) or better. If n is 20, O(2^n) can work.

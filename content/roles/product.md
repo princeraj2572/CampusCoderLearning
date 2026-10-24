@@ -27,6 +27,15 @@ You do not write the code or draw the screens. You work out which problems are w
 | Fintech, e-commerce and edtech | Fast-growing teams that need product thinking. |
 | Consulting and internal tools teams | Product work for a business or for staff. |
 
+## Year by year
+
+| Year | Focus | Build | Milestone |
+| --- | --- | --- | --- |
+| Year 1 | Pick apps you use and write what you would change | A one-page product review | Curiosity and a habit of writing |
+| Year 2 | Basics of design, data and code, user research | A small product you ship with friends | A product with a few real users |
+| Year 3 | Product sense, metrics, roadmaps, an internship or product club | A product requirements document and a prototype | An internship offer or leadership role in a club |
+| Year 4 | Strategy, prioritisation, stakeholder skills, interview loops | A case study with a metric you moved | An offer for an associate product role |
+
 ## Study plan
 
 ### Product thinking (Months 1–2)
@@ -109,6 +118,14 @@ You do not write the code or draw the screens. You work out which problems are w
 - Hiding behind data you have not looked at carefully, or ignoring data that disagrees with you.
 - Writing a long roadmap that no one believes.
 
+## Engineer's notes
+
+- Spend time with users every week. Opinions in a meeting are weaker than a conversation with a customer.
+- Say no often and kindly. A focused product beats a crowded one.
+- Write clearly. A short, sharp document does more than a long meeting.
+- Define the metric before you build, and check it after you ship.
+- Respect engineering time. Clear goals and stable priorities help the team ship more.
+
 ## Mistakes juniors make
 
 - Writing long documents nobody reads.
@@ -155,6 +172,41 @@ You do not write the code or draw the screens. You work out which problems are w
 - A metrics question: how would you measure the success of a feature, and what if the number drops?
 - A behavioural question about influencing a team or handling a disagreement.
 - A teardown of a product you know well, with a clear opinion.
+
+## Interview questions and answers
+
+**Q: How would you improve a product you use?**
+
+Name the user and the problem, back it with evidence, list a few ideas, pick one with a clear reason, define the metric you expect to move and how you would test it.
+
+**Q: How do you prioritise features?**
+
+Score each by impact, effort, reach and confidence, check against the goal, and be open about what you are not doing.
+
+**Q: How do you choose success metrics?**
+
+Tie them to the user's goal and the business goal. Pick one main metric, a few supporting ones and a guardrail so you do not harm something else.
+
+**Q: What do you do when engineering says it cannot be done in time?**
+
+Ask what drives the estimate, reduce scope to the core value, look for a simpler version and agree on the trade-off with the team.
+
+**Q: How do you say no to a stakeholder?**
+
+Acknowledge the need, explain the trade-off with data, offer an alternative or a later slot, and stay respectful.
+
+## Glossary
+
+| Term | Meaning |
+| --- | --- |
+| PRD | A product requirements document describing what to build and why. |
+| MVP | The smallest version that tests whether the idea is useful. |
+| North-star metric | The single number that best shows delivered value. |
+| Backlog | The ordered list of work waiting to be done. |
+| Prioritisation | Choosing what to do first, for example with impact versus effort. |
+| Roadmap | A plan of what you intend to build and roughly when. |
+| Stakeholder | Anyone affected by or interested in the product. |
+| A/B test | Comparing two versions with random users. |
 
 ## Resources
 

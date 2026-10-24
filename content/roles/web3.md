@@ -27,6 +27,15 @@ You write smart contracts, programs that run on a blockchain and often handle mo
 | Fintech and payments | Settlement, tokenisation and cross-border payments. |
 | Open-source and grants | Many contributors work on public goods and are funded by grants. |
 
+## Year by year
+
+| Year | Focus | Build | Milestone |
+| --- | --- | --- | --- |
+| Year 1 | Programming, data structures, how the web and cryptography work | A simple hash chain in code | Strong basics and a blockchain mini-project |
+| Year 2 | Ethereum basics, Solidity, a wallet, testing with Hardhat or Foundry | A token and a simple voting contract on a testnet | Two contracts on a testnet |
+| Year 3 | Security patterns, frontends with ethers or viem, an internship | A full dApp with a contract and a UI | An internship offer and an audited-style review |
+| Year 4 | Auditing, gas optimisation, protocol design, interview loops | A project with tests, a security review and docs | An offer for a blockchain developer role |
+
 ## Study plan
 
 ### Blockchain basics (Months 1–2)
@@ -109,6 +118,14 @@ You write smart contracts, programs that run on a blockchain and often handle mo
 - Chasing hype instead of learning fundamentals.
 - Promising returns to users. Build tools, not get-rich-quick schemes.
 
+## Engineer's notes
+
+- Code is law and mistakes are permanent. Test far more than you would for a normal app.
+- Get an independent audit before holding real funds, and still assume bugs remain.
+- Gas costs are a real constraint. Design data and loops with them in mind.
+- Never put private keys or seed phrases in code, chats or screenshots.
+- Understand the economics and incentives. Many exploits are design flaws, not coding bugs.
+
 ## Mistakes juniors make
 
 - Deploying without enough tests, and with real funds.
@@ -155,6 +172,41 @@ You write smart contracts, programs that run on a blockchain and often handle mo
 - Explain gas, storage versus memory, and how you would reduce a function's cost.
 - Describe how you would test and secure a contract that holds user funds.
 - General coding and data structures, since many teams test them first.
+
+## Interview questions and answers
+
+**Q: What is a reentrancy attack, and how do you prevent it?**
+
+An external call lets an attacker call back into your function before state is updated, draining funds. Update state before external calls, use a reentrancy guard and prefer pull payments.
+
+**Q: Why is gas important when writing contracts?**
+
+Each operation costs gas, and storage is costly. Efficient code lowers fees for users and avoids hitting limits.
+
+**Q: How is a blockchain different from a normal database?**
+
+It is shared and replicated across many parties, append-only and secured by cryptography and consensus, so no single party can rewrite history. It is slower and costlier than a database.
+
+**Q: What does immutable mean for contract bugs?**
+
+A deployed contract cannot be edited, so bugs are hard to fix. Test heavily, get audits, use upgradeable patterns with care and add emergency stops.
+
+**Q: How do you keep private keys safe?**
+
+Never put them in code or a repository, use hardware wallets or secure key stores, and keep separate keys for testing and for real funds.
+
+## Glossary
+
+| Term | Meaning |
+| --- | --- |
+| Smart contract | A program stored and run on a blockchain. |
+| Gas | The fee for computation on a blockchain. |
+| Wallet | A tool that holds keys and signs transactions. |
+| Consensus | How nodes agree on the state of the chain. |
+| ABI | A description of a contract's functions for other programs. |
+| Reentrancy | A bug where a call back into a contract happens before it updates its state. |
+| Testnet | A practice network with no real money. |
+| Oracle | A service that brings outside data onto a chain. |
 
 ## Resources
 

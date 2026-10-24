@@ -30,3 +30,28 @@ Start in your second year at the latest if you want GSoC or similar programmes. 
 - [Google Summer of Code](https://summerofcode.withgoogle.com): Paid summer mentorship with open-source organisations
 - [MLH Fellowship](https://fellowship.mlh.io): Remote fellowship on open-source projects
 - [LFX Mentorship](https://lfx.linuxfoundation.org/tools/mentorship/): Linux Foundation mentorships
+
+## What to do each year
+
+- Year 1: learn Git and GitHub well. Read other people's code and README files. Fix a typo in a project's docs.
+- Year 2: send your first pull requests to beginner-friendly projects. Aim for 2–3 merged.
+- Year 3: work on a bigger issue in one project, join its chat, and apply to a programme that fits your timing.
+- Year 4: become a regular contributor to one project, mentor a newcomer, and cite your work in applications.
+
+## Good habits for contributors
+
+- Read the contributing guide and the code of conduct before you open anything.
+- Search existing issues and pull requests first, so you do not repeat work.
+- Comment on an issue to say you would like to take it, and wait for a reply.
+- Keep each pull request small and focused, with a clear description and tests when the project has them.
+- Be polite when reviewers ask for changes. Reply to every comment and push fixes quickly.
+- If a project is quiet, wait a week, nudge once, then move on without taking it personally.
+
+## From an SDE's desk
+
+Open source is the closest thing a student can get to a real engineering team: shared code, review, issues and releases.
+
+- Reading a mature codebase is a skill. Start by tracing one feature from request to response.
+- A merged one-line fix with a clear description beats an abandoned big pull request.
+- Maintainers are busy volunteers. Be brief, polite and patient, and follow the contributing guide.
+- Your contributions are public proof of how you communicate and respond to feedback.

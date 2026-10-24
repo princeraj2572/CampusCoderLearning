@@ -45,3 +45,33 @@ Do DSA for everyone. After the basics, go deep in one track instead of sampling 
 - Each project should include a database, authentication and a deployed link.
 - Write a README with a screenshot, a description, the tech stack and how to run it.
 - Be ready to explain why you made each design choice.
+
+## What to build in each year
+
+| Year | Projects that fit | What they prove |
+| --- | --- | --- |
+| 1 | Calculator, to-do list, quiz game, personal portfolio, a small command-line tool | You can write, run and share working code. |
+| 2 | Blog or notes app with login, expense tracker, weather dashboard, a small REST API | You can use a database, authentication and an external API. |
+| 3 | A full product for real users, a clone of a known app with your own twist, a project for your target role | You can design, build, test and deploy something larger. |
+| 4 | Final-year project, an open-source contribution series, a deployed side project with users | You can finish and maintain real work. |
+
+## A path from idea to deployed app
+
+1. Write one sentence: who it helps and what it does.
+2. List the smallest set of features that makes it useful, and cut the rest for later.
+3. Sketch the screens on paper and list the data you will store.
+4. Set up the repository, a README and a simple folder structure.
+5. Build the data layer first, then the API, then the screens.
+6. Add validation and error handling before you add new features.
+7. Write tests for the parts that would hurt most if they broke.
+8. Deploy early, even if it is ugly, and fix what only shows up in production.
+9. Write the README with screenshots, setup steps and what you would improve next.
+
+## From an SDE's desk
+
+The gap between a tutorial project and a job is the boring parts: error handling, logging, configuration, deployment and keeping it running.
+
+- Handle failure on purpose. What happens if the database is down, the input is empty, or the API is slow?
+- Keep configuration and secrets out of the code from day one. Leaked keys on GitHub are a very common mistake.
+- Commit small and often, with messages that explain why, not only what.
+- Deploy early. The first deployment always finds problems that your laptop hid.

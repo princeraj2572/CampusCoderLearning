@@ -27,6 +27,15 @@ You write the code that runs on servers: the APIs a website or app calls, the ru
 | Fintech and e-commerce | Payments, orders and reliability matter most. |
 | Service companies | Build systems for clients across industries. |
 
+## Year by year
+
+| Year | Focus | Build | Milestone |
+| --- | --- | --- | --- |
+| Year 1 | One language, HTTP basics, Git, SQL basics | A command-line tool and a small HTTP server | Two projects online and easy problems solved alone |
+| Year 2 | REST APIs, a relational database, authentication, testing | A full CRUD API with login, deployed | A deployed API with docs and tests |
+| Year 3 | Caching, queues, Docker, system design, an internship | A project with a cache, a background job and metrics | An internship offer and a design you can explain |
+| Year 4 | Scale, reliability, security, interview loops | A final project with logs, monitoring and load tests | An offer for a backend role |
+
 ## Study plan
 
 ### Foundations (Months 1–2)
@@ -111,6 +120,14 @@ You write the code that runs on servers: the APIs a website or app calls, the ru
 - Skipping tests because 'it works on my machine'.
 - Copying a framework tutorial without knowing what the framework does for you.
 
+## Engineer's notes
+
+- Most production problems are data problems: bad migrations, missing indexes, and inconsistent state. Treat schema changes with care.
+- Log with request IDs so you can follow one request across services. You will thank yourself during an incident.
+- Never trust input from a client. Validate on the server, always.
+- Make writes idempotent where you can. Retries are normal and must not double-charge anyone.
+- Version your API. Changing a response field breaks someone you have never met.
+
 ## Mistakes juniors make
 
 - Building endpoints without thinking about who is allowed to call them.
@@ -157,6 +174,41 @@ You write the code that runs on servers: the APIs a website or app calls, the ru
 - Design an API or a service such as a URL shortener.
 - What happens when you type a URL; how HTTPS works; how sessions differ from JWTs.
 - Walk through one of your projects, including a bug you fixed.
+
+## Interview questions and answers
+
+**Q: What is the difference between authentication and authorisation?**
+
+Authentication proves who you are (a login). Authorisation decides what you may do once known (permissions). Check both on every protected request.
+
+**Q: Why do we use database indexes, and what is the cost?**
+
+An index lets the database find rows without scanning the table, so reads get faster. The cost is extra storage and slower writes, because the index must be updated too.
+
+**Q: How would you make an endpoint safe to retry?**
+
+Make it idempotent: accept a client-supplied idempotency key, store the result of the first call, and return the same result for repeats.
+
+**Q: What is the N+1 query problem?**
+
+Running one query for a list and then one more query per item. Fix it with a join or by loading the related rows in a single batched query.
+
+**Q: How does a cache go wrong?**
+
+Stale data after a change, a stampede when a popular key expires, and memory growth. Use expiry, invalidate on writes, and protect hot keys.
+
+## Glossary
+
+| Term | Meaning |
+| --- | --- |
+| API | A set of endpoints other programs call to use your service. |
+| REST | A style of API using HTTP methods and resource URLs. |
+| Index | A database structure that speeds up lookups at the cost of slower writes. |
+| Transaction | A group of database changes that succeed or fail together. |
+| Cache | Fast storage for results you expect to need again. |
+| Idempotent | An operation that gives the same result if repeated. |
+| Queue | A buffer that lets work happen later, in order. |
+| Rate limit | A cap on how many requests a client can make in a time window. |
 
 ## Resources
 

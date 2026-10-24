@@ -27,6 +27,15 @@ You build the machinery that tests, packages, deploys and monitors software, and
 | Managed service providers | Operate infrastructure for clients. |
 | Startups | Often one person sets up everything. |
 
+## Year by year
+
+| Year | Focus | Build | Milestone |
+| --- | --- | --- | --- |
+| Year 1 | Linux, the terminal, networking basics, Git | Shell scripts and a home-lab server | Comfort in the Linux shell |
+| Year 2 | Docker, a CI pipeline, a cloud account on a free tier | A containerised app with automatic tests | A deployed app with a pipeline |
+| Year 3 | Kubernetes basics, infrastructure as code, monitoring, an internship | An app on a cloud service defined in Terraform | An internship offer and a documented project |
+| Year 4 | Reliability, security, cost, on-call habits, interview loops | A project with metrics, alerts and a runbook | An offer for a DevOps or cloud role |
+
 ## Study plan
 
 ### Linux and networking (Months 1–3)
@@ -107,6 +116,14 @@ You build the machinery that tests, packages, deploys and monitors software, and
 - Giving everything admin access to save time.
 - Blaming people after an incident instead of fixing the process.
 
+## Engineer's notes
+
+- Automate what you do twice. Manual steps are where mistakes and midnight pages come from.
+- Every alert should need an action. If an alert is ignored, fix or delete it.
+- Practise recovery: restore a backup, roll back a release. An untested backup is a hope.
+- Keep environments as similar as possible. 'Works on my machine' is a sign of drift.
+- Watch cost. A forgotten cloud resource can be an expensive surprise.
+
 ## Mistakes juniors make
 
 - Making changes on a server by hand and not recording them.
@@ -153,6 +170,41 @@ You build the machinery that tests, packages, deploys and monitors software, and
 - Cloud services and IAM questions.
 - Scenario: the site is down, what do you check first?
 - Scripting, plus DSA at an easy to medium level.
+
+## Interview questions and answers
+
+**Q: What is the difference between a container image and a container?**
+
+An image is a read-only template with the app and its dependencies. A container is a running instance of that image.
+
+**Q: How would you design a basic CI/CD pipeline?**
+
+On each push: check out the code, install dependencies, run lint and tests, build an artefact or image, scan it, and deploy to staging. Promote to production after approval or checks.
+
+**Q: What does a load balancer do?**
+
+It spreads incoming requests across servers, checks their health, and removes unhealthy ones. It can also end TLS.
+
+**Q: A site is slow. What do you check first?**
+
+Confirm the symptom, then look at recent changes, CPU, memory, disk, network, database latency and error rates, using the dashboards before logging in to machines.
+
+**Q: Why use infrastructure as code?**
+
+It makes environments repeatable, reviewable and versioned, and it lets you rebuild after a failure.
+
+## Glossary
+
+| Term | Meaning |
+| --- | --- |
+| CI/CD | Automatic build, test and release pipelines. |
+| Container | A packaged process with its dependencies, isolated from others. |
+| Kubernetes | A system that runs and manages containers across machines. |
+| IaC | Infrastructure as code: defining servers and networks in files. |
+| Observability | Logs, metrics and traces that show what a system is doing. |
+| SLO | A target for service reliability, such as 99.9% of requests succeed. |
+| Blue/green deploy | Running two environments and switching traffic to the new one. |
+| Runbook | A written guide for handling a known incident. |
 
 ## Resources
 

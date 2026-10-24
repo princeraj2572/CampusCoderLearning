@@ -27,6 +27,15 @@ You turn data into working predictions or language features. Much of the job is 
 | Research labs | Usually need a master's degree or a PhD. |
 | Healthcare and finance | Predictive models with strict quality rules. |
 
+## Year by year
+
+| Year | Focus | Build | Milestone |
+| --- | --- | --- | --- |
+| Year 1 | Python, maths (linear algebra, probability), Git | Small scripts, NumPy and a plotting notebook | Python fluency and a few notebooks online |
+| Year 2 | Pandas, scikit-learn, classic models, evaluation | Two end-to-end models on public datasets | Two notebooks with clear write-ups |
+| Year 3 | Deep learning, PyTorch, deployment, LLM apps, an internship | A model served through an API, and an LLM app with retrieval | An internship offer and one deployed project |
+| Year 4 | MLOps, evaluation, research habits, interview loops | A final project with data, a model, an API and monitoring | An offer for an ML or AI engineer role |
+
 ## Study plan
 
 ### Programming and maths (Months 1–3)
@@ -111,6 +120,14 @@ You turn data into working predictions or language features. Much of the job is 
 - Using a huge model where a small one would do.
 - Shipping a demo as if it were a product.
 
+## Engineer's notes
+
+- Most of the work is data: cleaning, labelling, checking leaks and building a trustworthy test set.
+- Start with a simple baseline. If a simple model is close, the complex one may not be worth it.
+- A model that works in a notebook is not a product. Plan for serving, monitoring and retraining.
+- Track experiments: data version, code version, settings and results. You will forget otherwise.
+- Evaluate with real examples from your users, not only a public benchmark.
+
 ## Mistakes juniors make
 
 - Tuning the model before looking at the data.
@@ -157,6 +174,41 @@ You turn data into working predictions or language features. Much of the job is 
 - Walk through a project: data, baseline, results and mistakes.
 - SQL and data manipulation questions.
 - How you would evaluate a language-model feature.
+
+## Interview questions and answers
+
+**Q: What is overfitting, and how do you reduce it?**
+
+The model learns noise in the training set and does poorly on new data. Reduce it with more data, simpler models, regularisation, dropout, early stopping and cross-validation.
+
+**Q: Why is accuracy a poor metric for imbalanced data?**
+
+A model that always predicts the majority class can score high accuracy while finding none of the rare cases. Use precision, recall, F1 or PR-AUC.
+
+**Q: What is the bias-variance trade-off?**
+
+Bias is error from too-simple assumptions, and variance is error from sensitivity to the training data. Better fit lowers bias but can raise variance, so you tune for the best total.
+
+**Q: How does retrieval-augmented generation work?**
+
+Split documents into chunks, embed them, store them in a vector index, retrieve the closest chunks for a question, and give them to the model as context to answer from.
+
+**Q: How do you know an LLM feature works?**
+
+Build an evaluation set of realistic questions with expected answers, score outputs with checks or a rubric, track results over time, and test again after each change.
+
+## Glossary
+
+| Term | Meaning |
+| --- | --- |
+| Overfitting | A model that memorises training data and fails on new data. |
+| Train/validation/test split | Separate data for learning, tuning and the final honest check. |
+| Precision / recall | How many predicted positives are right / how many real positives were found. |
+| Embedding | A vector that captures the meaning of text, an image or other data. |
+| RAG | Retrieval-augmented generation: fetch relevant documents and give them to the model. |
+| Fine-tuning | Training an existing model further on your own data. |
+| Hallucination | A confident answer from a model that is not true. |
+| Gradient descent | A way to train by repeatedly nudging parameters to lower the loss. |
 
 ## Resources
 

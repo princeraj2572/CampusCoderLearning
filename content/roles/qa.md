@@ -27,6 +27,15 @@ You find problems early. You plan what to test, write automated tests that run o
 | Fintech and healthcare | Testing is part of compliance. |
 | Game studios | Playtesting and automation for builds. |
 
+## Year by year
+
+| Year | Focus | Build | Milestone |
+| --- | --- | --- | --- |
+| Year 1 | Programming basics, how software is built, Git | Manual test cases for a small app | A bug report you are proud of |
+| Year 2 | Test design, SQL, an automation tool (Selenium, Playwright, Cypress) | An automated suite for a demo site | A suite that runs on every push |
+| Year 3 | API testing, CI, performance basics, an internship | UI, API and load tests for one product | An internship offer and a reported-bug record |
+| Year 4 | Test strategy, quality in the team, interview loops | A test framework with reports and flaky-test handling | An offer for a QA or SDET role |
+
 ## Study plan
 
 ### Testing fundamentals (Months 1–2)
@@ -109,6 +118,14 @@ You find problems early. You plan what to test, write automated tests that run o
 - Treating testing as a final stage after development ends.
 - Blaming developers. You are on the same team.
 
+## Engineer's notes
+
+- Think like a curious user and like a careful attacker. Both find different bugs.
+- Automate stable, repeated checks. Spend human time on exploring and judging.
+- A good bug report saves hours: steps, expected, actual, environment and evidence.
+- Fix flaky tests quickly. A suite nobody trusts gets ignored.
+- Join design and planning early. Asking 'how will we test this?' improves the design.
+
 ## Mistakes juniors make
 
 - Writing tests that depend on each other's order.
@@ -155,6 +172,41 @@ You find problems early. You plan what to test, write automated tests that run o
 - Coding at an easy to medium level, plus SQL.
 - Explain how you would design an automation framework and avoid flaky tests.
 - Differences between severity and priority, regression and retesting, smoke and sanity tests.
+
+## Interview questions and answers
+
+**Q: Severity versus priority: what is the difference?**
+
+Severity is the impact of a defect on the system. Priority is how soon it must be fixed. A typo on the home page is low severity but may be high priority.
+
+**Q: How do you write a good bug report?**
+
+A clear title, steps to reproduce, expected and actual results, environment details and evidence such as a screenshot or log.
+
+**Q: What would you automate, and what would you leave manual?**
+
+Automate stable, repeated, high-value checks such as regression and API tests. Keep exploratory, usability and one-off checks manual.
+
+**Q: How do you deal with flaky tests?**
+
+Find the cause (timing, shared data, environment), add proper waits or isolation, quarantine the test if needed, and fix it rather than rerunning.
+
+**Q: How would you test a login page?**
+
+Valid and invalid credentials, empty fields, locked accounts, password rules, session expiry, injection attempts, accessibility and different browsers.
+
+## Glossary
+
+| Term | Meaning |
+| --- | --- |
+| Test case | Steps, inputs and expected results for one check. |
+| Regression test | A test that confirms old features still work after a change. |
+| Flaky test | A test that passes and fails without code changes. |
+| Smoke test | A quick check that the main features work at all. |
+| Test pyramid | Many unit tests, fewer integration tests, few end-to-end tests. |
+| Boundary value | A test input at the edge of an allowed range. |
+| Severity vs priority | How bad a bug is versus how soon it should be fixed. |
+| Mock | A stand-in for a real dependency in tests. |
 
 ## Resources
 

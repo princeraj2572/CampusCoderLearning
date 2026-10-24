@@ -84,6 +84,77 @@ Both, in short daily slots. DSA gets you through the screening, and projects get
 
 Rank only shows where you are today. Improve your trend week over week and keep going.
 
+## Year 1 in detail: build the base
+
+Goal: be comfortable writing code, using Git, and solving easy problems without help.
+
+- Learn: one language (C++, Java or Python), variables, loops, functions, arrays, strings, recursion basics, and Big-O at a simple level.
+- Learn: Git and GitHub (init, add, commit, branch, push, pull request) and the terminal basics.
+- Learn: HTML, CSS and a little JavaScript, so you can put a page online.
+- Practise: 150–200 easy problems across arrays, strings, hashing and maths. Join a few beginner contests.
+- Build: a calculator, a to-do app, a quiz game and a personal portfolio page. Put each on GitHub with a README.
+- Milestone by the end of the year: you can solve most easy problems alone, and you have 3–4 small projects online.
+- Avoid: hopping between languages, watching tutorials without typing the code, and skipping maths and logic.
+
+## Year 2 in detail: go deep on the core
+
+Goal: finish the main data structures and algorithms, learn the core subjects, and make your first real projects.
+
+- Learn: arrays, linked lists, stacks, queues, trees, heaps, graphs, hashing, sorting, binary search, recursion, backtracking and starter dynamic programming.
+- Learn: OOP, DBMS with SQL, operating systems and computer networks as your college teaches them. Revise by solving questions, not by re-reading.
+- Practise: 250–350 problems, mostly medium. Take part in every weekly contest you can, and upsolve what you missed.
+- Build: two full projects with a database and login, one of them deployed. Send your first open-source pull request (even a docs fix).
+- Milestone: you recognise common patterns (two pointers, sliding window, BFS/DFS, DP) and have two deployed projects.
+- Avoid: starting a hard topic like advanced DP before the basics are solid, and copying solutions without understanding.
+
+## Year 3 in detail: prepare for internships and interviews
+
+Goal: be interview-ready for an internship at the end of this year. Most placement and internship cycles start early in the year or even before it.
+
+- Learn: system design basics, low-level design, SQL beyond the basics, OS and networks for interviews, and your chosen role's stack.
+- Practise: finish a standard SDE sheet, then solve 150+ more medium problems by pattern. Do timed mock rounds every week from the middle of the year.
+- Build: one larger project that solves a real problem for real users, with tests, a README, a live demo and a short write-up of the trade-offs.
+- Apply: write the resume in the first month, ask seniors for referrals, apply to internships, and keep a tracking sheet of every application.
+- Do: at least five mock interviews with friends or seniors, including a behavioural round.
+- Milestone: a resume with 2–3 strong projects, a profile on LeetCode/Codeforces/GitHub that backs it up, and applications out.
+- Avoid: waiting until you feel ready to apply, and writing a resume that lists tools instead of what you built.
+
+## Year 4 in detail: convert the work into an offer
+
+Goal: get placed or hired, finish your final-year project, and set up your first job well.
+
+- Revise: DSA patterns, core subjects and your projects. Be able to explain every line of every project on your resume.
+- Do: campus placements, off-campus applications, referrals and cold emails in parallel. One channel is rarely enough.
+- Practise: weekly mock interviews, company-specific question lists, and a timed online-assessment routine.
+- Build: a strong final-year project, preferably linked to your target role, with a demo you can show in two minutes.
+- Learn: how offers work: CTC versus in-hand pay, notice periods, joining dates, and what to ask before you accept.
+- Prepare: for the first job. Read the stack of the company you joined, and learn its tools and Git workflow before day one.
+- Milestone: one or more offers, a repo and demo for the final-year project, and a plan for your first 90 days.
+- Avoid: stopping practice after one rejection, accepting the first offer without reading it, and burning out in the last semester.
+
+## A month-by-month checklist for any year
+
+| Month | What to check |
+| --- | --- |
+| 1 | Pick the year's goals. Set up your tools, accounts and a weekly timetable. |
+| 2–3 | Learn the main topic of the year. Solve problems on it every day. |
+| 4 | Build or extend a project that uses what you learned. Push it to GitHub. |
+| 5 | Take a contest every week. Write down the mistakes you made. |
+| 6 | Mid-year review: what is done, what slipped, what to cut. Update your resume. |
+| 7–8 | Second main topic. Take a mock interview or a timed test. |
+| 9 | Ship the second project and write its README and a short post about it. |
+| 10 | Revise old topics with spaced repetition. Fix weak areas. |
+| 11 | Apply: internships, programmes, open-source contributions or competitions. |
+| 12 | Year-end review. Update the plan for next year and rest for a week. |
+
+## From an SDE's desk
+
+Most people I have worked with did not follow a perfect plan. What they shared was a habit of shipping small things and learning from the result.
+
+- Pick a plan and stay with it for a semester before you judge it. Switching every two weeks feels like progress and is not.
+- Get comfortable being stuck. Most of the job is working out what to do when the answer is not written down.
+- A small project that real people use teaches more than three tutorial clones. Aim for one of those by the end of year two.
+- Write things down: what you learned, what broke, what you would do differently. It becomes your resume and your interview stories.
 
 ---
 
@@ -128,6 +199,47 @@ These are rough guides, not rules. About 150 LeetCode problems and a rating of 1
 - Aim to solve problems A and B quickly and accurately before chasing C.
 - Read how top-rated people solved the problems you could not.
 
+## A year-wise DSA plan
+
+| Year | Cover | Problems (rough guide) |
+| --- | --- | --- |
+| 1 | Basics, arrays, strings, hashing, recursion, simple maths, Big-O | 150–200 easy |
+| 2 | Linked lists, stack, queue, binary search, trees, heaps, graphs, sorting, starter DP | 250–350, mostly medium |
+| 3 | Pattern practice, advanced DP, graphs, tries, union-find, timed mocks | 150+ medium, some hard |
+| 4 | Revision by pattern, company question lists, contests | Fewer new topics, more review |
+
+## Topic checklist
+
+- Arrays and strings: prefix sums, two pointers, sliding window, sorting, in-place edits.
+- Hashing: frequency counts, sets and maps, anagram and subarray-sum problems.
+- Recursion and backtracking: subsets, permutations, N-Queens style problems.
+- Linked lists: reversal, cycle detection, merging, fast and slow pointers.
+- Stacks and queues: monotonic stack, next greater element, parentheses, queue with two stacks.
+- Trees: traversals, height, diameter, lowest common ancestor, BST operations.
+- Heaps: top-k, merging sorted lists, running median.
+- Graphs: BFS, DFS, shortest path (Dijkstra), topological sort, union-find, minimum spanning tree.
+- Dynamic programming: 1D, 2D, knapsack, subsequences, strings, grids.
+- Binary search on answers, greedy choices, intervals, bit manipulation, tries.
+
+## Rough rating milestones
+
+Treat these as a loose guide, not a promise. Ratings differ by platform and by how often you take part.
+
+| Stage | Typical sign that you are on track |
+| --- | --- |
+| End of year 1 | You solve most easy problems alone and finish the first problems in a beginner contest. |
+| End of year 2 | You solve medium problems in 30–45 minutes and place in the upper half of weekly contests. |
+| End of year 3 | You solve most mediums in 25–30 minutes, try hards, and can explain trade-offs aloud. |
+| Year 4 | You keep the skill warm with contests and review, and your effort moves to interviews. |
+
+## From an SDE's desk
+
+On the job you will rarely write a red-black tree. You will pick the right structure, spot a hidden O(n²), and explain why a query is slow. That is what DSA practice buys you.
+
+- The most common real use: choose between a list, a set and a map. Knowing the cost of each avoids slow code before it is written.
+- A nested loop over two lists that grew is the classic production slowdown. Big-O thinking catches it in review.
+- Interviews test DSA because it is a fair, comparable signal. Treat it as a skill to build, not as the job itself.
+- Read other people's solutions after you have tried. The goal is to see a cleaner idea, not to copy a trick.
 
 ---
 
@@ -244,6 +356,355 @@ A rule of thumb for time limits: about 10^8 simple operations per second. With n
 - [Visualgo](https://visualgo.net/en): Animations of sorting, trees and graph algorithms
 - [Big O notation (Wikipedia)](https://en.wikipedia.org/wiki/Big_O_notation): The definition and the common growth rates
 
+## A classic problem for each pattern
+
+Start with one well-known problem per pattern, then do others of the same type until the idea feels natural.
+
+| Pattern | Classic problem to start with | Key idea |
+| --- | --- | --- |
+| Hash map | Two Sum | Store what you have seen so a lookup replaces an inner loop. |
+| Two pointers | Container With Most Water | Move the pointer that limits the answer, from both ends. |
+| Sliding window | Longest Substring Without Repeating Characters | Grow the window to the right, shrink from the left when it breaks the rule. |
+| Prefix sums | Subarray Sum Equals K | Sums of ranges become differences of prefix values. |
+| Binary search | Search in Rotated Sorted Array | Find which half is sorted, then decide where the target lies. |
+| Binary search on answer | Koko Eating Bananas | Search over possible answers when you can check one cheaply. |
+| Stack | Valid Parentheses | The most recent open item must close first. |
+| Monotonic stack | Daily Temperatures | Keep a stack in order so each item is pushed and popped once. |
+| Fast and slow pointers | Linked List Cycle | Two speeds meet inside a cycle. |
+| BFS | Rotting Oranges | Process level by level when distance or time is the answer. |
+| DFS | Number of Islands | Walk every connected cell and mark it visited. |
+| Heap | Top K Frequent Elements | Keep only the k best items in a heap of size k. |
+| Intervals | Merge Intervals | Sort by start, then merge neighbours that overlap. |
+| Backtracking | Subsets | Choose, explore, then undo the choice. |
+| Dynamic programming | Coin Change | Define the state, write the recurrence, then add a table. |
+| Union-find | Number of Provinces | Merge groups and test whether two items share a root. |
+| Topological sort | Course Schedule | Process nodes with no unmet dependencies first. |
+| Trie | Implement Trie (Prefix Tree) | Share prefixes to search words quickly. |
+
+## A weekly pattern routine
+
+- Monday: read the idea for one pattern and solve its classic problem without hints.
+- Tuesday to Thursday: solve three more problems of the same pattern, one easier and two at medium level.
+- Friday: explain the pattern aloud as if teaching a friend. Write the template in your notes.
+- Saturday: take a contest and note which pattern each problem needed.
+- Sunday: redo two problems you failed during the week, then rest.
+
+## From an SDE's desk
+
+Patterns are how experienced engineers recognise a problem fast. The same shapes show up in real code: windows over a stream, graphs of dependencies, intervals in a calendar.
+
+- Dependency order in a build tool is a topological sort. Scheduling meetings is interval merging. Rate limiting is a sliding window.
+- When two approaches both work, pick the one a teammate can read in a minute. Clever code costs more to maintain than it saves.
+- Write the brute force first, state its cost, then improve. It is also how you should approach a real performance problem.
+
+## Code templates: arrays, strings and searching
+
+Learn these as shapes, not as text to copy. Type each one from memory, run it on a small input, then change it to solve a related problem. All examples are Python, and the same shapes work in C++ and Java.
+
+**Two pointers on a sorted array (pair with a given sum): O(n) time, O(1) space**
+
+```python
+def pair_sum(a, target):
+    l, r = 0, len(a) - 1
+    while l < r:
+        s = a[l] + a[r]
+        if s == target:
+            return [l, r]
+        if s < target:
+            l += 1          # need a bigger sum
+        else:
+            r -= 1          # need a smaller sum
+    return []
+```
+
+**Sliding window (longest substring without repeating characters): O(n)**
+
+```python
+def longest_unique(s):
+    last_seen = {}          # char -> most recent index
+    left = best = 0
+    for right, ch in enumerate(s):
+        if ch in last_seen and last_seen[ch] >= left:
+            left = last_seen[ch] + 1   # shrink past the repeat
+        last_seen[ch] = right
+        best = max(best, right - left + 1)
+    return best
+```
+
+**Prefix sums with a hash map (number of subarrays with sum k): O(n)**
+
+```python
+def subarray_sum(nums, k):
+    count = {0: 1}          # prefix sum -> times seen
+    s = result = 0
+    for x in nums:
+        s += x
+        result += count.get(s - k, 0)   # earlier prefix = s - k
+        count[s] = count.get(s, 0) + 1
+    return result
+```
+
+**Binary search (first index with a[i] >= x): O(log n)**
+
+```python
+def lower_bound(a, x):
+    lo, hi = 0, len(a)      # search in [lo, hi)
+    while lo < hi:
+        mid = (lo + hi) // 2
+        if a[mid] < x:
+            lo = mid + 1
+        else:
+            hi = mid
+    return lo               # len(a) if every element is smaller
+```
+
+**Binary search on the answer (minimum eating speed so all piles finish in h hours)**
+
+```python
+def min_speed(piles, h):
+    lo, hi = 1, max(piles)
+    while lo < hi:
+        mid = (lo + hi) // 2
+        hours = sum((p + mid - 1) // mid for p in piles)   # ceil division
+        if hours <= h:
+            hi = mid        # fast enough: try slower
+        else:
+            lo = mid + 1    # too slow: need more speed
+    return lo
+```
+
+**Merge intervals: O(n log n) for the sort**
+
+```python
+def merge(intervals):
+    if not intervals:
+        return []
+    intervals.sort()
+    out = [intervals[0]]
+    for start, end in intervals[1:]:
+        if start <= out[-1][1]:
+            out[-1][1] = max(out[-1][1], end)   # overlap: extend
+        else:
+            out.append([start, end])
+    return out
+```
+
+- Off-by-one errors live in binary search. Decide once whether your range is [lo, hi) or [lo, hi], and keep every line consistent with it.
+- For sliding window, ask: what makes the window invalid, and how do I shrink it? If you cannot answer, it is not a sliding-window problem.
+- Prefix sums turn 'sum of a range' into a subtraction. Whenever you see 'subarray sum', think prefix sums plus a map.
+
+## Code templates: stacks, graphs and ordering
+
+**Monotonic stack (days until a warmer temperature): O(n), each index pushed and popped once**
+
+```python
+def daily_temperatures(t):
+    answer = [0] * len(t)
+    stack = []              # indices with no warmer day found yet
+    for i, x in enumerate(t):
+        while stack and t[stack[-1]] < x:
+            j = stack.pop()
+            answer[j] = i - j
+        stack.append(i)
+    return answer
+```
+
+**BFS (shortest distance in an unweighted graph): O(V + E)**
+
+```python
+from collections import deque
+
+def bfs(graph, start):
+    dist = {start: 0}
+    q = deque([start])
+    while q:
+        u = q.popleft()
+        for v in graph[u]:
+            if v not in dist:           # first visit is the shortest
+                dist[v] = dist[u] + 1
+                q.append(v)
+    return dist
+```
+
+**DFS on a grid (number of islands): O(rows x cols)**
+
+```python
+def count_islands(grid):
+    rows, cols = len(grid), len(grid[0])
+    count = 0
+
+    def dfs(r, c):
+        if r < 0 or c < 0 or r >= rows or c >= cols or grid[r][c] != "1":
+            return
+        grid[r][c] = "0"                # mark visited
+        dfs(r + 1, c); dfs(r - 1, c); dfs(r, c + 1); dfs(r, c - 1)
+
+    for r in range(rows):
+        for c in range(cols):
+            if grid[r][c] == "1":
+                count += 1
+                dfs(r, c)
+    return count
+```
+
+**Topological sort with Kahn's algorithm (course order): O(V + E)**
+
+```python
+from collections import deque
+
+def topo_order(n, edges):               # edge (a, b): a must come before b
+    graph = [[] for _ in range(n)]
+    indegree = [0] * n
+    for a, b in edges:
+        graph[a].append(b)
+        indegree[b] += 1
+    q = deque(i for i in range(n) if indegree[i] == 0)
+    order = []
+    while q:
+        u = q.popleft()
+        order.append(u)
+        for v in graph[u]:
+            indegree[v] -= 1
+            if indegree[v] == 0:
+                q.append(v)
+    return order if len(order) == n else []   # empty list means a cycle
+```
+
+**Dijkstra with a heap (shortest paths, non-negative weights): O((V + E) log V)**
+
+```python
+import heapq
+
+def dijkstra(graph, src):               # graph[u] = [(v, weight), ...]
+    dist = {src: 0}
+    heap = [(0, src)]
+    while heap:
+        d, u = heapq.heappop(heap)
+        if d > dist.get(u, float("inf")):
+            continue                    # stale entry
+        for v, w in graph[u]:
+            nd = d + w
+            if nd < dist.get(v, float("inf")):
+                dist[v] = nd
+                heapq.heappush(heap, (nd, v))
+    return dist
+```
+
+**Union-find with path compression and union by size: near O(1) per operation**
+
+```python
+class DSU:
+    def __init__(self, n):
+        self.parent = list(range(n))
+        self.size = [1] * n
+
+    def find(self, x):
+        while self.parent[x] != x:
+            self.parent[x] = self.parent[self.parent[x]]   # path halving
+            x = self.parent[x]
+        return x
+
+    def union(self, a, b):
+        a, b = self.find(a), self.find(b)
+        if a == b:
+            return False                # already connected
+        if self.size[a] < self.size[b]:
+            a, b = b, a
+        self.parent[b] = a
+        self.size[a] += self.size[b]
+        return True
+```
+
+- Use BFS for fewest steps in an unweighted graph. Use Dijkstra when edges have weights, and never with negative weights.
+- Recursive DFS can overflow the stack on a deep input. Use an explicit stack when depth could reach thousands.
+- A cycle in a dependency graph means no valid order. Topological sort tells you that for free.
+
+## Code templates: backtracking and dynamic programming
+
+1. Define the state in one sentence: 'dp[i] means ...'. If you cannot, you do not have a DP yet.
+2. Write the recurrence: how does dp[i] come from smaller states?
+3. Set the base cases, then choose an order so every dependency is ready.
+4. Check it by hand on a tiny input before you trust it.
+5. Look for space savings: if row i only needs row i-1, keep two rows or one.
+
+**Backtracking (all subsets): choose, explore, un-choose. O(2^n)**
+
+```python
+def subsets(nums):
+    result, path = [], []
+
+    def go(i):
+        if i == len(nums):
+            result.append(path[:])      # copy, the list keeps changing
+            return
+        go(i + 1)                       # skip nums[i]
+        path.append(nums[i])            # take nums[i]
+        go(i + 1)
+        path.pop()                      # undo
+
+    go(0)
+    return result
+```
+
+**1D DP (fewest coins for an amount): O(amount x coins)**
+
+```python
+def coin_change(coins, amount):
+    INF = amount + 1
+    dp = [0] + [INF] * amount           # dp[a] = fewest coins to make a
+    for a in range(1, amount + 1):
+        for c in coins:
+            if c <= a:
+                dp[a] = min(dp[a], dp[a - c] + 1)
+    return dp[amount] if dp[amount] != INF else -1
+```
+
+**2D DP (longest common subsequence): O(m x n)**
+
+```python
+def lcs(a, b):
+    m, n = len(a), len(b)
+    dp = [[0] * (n + 1) for _ in range(m + 1)]   # dp[i][j] for a[:i], b[:j]
+    for i in range(1, m + 1):
+        for j in range(1, n + 1):
+            if a[i - 1] == b[j - 1]:
+                dp[i][j] = dp[i - 1][j - 1] + 1
+            else:
+                dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])
+    return dp[m][n]
+```
+
+**0/1 knapsack with a 1D array: O(n x capacity). Loop the capacity downwards so each item is used once**
+
+```python
+def knapsack(weights, values, capacity):
+    dp = [0] * (capacity + 1)
+    for w, v in zip(weights, values):
+        for c in range(capacity, w - 1, -1):
+            dp[c] = max(dp[c], dp[c - w] + v)
+    return dp[capacity]
+```
+
+## Complexity analysis in depth
+
+| Code shape | Time | Why |
+| --- | --- | --- |
+| One loop over n items | O(n) | Each item is touched once. |
+| Two nested loops over n | O(n²) | n x n pairs. |
+| A loop that halves the range each time | O(log n) | Binary search shape. |
+| Sort, then a single pass | O(n log n) | The sort dominates. |
+| Recursion that branches twice with no overlap, depth n | O(2^n) | Each level doubles the calls. |
+| Recursion with memoisation over k states, constant work each | O(k) | Each state is computed once. |
+| Visit every vertex and edge of a graph | O(V + E) | BFS, DFS, topological sort. |
+| Heap push or pop | O(log n) | Height of the heap. |
+| Build a heap from n items | O(n) | Sift-down work sums to linear. |
+| Hash map get or set | O(1) average | O(n) in a bad worst case. |
+
+- Drop constants and lower-order terms: 3n² + 5n + 2 is O(n²).
+- Multiply for nested work, add for sequential work.
+- Space counts too: recursion depth uses stack space, and a DP table uses O(states).
+- Amortised cost averages over a sequence. Appending to a dynamic array is O(1) amortised.
+- A rough rule for contests: about 10^8 simple operations fit in a second. If n is 10^5, aim for O(n log n) or better. If n is 20, O(2^n) can work.
 
 ---
 
@@ -284,10 +745,6 @@ Practise by designing the database for a small app (a library, a hostel, this le
 
 Small projects that teach how things work underneath. Each builds on the one before. The last column is the test: you understand it when you can explain that out loud, without notes.
 
-- Do them in order if you want foundations first. Projects 1 to 4 cover most of what interviews and the OS and networking parts of GATE ask.
-- Fit them to your gaps. Projects 2 and 10 build Redis knowledge and system design thinking. For Docker, add a mini container runtime later (Linux only).
-- Keep each to about a week. Do not start the next until you pass its test.
-
 | # | Project | Concept it clears | You understand it when you can explain |
 | --- | --- | --- | --- |
 | 1 | HTTP server from scratch | Sockets, TCP, request and response format, status codes | What happens between typing a URL and seeing a page |
@@ -303,12 +760,318 @@ Small projects that teach how things work underneath. Each builds on the one bef
 | 11 | Autograd engine (tiny neural network library) | Backpropagation, gradients, training loops | How a model learns from an error |
 | 12 | Auth system (sessions, password hashing, JWT, OAuth flow) | Security basics, cookies, tokens | Why passwords are hashed, not encrypted, and what a token proves |
 
+- Do them in order if you want foundations first. Projects 1 to 4 cover most of what interviews and the OS and networking parts of GATE ask.
+- Fit them to your gaps. Projects 2 and 10 build Redis knowledge and system design thinking. For Docker, add a mini container runtime later (Linux only).
+- Keep each to about a week. Do not start the next until you pass its test.
+
 ## Rules for every project
 
 1. Write it yourself. Use AI as a tutor that gives tasks and reviews your work, not one that writes the code.
 2. Write a one-page note: what it does, the one idea that clicked, and the one bug that taught you something.
 3. Explain it to a friend, or record yourself for 3 minutes. Wherever you get stuck is the concept to revisit.
 
+## Which year to study what
+
+| Year | Subjects | How deep |
+| --- | --- | --- |
+| 1 | Programming, discrete maths basics, how computers work | Concepts and examples |
+| 2 | OOP, DBMS and SQL, operating systems, computer networks | Full syllabus, with practice questions |
+| 3 | Revision of all four for interviews, plus system design basics and your role's stack | Interview depth: why, trade-offs, examples |
+| 4 | Revision on demand and company-specific topics | Quick recall and clear explanations |
+
+## Revision checklist by subject
+
+- OOP: classes and objects, the four pillars, SOLID, composition versus inheritance, common design patterns (singleton, factory, observer).
+- DBMS: keys, normalisation, ACID, transactions, isolation levels, indexes, joins, group by, subqueries, window functions.
+- OS: processes versus threads, scheduling, deadlock, synchronisation (mutex, semaphore), memory management, paging, virtual memory.
+- CN: OSI and TCP/IP layers, TCP versus UDP, the three-way handshake, DNS, HTTP and HTTPS, status codes, cookies, TLS basics.
+- Be able to draw one small diagram for each subject from memory. Drawing shows you understand it.
+
+## From an SDE's desk
+
+These subjects look like exam material until you debug a real system. Then they become the explanation.
+
+- DBMS: a missing index, a bad join or a long transaction causes most slow pages. Learn to read a query plan.
+- OS: memory leaks, thread pools, file handles and zombie processes are everyday issues. Know what a process and a thread really are.
+- Networks: timeouts, retries, DNS and TLS errors show up as 'the site is down'. Know where each layer can fail.
+- OOP: the point is clear boundaries. If a class needs six collaborators to test, the design is telling you something.
+
+## DBMS in depth: keys and normalisation with an example
+
+Take a single messy table: orders(order_id, customer_id, customer_name, customer_city, product_id, product_name, price, qty). Customer details repeat on every row, so changing a city means updating many rows. That is an update anomaly. Deleting the only order for a product deletes the product, a delete anomaly. Normalisation splits the table so each fact is stored once.
+
+| Normal form | Rule | Fix in the example |
+| --- | --- | --- |
+| 1NF | Each cell holds one value. No repeating groups. | One row per order line, not a list of products in one cell. |
+| 2NF | No non-key column depends on only part of a composite key. | Move product_name and price to a products table keyed by product_id. |
+| 3NF | No non-key column depends on another non-key column. | Move customer_name and customer_city to a customers table keyed by customer_id. |
+| BCNF | Every determinant is a candidate key. | Rarely needed beyond 3NF. It matters when two candidate keys overlap. |
+
+**The result after normalisation**
+
+```sql
+CREATE TABLE customers (
+  customer_id INT PRIMARY KEY,
+  name        VARCHAR(100) NOT NULL,
+  city        VARCHAR(100)
+);
+CREATE TABLE products (
+  product_id INT PRIMARY KEY,
+  name       VARCHAR(100) NOT NULL,
+  price      DECIMAL(10,2) NOT NULL CHECK (price >= 0)
+);
+CREATE TABLE orders (
+  order_id    INT PRIMARY KEY,
+  customer_id INT NOT NULL REFERENCES customers(customer_id),
+  created_at  TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE order_items (
+  order_id   INT REFERENCES orders(order_id),
+  product_id INT REFERENCES products(product_id),
+  qty        INT NOT NULL CHECK (qty > 0),
+  PRIMARY KEY (order_id, product_id)
+);
+```
+
+- Denormalise on purpose only when you have measured a read problem. Copy a column, keep it in sync, and write down why.
+- Store money as DECIMAL or as integer minor units (paise, cents), never as floating point.
+- Use constraints (NOT NULL, UNIQUE, CHECK, foreign keys). The database should refuse bad data even if the code has a bug.
+
+## DBMS in depth: SQL you should be able to write
+
+**Customers who never ordered (anti-join)**
+
+```sql
+SELECT c.customer_id, c.name
+FROM customers c
+LEFT JOIN orders o ON o.customer_id = c.customer_id
+WHERE o.order_id IS NULL;
+```
+
+**Duplicate emails**
+
+```sql
+SELECT email, COUNT(*) AS n
+FROM users
+GROUP BY email
+HAVING COUNT(*) > 1;
+```
+
+**Second highest salary**
+
+```sql
+SELECT MAX(salary)
+FROM employees
+WHERE salary < (SELECT MAX(salary) FROM employees);
+```
+
+**Top 3 earners in each department (window function)**
+
+```sql
+SELECT *
+FROM (
+  SELECT e.*,
+         DENSE_RANK() OVER (PARTITION BY dept_id ORDER BY salary DESC) AS rnk
+  FROM employees e
+) t
+WHERE rnk <= 3;
+```
+
+**Running total per customer**
+
+```sql
+SELECT customer_id, created_at, amount,
+       SUM(amount) OVER (PARTITION BY customer_id ORDER BY created_at) AS running_total
+FROM payments;
+```
+
+**Revenue per month, newest first**
+
+```sql
+SELECT DATE_TRUNC('month', created_at) AS month, SUM(amount) AS revenue
+FROM payments
+GROUP BY 1
+ORDER BY 1 DESC;
+```
+
+- WHERE filters rows before grouping, HAVING filters groups after. Writing a condition in the wrong one is a common bug.
+- NULL is not equal to anything, even NULL. Use IS NULL, and remember that COUNT(col) skips NULLs while COUNT(*) does not.
+- Date functions differ between databases (DATE_TRUNC in PostgreSQL, DATE_FORMAT in MySQL). Check the docs for yours.
+
+## DBMS in depth: indexes, query plans and transactions
+
+An index is usually a B+ tree: sorted, shallow and good at equality and range lookups. A composite index on (customer_id, created_at) helps queries that filter on customer_id, or on customer_id and then created_at. It does not help a query that filters only on created_at. This is the left-most prefix rule.
+
+| Isolation level | Dirty read | Non-repeatable read | Phantom read |
+| --- | --- | --- | --- |
+| Read uncommitted | Possible | Possible | Possible |
+| Read committed | No | Possible | Possible |
+| Repeatable read | No | No | Possible (depends on the database) |
+| Serializable | No | No | No |
+
+**Create an index and read the plan**
+
+```sql
+CREATE INDEX idx_orders_customer_date ON orders (customer_id, created_at);
+
+EXPLAIN
+SELECT * FROM orders
+WHERE customer_id = 42 AND created_at >= '2026-01-01';
+-- Look for an index scan. A full table scan on a big table is the red flag.
+```
+
+**A transaction: both updates happen or neither does**
+
+```sql
+BEGIN;
+UPDATE accounts SET balance = balance - 100 WHERE id = 1;
+UPDATE accounts SET balance = balance + 100 WHERE id = 2;
+COMMIT;      -- or ROLLBACK; if anything failed
+```
+
+- ACID: atomicity (all or nothing), consistency (rules hold), isolation (transactions do not see each other's half-done work) and durability (committed data survives a crash).
+- Indexes speed up reads but slow writes and use space. Index the columns you filter, join and sort on, not every column.
+- Functions on an indexed column, such as WHERE LOWER(email) = 'x', can stop the index being used. Index the expression, or store it normalised.
+- A deadlock happens when two transactions each wait for a lock the other holds. Databases detect it and abort one. Reduce the risk by locking rows in a consistent order and keeping transactions short.
+- SQL versus NoSQL is about access patterns. Relational databases suit related data and strong consistency. Key-value, document and wide-column stores suit specific scale or shape needs.
+
+## Operating systems in depth: processes, threads and scheduling
+
+| Concept | Process | Thread |
+| --- | --- | --- |
+| Memory | Own address space | Shares the process's memory |
+| Creation cost | Heavier | Lighter |
+| Crash effect | Isolated from other processes | Can take down the whole process |
+| Communication | Needs IPC (pipes, sockets, shared memory) | Reads and writes shared variables, which needs synchronisation |
+
+- A process moves between states: new, ready, running, waiting (blocked) and terminated. A context switch saves one task's registers and loads another's, which costs time.
+- FCFS is simple but a long job can block short ones (the convoy effect). SJF minimises average waiting time but can starve long jobs and needs a guess of run time.
+- Round robin gives each task a time slice. A tiny slice wastes time switching, and a huge one behaves like FCFS.
+- Priority scheduling can starve low-priority tasks. Aging raises the priority of a task the longer it waits.
+- Real operating systems use a mix, such as multilevel feedback queues, to favour interactive tasks and still be fair.
+
+## Operating systems in depth: synchronisation, deadlock and memory
+
+| Deadlock condition (all four must hold) | How to break it |
+| --- | --- |
+| Mutual exclusion: a resource is held by one task at a time | Use shareable resources where you can |
+| Hold and wait: a task holds one resource while waiting for another | Request every resource at once |
+| No preemption: a held resource cannot be taken away | Allow the system to take resources back |
+| Circular wait: a cycle of tasks each waiting for the next | Always acquire locks in one fixed global order |
+
+**A race condition, and the fix with a lock**
+
+```python
+import threading
+
+counter = 0
+lock = threading.Lock()
+
+def add_unsafe():
+    global counter
+    for _ in range(100_000):
+        counter += 1            # read, add, write: threads can interleave and lose updates
+
+def add_safe():
+    global counter
+    for _ in range(100_000):
+        with lock:              # only one thread in this block at a time
+            counter += 1
+```
+
+- A mutex lets one task into a critical section. A semaphore is a counter that lets up to N tasks in. A condition variable lets tasks wait until something becomes true.
+- Paging splits memory into fixed-size pages. A page table maps virtual pages to physical frames, and the TLB caches recent translations.
+- A page fault happens when a page is not in memory. The OS loads it from disk, which is thousands of times slower than memory.
+- Thrashing is when a system spends more time swapping pages than doing work, because too many tasks compete for too little memory.
+- Common page replacement choices are FIFO, LRU and clock. LRU performs well but costs bookkeeping to track recency.
+- Virtual memory lets each process think it has its own large, continuous address space and keeps processes isolated from each other.
+
+## Computer networks in depth: from a URL to a response
+
+1. The browser checks its caches, then asks a DNS resolver to turn the domain into an IP address. The resolver walks root, top-level domain and authoritative servers if it has no cached answer.
+2. The browser opens a TCP connection with a three-way handshake: SYN, SYN-ACK, ACK.
+3. For HTTPS, a TLS handshake follows: the server proves its identity with a certificate, and both sides agree on session keys for encrypted traffic.
+4. The browser sends an HTTP request: a method, a path, headers (host, cookies, accept) and sometimes a body.
+5. A load balancer or reverse proxy forwards the request to an application server, which may call caches and databases.
+6. The server returns a response with a status code, headers and a body. The browser parses HTML, then fetches CSS, JavaScript and images, often in parallel and over a reused connection.
+7. The browser builds the DOM and renders the page. Cached files and CDNs make later visits faster.
+
+| Layer (TCP/IP) | Job | Examples |
+| --- | --- | --- |
+| Application | What programs say to each other | HTTP, HTTPS, DNS, SMTP, SSH |
+| Transport | End-to-end delivery between processes | TCP (reliable, ordered), UDP (fast, no guarantee) |
+| Internet | Routing packets between networks | IP, ICMP |
+| Link | Moving frames on one local network | Ethernet, Wi-Fi |
+
+- TCP gives reliable, ordered delivery with retransmission, flow control and congestion control. UDP skips all that for speed, which suits video calls, games and DNS.
+- Common HTTP status codes: 200 OK, 201 Created, 301 and 302 redirects, 400 bad request, 401 unauthenticated, 403 forbidden, 404 not found, 429 too many requests, 500 server error, 503 unavailable.
+- GET reads and should not change data. POST creates. PUT replaces. PATCH changes part of a resource. DELETE removes. GET, PUT and DELETE should be idempotent.
+- HTTP/2 multiplexes many requests on one connection. HTTP/3 runs over QUIC (on UDP) to avoid TCP head-of-line blocking.
+- A cookie stores small data in the browser and sends it back with each request. Use HttpOnly, Secure and SameSite flags for session cookies.
+- CORS is a browser rule: a page can read a cross-origin response only if the server allows it with the right headers.
+
+## OOP and design in depth: SOLID with examples
+
+| Principle | Meaning | Warning sign when broken |
+| --- | --- | --- |
+| Single responsibility | A class has one reason to change. | A class that handles HTTP, validation, and database access. |
+| Open/closed | Add behaviour by adding code, not by editing old code. | A growing if/else chain on a type. |
+| Liskov substitution | A subclass can stand in for its parent without surprises. | A subclass that throws on a method the parent supports. |
+| Interface segregation | Prefer small interfaces to one huge one. | Classes that implement methods they do not need. |
+| Dependency inversion | Depend on abstractions, not concrete classes. | A class that creates its own database client, making it hard to test. |
+
+**Dependency inversion in practice: the service does not know which store it uses**
+
+```python
+from typing import Protocol
+
+class UserStore(Protocol):
+    def get(self, user_id: int) -> dict | None: ...
+
+class PostgresStore:
+    def get(self, user_id):
+        ...                             # real database call
+
+class FakeStore:
+    def __init__(self, users): self.users = users
+    def get(self, user_id): return self.users.get(user_id)
+
+class ProfileService:
+    def __init__(self, store: UserStore):
+        self.store = store              # injected, not created here
+
+    def display_name(self, user_id):
+        user = self.store.get(user_id)
+        return user["name"] if user else "Guest"
+
+# In a test: no database needed.
+assert ProfileService(FakeStore({1: {"name": "Asha"}})).display_name(1) == "Asha"
+```
+
+**Observer pattern: a subject notifies many listeners without knowing them**
+
+```python
+class EventBus:
+    def __init__(self):
+        self.listeners = {}
+
+    def subscribe(self, event, fn):
+        self.listeners.setdefault(event, []).append(fn)
+
+    def publish(self, event, data):
+        for fn in self.listeners.get(event, []):
+            fn(data)
+
+bus = EventBus()
+bus.subscribe("order_placed", lambda o: print("email receipt for", o["id"]))
+bus.subscribe("order_placed", lambda o: print("reduce stock for", o["id"]))
+bus.publish("order_placed", {"id": 7})
+```
+
+- Prefer composition to inheritance: build behaviour from small parts that you can swap, instead of deep class trees.
+- Four pillars: encapsulation (hide internals), abstraction (expose what, not how), inheritance (reuse by extending) and polymorphism (one interface, many behaviours).
+- Patterns worth knowing: singleton, factory, builder, strategy, observer, decorator and adapter. Learn the problem each one solves, not only the diagram.
+- Overusing patterns is a smell. Reach for one when the code shows the problem, not before.
 
 ---
 
@@ -513,6 +1276,82 @@ Name something specific: the product, the technology, the team or the problem. L
 
 Always ask. For example: what does the first three months look like, how do you review code, what is the hardest problem the team has now, and how do new people get mentored?
 
+## Behavioural patterns: the STAR method in detail
+
+| Part | What to say | Rough share of the answer |
+| --- | --- | --- |
+| Situation | One or two sentences of context: where, when, what the project or team was. | 15% |
+| Task | Your responsibility or the goal. What was at stake or what was hard? | 10% |
+| Action | The specific steps you took, with 'I' and not 'we'. Include one decision and why. | 50% |
+| Result | What happened, with a number if you can, and what you learned or would change. | 25% |
+
+- Practise each story aloud until it takes about two minutes. Shorter is fine, longer loses people.
+- Prefer stories with a clear result, even a small one: a faster page, a bug fixed, a feature shipped, a contest rank.
+- If the result was bad, say what you learned and what you changed afterwards. Honesty reads better than polish.
+
+## Behavioural patterns: build a story bank
+
+Do not prepare fifty answers. Prepare five to seven real stories and learn to bend each one to fit different questions. Write each in four lines (S, T, A, R) in your notes.
+
+| Story | Where to find it | Questions it can answer |
+| --- | --- | --- |
+| A project you are proud of | A college or personal project | Tell me about yourself, proudest work, a technical challenge, ownership |
+| A time something went wrong | A failed contest, a bug in a demo, a missed deadline | Failure, learning, handling pressure |
+| A disagreement or hard teammate | Group project, hackathon, club | Conflict, communication, teamwork |
+| Learning something fast | A new framework for a hackathon, a new subject | Learning, adaptability, curiosity |
+| Leading or helping others | A club event, mentoring a junior, an open-source review | Leadership, initiative, going beyond the task |
+| A tight deadline or trade-off | Exam week with a project due, a hackathon | Prioritisation, time management, decisions |
+| Feedback you received | A code review, a mentor's comment | Handling criticism, growth |
+
+## Behavioural patterns: match the question to the story
+
+| The question sounds like | What they really want to know | Pattern for your answer |
+| --- | --- | --- |
+| Tell me about a time you failed | Do you own mistakes and learn? | Small real failure, what you changed, a result since then |
+| Tell me about a conflict | Can you disagree without drama? | Listen, state the shared goal, use evidence, accept the outcome |
+| Tell me about a time you led | Do you take initiative? | You saw a gap, you acted without being asked, others benefited |
+| Tell me about a tight deadline | Can you prioritise? | What you cut, what you kept and why, how you told others |
+| Tell me about a time you learned something quickly | Can you grow on the job? | How you broke it down, what you used, what you built in the end |
+| What is your biggest weakness? | Are you self-aware? | A real, not fatal, weakness plus the steps you are taking on it |
+| Why should we hire you? | Do you understand the role? | Match two or three of their needs with proof from your work |
+| Where do you see yourself in five years? | Will you grow and stay? | Skills you want to build and the kind of impact you want, linked to this role |
+
+## Behavioural patterns: example answers
+
+**Q: Tell me about a time you worked in a team and something went wrong.**
+
+Situation: in a four-person hackathon team, our API and frontend did not match two hours before the demo. Task: I owned the backend and needed to get the app working end to end. Action: I called a ten-minute stop, wrote the real response shapes on a shared page, fixed my endpoints to match, and added a quick script to check them. Result: we demoed on time and reached the finals. Since then I agree on API shapes before anyone writes code.
+
+**Q: Tell me about a time you had to learn something quickly.**
+
+Situation: our club project needed a database I had never used. Task: build the data layer in one week. Action: I read the official quick-start, built a tiny version first, then asked a senior to review my schema. Result: we shipped on schedule, and I later wrote a short guide for the club. I learn by building the smallest working thing first.
+
+**Q: What is your biggest weakness?**
+
+Pick something real that will not break the job. For example: I used to dive into code without planning, which cost me rework. Now I write a short plan and the main steps before I start, and my last two projects needed far fewer rewrites.
+
+**Q: Tell me about a time you disagreed with a teammate.**
+
+We disagreed on whether to use a new framework for a deadline project. I asked what risks each choice had, we listed them, and I suggested a small test of the new framework for a day. It was slower, so we kept the familiar tool. I accepted the decision and we finished on time.
+
+## Behavioural patterns: what to avoid
+
+- Saying 'we' for everything. The interviewer needs to hear what you did.
+- Blaming a teammate, a teacher or the tools. Describe the problem and your part.
+- A story with no result. Always finish with what happened.
+- Memorised scripts. They sound flat, and they fall apart when the question changes.
+- Made-up stories. Follow-up questions will find the gaps. Use something real and small.
+- Speaking for five minutes without pausing. Aim for two, then let them ask more.
+
+## Behavioural patterns: a practice routine
+
+1. Write down five to seven stories in S, T, A, R lines.
+2. Tell each aloud to a mirror or a friend. Time it and trim to two minutes.
+3. Pick ten questions from the table above and choose which story answers each.
+4. Record yourself once. Watch for filler words, rushing and long setups.
+5. Do one mock interview with a senior and ask for feedback on clarity and results, not just content.
+6. Update the stories after each real interview with what worked.
+
 ## More practice
 
 - [GeeksforGeeks interview experiences](https://www.geeksforgeeks.org/company-interview-corner/): Real company interview reports
@@ -521,6 +1360,327 @@ Always ask. For example: what does the first three months look like, how do you 
 - [Pramp](https://www.pramp.com): Free mock interviews with peers
 - [InterviewBit](https://www.interviewbit.com): Practice problems and topic-wise questions
 
+## Data structures and algorithms (concepts)
+
+**Q: Array versus linked list: when would you choose each?**
+
+Arrays give O(1) access by index and good cache use, but inserting in the middle costs O(n) and resizing copies data. Linked lists insert or delete in O(1) once you hold the node, but access is O(n) and each node has pointer overhead. Choose an array by default and a linked list when you do many insertions and deletions in the middle and rarely index.
+
+**Q: How does a hash map work, and what happens on a collision?**
+
+A hash function maps a key to a bucket index. Two keys can land in the same bucket, which is a collision. Common fixes are chaining (each bucket holds a list) and open addressing (probe for the next free slot). Lookup is O(1) on average and O(n) in the worst case. A resize keeps the load factor low.
+
+**Q: Compare BFS and DFS. When is each the right choice?**
+
+BFS explores level by level with a queue and finds the shortest path in an unweighted graph. DFS goes deep with a stack or recursion and suits cycle detection, topological sort, connected components and backtracking. Both are O(V+E).
+
+**Q: What is the difference between a stack and a queue?**
+
+A stack is last in, first out (push and pop at one end). A queue is first in, first out (add at the back, remove from the front). Stacks suit undo, recursion and parsing. Queues suit scheduling and BFS.
+
+**Q: What is dynamic programming, and how do you start a DP problem?**
+
+DP solves a problem by combining answers to overlapping subproblems and storing them to avoid repeat work. Start by defining the state in words, write the recurrence between states, set the base cases, choose the order (top-down with memoisation or bottom-up with a table), then see if you can shrink the space.
+
+**Q: Why is quicksort usually faster than merge sort in practice, even though its worst case is worse?**
+
+Quicksort sorts in place with good cache behaviour and small constants, and a random or median pivot makes the O(n²) case very unlikely. Merge sort always runs in O(n log n) and is stable but needs O(n) extra space.
+
+**Q: What is a balanced binary search tree, and why does balance matter?**
+
+A balanced BST keeps its height near log n, so search, insert and delete stay O(log n). Without balance, sorted inserts turn the tree into a list with O(n) operations. AVL and red-black trees keep balance with rotations.
+
+**Q: What does amortised O(1) mean?**
+
+It means the average cost per operation over a long sequence is constant, even if a few operations are expensive. Appending to a dynamic array is the usual example: most appends are O(1), and an occasional resize costs O(n), but spread over all appends the average is O(1).
+
+## Git, tools and testing
+
+**Q: What is the difference between git merge and git rebase?**
+
+Merge joins two branches with a merge commit and keeps the true history. Rebase replays your commits on top of another branch, giving a linear history but rewriting those commits. Do not rebase commits that others already use.
+
+**Q: What is the difference between git fetch and git pull?**
+
+Fetch downloads new commits and updates remote-tracking branches without changing your working branch. Pull is a fetch followed by a merge (or rebase) into your current branch.
+
+**Q: What are unit, integration and end-to-end tests?**
+
+Unit tests check one function or class in isolation. Integration tests check that parts work together, such as an API with its database. End-to-end tests drive the whole system the way a user would. Keep many unit tests, fewer integration tests and a few end-to-end tests.
+
+**Q: What is CI/CD?**
+
+Continuous integration builds and tests every change automatically so problems show up early. Continuous delivery or deployment then releases the passing build, either with one click or fully automatically.
+
+**Q: What is the difference between a container and a virtual machine?**
+
+A virtual machine runs a full guest operating system on virtual hardware. A container shares the host kernel and isolates only the process and its files, so it starts faster and uses less memory.
+
+## How ready are you in each year?
+
+| Year | A fair interview-readiness target |
+| --- | --- |
+| 1 | Explain your language's basics and solve easy problems. No interviews yet, just build confidence. |
+| 2 | Answer basic OOP, DBMS and OS questions, and solve medium problems with hints. |
+| 3 | Answer core-subject questions clearly, solve mediums alone, and explain every project you list. |
+| 4 | Handle a full loop: coding, core subjects, a design discussion, projects and a behavioural round. |
+
+## From an SDE's desk
+
+As someone who sits on the interviewer side: we are not checking if you memorised an answer. We want to see how you think and whether we would enjoy solving problems with you.
+
+- Say your thinking aloud. A reasoned wrong answer scores better than a silent right one.
+- Ask a clarifying question before you start. It signals that you would ask in a real ticket as well.
+- If you do not know, say so, then reason from what you do know. Bluffing is easy to spot and costs trust.
+- Honest answers about projects win. Be ready to go two levels deeper on anything on your resume.
+
+## Operating systems (more questions)
+
+**Q: What is the difference between a process and a thread?**
+
+A process has its own memory space and resources. Threads inside a process share its memory, so they are cheaper to create and to switch between, but they need synchronisation and a crash in one can bring down the process.
+
+**Q: What is a context switch, and why is it expensive?**
+
+It is when the CPU stops one task and starts another, saving and restoring registers and other state. It costs time directly and also hurts caches, because the new task's data is not warm.
+
+**Q: What are the four conditions for deadlock?**
+
+Mutual exclusion, hold and wait, no preemption and circular wait. All four must hold. Breaking any one prevents deadlock, for example by locking in a fixed order to avoid circular wait.
+
+**Q: What is the difference between a mutex and a semaphore?**
+
+A mutex is a lock owned by one thread at a time, used to protect a critical section. A semaphore is a counter that allows up to N holders and can be signalled by a different thread, used to limit access or to coordinate.
+
+**Q: What is virtual memory?**
+
+A technique that gives every process its own large address space, mapped to physical memory and disk by the OS and hardware. It gives isolation, lets programs use more than physical RAM, and simplifies loading.
+
+**Q: What is a page fault?**
+
+An access to a page that is not currently in physical memory. The OS finds the page on disk, loads it into a frame, updates the page table and restarts the instruction.
+
+**Q: What is thrashing?**
+
+When the system spends most of its time moving pages between memory and disk because processes need more memory than is available, so little real work is done. Fix by reducing the number of active processes or adding memory.
+
+**Q: What is starvation, and how does aging help?**
+
+Starvation is when a task never gets a resource because others keep getting it first. Aging gradually raises a waiting task's priority so it eventually runs.
+
+**Q: What is the difference between user mode and kernel mode?**
+
+Kernel mode can run privileged instructions and access all hardware and memory. User mode is restricted. Programs enter kernel mode only through system calls, which protects the system from faulty or hostile programs.
+
+**Q: What is a zombie process?**
+
+A process that has finished but still has an entry in the process table because its parent has not yet read its exit status. The parent should call wait to clean it up.
+
+## Computer networks (more questions)
+
+**Q: Explain the TCP three-way handshake.**
+
+The client sends SYN, the server replies SYN-ACK, and the client sends ACK. Both sides now agree on starting sequence numbers and the connection is open. Closing uses FIN and ACK messages from each side.
+
+**Q: TCP versus UDP: when would you choose each?**
+
+TCP when you need reliable, ordered delivery, such as web pages, files and APIs. UDP when speed matters more than perfect delivery or you handle loss yourself, such as live video, games and DNS.
+
+**Q: How does DNS work?**
+
+A resolver checks its cache, then asks root servers, then the top-level domain servers, then the authoritative server for the domain, which returns the IP address. Answers are cached for a time to live.
+
+**Q: What is the difference between HTTP and HTTPS?**
+
+HTTPS is HTTP over TLS. TLS encrypts traffic, verifies the server's identity with a certificate and protects against tampering.
+
+**Q: What is the difference between GET and POST?**
+
+GET requests data and should not change anything, so it can be cached and bookmarked. POST sends data to create or change something, and its body is not part of the URL. Neither is secure by itself, because security comes from HTTPS and the server.
+
+**Q: What is a load balancer?**
+
+A component that spreads requests across servers, checks their health and removes failed ones, and may end TLS. It can work at layer 4 (connections) or layer 7 (HTTP content).
+
+**Q: What is NAT?**
+
+Network address translation lets many devices in a private network share one public IP address. The router rewrites addresses and ports and remembers the mapping for replies.
+
+**Q: What is the difference between a hub, a switch and a router?**
+
+A hub repeats traffic to all ports. A switch forwards frames only to the right port using MAC addresses. A router connects different networks and forwards packets using IP addresses.
+
+**Q: What is a CDN?**
+
+A content delivery network is a set of servers around the world that cache static content close to users, giving lower latency and taking load off your origin server.
+
+**Q: What is the difference between a cookie, a session and a token?**
+
+A cookie is data the browser stores and sends back. A session is server-side state, usually found by an ID kept in a cookie. A token, such as a JWT, carries signed claims that the server can check without looking up state.
+
+## DBMS and SQL (more questions)
+
+**Q: What is the difference between DELETE, TRUNCATE and DROP?**
+
+DELETE removes selected rows, can use WHERE and can be rolled back in a transaction. TRUNCATE removes all rows quickly and keeps the table. DROP removes the table itself, including structure and data.
+
+**Q: What is the difference between a clustered and a non-clustered index?**
+
+A clustered index decides the physical order of the rows, so a table has only one. A non-clustered index is a separate structure with pointers to the rows, and a table can have many.
+
+**Q: What is a view, and what is a materialised view?**
+
+A view is a stored query that behaves like a table. A materialised view stores its result and must be refreshed, which makes reads fast but adds staleness.
+
+**Q: What is a stored procedure, and when would you avoid one?**
+
+A stored procedure is code saved inside the database. It can reduce round trips and centralise logic, but it is harder to version, test and move between databases, so many teams keep business logic in application code.
+
+**Q: What is the difference between UNION and UNION ALL?**
+
+UNION combines results and removes duplicates, which costs a sort or hash. UNION ALL keeps every row and is faster. Use UNION ALL unless you need deduplication.
+
+**Q: What is a correlated subquery?**
+
+A subquery that refers to a column of the outer query, so it runs once per outer row. It can be slow, and is often rewritten as a join or a window function.
+
+**Q: How would you find the Nth highest salary?**
+
+Use DENSE_RANK() over salary descending in a subquery and filter for rank N. An older approach is ORDER BY salary DESC with LIMIT 1 OFFSET N-1, which does not handle ties the same way.
+
+**Q: What is the N+1 query problem?**
+
+Running one query for a list and then one more per item. Fix it with a join, or by fetching all related rows in one batched query.
+
+**Q: What is database replication, and what is replication lag?**
+
+Replication copies data from a primary to replicas for read scaling and failover. Lag is the delay before a change reaches a replica, so a read from a replica can briefly return old data.
+
+**Q: When would you pick NoSQL over SQL?**
+
+When the data shape is flexible, when you need very high write volume or horizontal scale, or when access is simple key-based. Pick SQL when you need joins, transactions and a stable schema.
+
+## OOP and design (more questions)
+
+**Q: What is the difference between an abstract class and an interface?**
+
+An interface describes what a type can do and has no state, so a class can implement many. An abstract class can hold shared state and partial code but a class can usually extend only one. Prefer interfaces for contracts and abstract classes for shared base behaviour.
+
+**Q: What is polymorphism? Give an example.**
+
+One interface with different behaviour depending on the object. A Shape list where each item has an area() method gives the right area for circles and rectangles without checking types.
+
+**Q: Composition versus inheritance: which do you prefer?**
+
+Composition. It keeps parts independent and swappable, while deep inheritance couples a subclass tightly to its parent. Use inheritance for a true 'is a' relationship with stable behaviour.
+
+**Q: What is the difference between overloading and overriding?**
+
+Overloading is several methods with the same name but different parameters, resolved at compile time. Overriding is a subclass replacing a parent's method with the same signature, resolved at run time.
+
+**Q: What is the singleton pattern, and what are its problems?**
+
+A class that allows one instance with global access. It hides dependencies, makes tests harder and can cause trouble with threads. Prefer passing a single instance in through the constructor.
+
+**Q: What is dependency injection?**
+
+Giving an object the things it needs from outside instead of letting it create them. It makes code easier to test and to change, for example by passing a fake database in a test.
+
+**Q: What is the difference between shallow and deep copy?**
+
+A shallow copy duplicates the outer object but shares inner objects. A deep copy duplicates everything, so changes to the copy never affect the original.
+
+**Q: What does 'program to an interface, not an implementation' mean?**
+
+Depend on a contract, not a concrete class, so you can swap the implementation without changing the callers.
+
+**Q: Design a parking lot. How would you start?**
+
+Ask about vehicle types, floors, pricing and payment. Identify nouns as classes (ParkingLot, Level, Spot, Vehicle, Ticket) and behaviours as methods (park, unpark, calculateFee). Keep spot assignment and pricing as separate strategies so each can change.
+
+**Q: What is a race condition, and how do you avoid it?**
+
+A bug where the result depends on the timing of threads touching shared data. Avoid it by not sharing mutable state, or by protecting it with locks, atomic operations or immutable data.
+
+## System design (more questions)
+
+**Q: How do you design a rate limiter?**
+
+Choose an algorithm (token bucket is a good default), key it by user or IP, store counters in a shared fast store such as Redis, return HTTP 429 with a Retry-After header, and decide what to do if the store fails, usually allowing the request.
+
+**Q: How would you design a URL shortener?**
+
+Generate a unique short code from a counter encoded in base62, store code to URL, redirect on read, cache hot links and rate-limit creation. Reads far outnumber writes, so scale reads with caches and replicas.
+
+**Q: How do you scale a read-heavy service?**
+
+Cache, add read replicas, use a CDN for static data, add indexes, and precompute results that are expensive to build.
+
+**Q: How do you scale a write-heavy service?**
+
+Batch and queue writes, partition or shard the data, choose a store built for high write throughput, and reduce write amplification such as extra indexes.
+
+**Q: What is eventual consistency, and when is it fine?**
+
+Replicas converge after a delay without a guarantee that every read is the latest. It suits feeds, likes and counters, and does not suit payments or inventory that must not oversell.
+
+**Q: How would you make a payment API safe to retry?**
+
+Require an idempotency key. Store the result of the first request under that key, and return the same result for repeats, so a retry never charges twice.
+
+**Q: Monolith or microservices?**
+
+Start with a well-structured monolith. Split out a service when a part needs to scale, deploy or be owned separately. Microservices add network failures, distributed data and operational cost.
+
+**Q: How do you find the bottleneck in a slow system?**
+
+Measure. Look at latency percentiles, then trace a slow request through each hop, and check CPU, memory, database queries and queues. Fix the biggest cost first, and measure again.
+
+## SQL practice questions (with answers)
+
+**Employees earning more than their manager**
+
+```sql
+SELECT e.name
+FROM employees e
+JOIN employees m ON e.manager_id = m.id
+WHERE e.salary > m.salary;
+```
+
+**Departments with more than 5 employees**
+
+```sql
+SELECT dept_id, COUNT(*) AS headcount
+FROM employees
+GROUP BY dept_id
+HAVING COUNT(*) > 5;
+```
+
+**Users who logged in on three consecutive days (gaps and islands idea)**
+
+```sql
+SELECT DISTINCT user_id
+FROM (
+  SELECT user_id, login_date,
+         login_date - ROW_NUMBER() OVER (PARTITION BY user_id ORDER BY login_date) * INTERVAL '1 day' AS grp
+  FROM (SELECT DISTINCT user_id, login_date FROM logins) d
+) t
+GROUP BY user_id, grp
+HAVING COUNT(*) >= 3;
+```
+
+**Delete duplicate rows but keep the lowest id**
+
+```sql
+DELETE FROM users
+WHERE id NOT IN (
+  SELECT MIN(id) FROM users GROUP BY email
+);
+```
+
+- Before you write SQL in an interview, say the tables, the join keys and the shape of the result you want.
+- Run each query in your head on a tiny table with two or three rows, including a row with a NULL.
+- Syntax for dates and intervals differs by database. Say which one you assume.
 
 ---
 
@@ -633,6 +1793,217 @@ Many fresher interviews ask for classes and relationships instead of servers. Th
 - [Awesome Low Level Design](https://github.com/ashishps1/awesome-low-level-design): Object-oriented design problems with code
 - [Engineering blogs](https://github.com/kilimchoi/engineering-blogs): A list of company blogs where real designs are explained
 
+## Worked example: a URL shortener
+
+1. Clarify: users create a short link for a long URL and are redirected when they open it. Ask about custom aliases, expiry, analytics and expected traffic.
+2. Estimate: suppose 100 million new links a month and a read-to-write ratio of 100:1. That is roughly 40 writes a second and 4,000 reads a second on average, and more at peak.
+3. API: POST /links with the long URL returns a short code. GET /{code} returns a redirect (HTTP 301 or 302).
+4. Data: one table with code (primary key), long URL, created time, expiry and owner. A key-value store or a SQL table with an index on code both work.
+5. Generate the code: use a counter encoded in base62, or hash the URL and check for collisions. A counter is simple and has no collisions, but needs care when many servers run.
+6. Scale reads: put a cache such as Redis in front of the database, because the same popular links are read again and again. Add a CDN or edge cache if the traffic is global.
+7. Scale writes: split the data by code range or hash. Give each application server a block of counter values so servers do not wait on each other.
+8. Extras: rate-limit creation, check links for abuse, and log clicks through a queue so analytics never slow down a redirect.
+9. Trade-offs to mention: 301 is cached by browsers and cuts load but hides later clicks. 302 lets you count every click. Random codes are harder to guess than counters.
+
+## Which year to learn system design
+
+- Years 1–2: learn how the web, databases and caches work. You do not need to design systems yet.
+- Year 3: learn the framework, building blocks and a few classic designs. Practise saying your thinking aloud.
+- Year 4: practise full designs against a timer, and rehearse low-level design for the companies that ask for it.
+
+## From an SDE's desk
+
+In real teams, system design is mostly deciding what not to build. The best design is the simplest one that meets today's load with a clear path to the next stage.
+
+- Start with one server and one database. Add a cache, a queue or a new service only when a measured problem asks for it.
+- Every box you add is something that can fail at 3 am and something a teammate must learn. Count that cost.
+- Write the design down before building it, even a one-page note. Many bad ideas die on paper cheaply.
+- Numbers beat opinions. Estimate load and storage, then check against real metrics after launch.
+
+## Deep dive: caching
+
+| Strategy | How it works | Good for | Watch out for |
+| --- | --- | --- | --- |
+| Cache-aside (lazy loading) | App checks the cache, on a miss reads the database and fills the cache. | Read-heavy data, the most common choice. | Stale data after writes. Delete or update the key on write. |
+| Read-through | The cache itself loads from the database on a miss. | Simpler app code. | Needs a cache that supports it. |
+| Write-through | Writes go to the cache and the database together. | Data that is read right after it is written. | Slower writes. |
+| Write-back | Writes go to the cache and are saved to the database later. | Very write-heavy loads. | Data loss if the cache fails before saving. |
+
+**Cache-aside with expiry (a plain dict stands in for Redis)**
+
+```python
+import time
+
+cache = {}                              # key -> (value, expires_at)
+TTL = 60                                # seconds
+
+def get_user(user_id, db):
+    hit = cache.get(user_id)
+    if hit and hit[1] > time.time():
+        return hit[0]                   # cache hit
+    user = db.fetch_user(user_id)       # cache miss: go to the source
+    cache[user_id] = (user, time.time() + TTL)
+    return user
+
+def update_user(user_id, data, db):
+    db.save_user(user_id, data)
+    cache.pop(user_id, None)            # invalidate so the next read is fresh
+```
+
+**An LRU cache: evict the least recently used item**
+
+```python
+from collections import OrderedDict
+
+class LRU:
+    def __init__(self, capacity):
+        self.cap = capacity
+        self.items = OrderedDict()
+
+    def get(self, key):
+        if key not in self.items:
+            return None
+        self.items.move_to_end(key)     # mark as most recently used
+        return self.items[key]
+
+    def put(self, key, value):
+        self.items[key] = value
+        self.items.move_to_end(key)
+        if len(self.items) > self.cap:
+            self.items.popitem(last=False)   # drop the oldest
+```
+
+- Cache what is read often and changes rarely. Do not cache what is cheap to compute or must always be exact, such as an account balance.
+- Pick a time to live (TTL) on purpose. Short TTLs mean fresher data and more database load.
+- Cache stampede: a popular key expires and many requests hit the database at once. Add random jitter to TTLs, or let one request rebuild while the others wait.
+- Eviction policies: LRU (least recently used), LFU (least frequently used) and FIFO. LRU is the usual default.
+- Layers: the browser cache, a CDN for static files, an application cache such as Redis, and the database's own buffers.
+
+## Deep dive: scaling the database
+
+1. Add indexes and fix slow queries first. This is the cheapest and biggest win.
+2. Add a cache for repeated reads.
+3. Add read replicas: one primary takes writes, copies take reads. Replication lag means a replica can briefly serve old data.
+4. Scale vertically (a bigger machine) while that is simpler than anything else.
+5. Partition large tables, for example by date, so queries touch less data.
+6. Shard: split data across several databases by a key such as user_id. It works, but cross-shard queries and joins get hard, so delay it as long as you can.
+
+| Sharding method | How | Trade-off |
+| --- | --- | --- |
+| Range | Users 1–1M on shard A, 1M–2M on shard B. | Simple, but one shard can become a hot spot. |
+| Hash | shard = hash(user_id) mod N. | Even spread, but adding shards moves a lot of data unless you use consistent hashing. |
+| Directory | A lookup table says which shard holds which key. | Flexible, but the directory is one more thing to scale and protect. |
+
+- Consistent hashing places servers and keys on a ring, so adding or removing a server moves only a small share of keys.
+- Pick a shard key with high cardinality and even access. A bad key, like country, creates a hot shard.
+- SQL gives joins and transactions. Many NoSQL stores give easy horizontal scaling and flexible shape. Choose by access pattern, not fashion.
+
+## Deep dive: queues, events and consistency
+
+A queue lets a fast part of the system hand work to a slower part without waiting. The web request puts 'send the receipt email' on a queue and returns at once, and a worker does the email later. This smooths traffic spikes, lets you retry, and keeps failures from spreading.
+
+- At-most-once delivery can lose messages. At-least-once never loses them but can deliver twice, so consumers must be idempotent. Exactly-once is really at-least-once plus idempotent handling.
+- Make a consumer idempotent by storing the IDs of messages already handled, or by using operations that are safe to repeat, such as 'set status to paid'.
+- A dead-letter queue holds messages that keep failing so they do not block the rest and can be inspected.
+- Backpressure: if producers outrun consumers, queues grow without limit. Limit the queue, shed load or scale consumers.
+- CAP theorem: during a network partition you must choose between consistency (every read sees the latest write) and availability (every request gets an answer). Most systems choose per feature.
+- Eventual consistency means replicas agree after a short delay. It is fine for likes and feeds, and not fine for payments.
+- Use the outbox pattern when you must update a database and publish an event reliably: write the event to an outbox table in the same transaction, then publish from that table.
+
+## Deep dive: load balancing, rate limiting and APIs
+
+| Load balancing method | How it picks a server | Good for |
+| --- | --- | --- |
+| Round robin | Takes servers in turn. | Similar servers and similar requests. |
+| Least connections | Picks the server with the fewest active connections. | Requests of uneven length. |
+| IP or key hash | Same client goes to the same server. | Sticky sessions or local caches. |
+| Weighted | Bigger servers get more traffic. | Mixed hardware. |
+
+**Token bucket rate limiter: allows bursts, enforces an average rate**
+
+```python
+import time
+
+class TokenBucket:
+    def __init__(self, rate_per_sec, capacity):
+        self.rate = rate_per_sec
+        self.capacity = capacity
+        self.tokens = capacity
+        self.last = time.monotonic()
+
+    def allow(self):
+        now = time.monotonic()
+        # refill for the time that has passed
+        self.tokens = min(self.capacity, self.tokens + (now - self.last) * self.rate)
+        self.last = now
+        if self.tokens >= 1:
+            self.tokens -= 1
+            return True
+        return False                    # caller returns HTTP 429
+```
+
+**Base62 encoding for short URL codes (an ID from a counter becomes a short string)**
+
+```python
+ALPHABET = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+def encode(n):
+    if n == 0:
+        return ALPHABET[0]
+    out = []
+    while n:
+        n, r = divmod(n, 62)
+        out.append(ALPHABET[r])
+    return "".join(reversed(out))
+
+# 62^7 is about 3.5 trillion, so 7 characters is plenty for most systems.
+```
+
+- Rate limiting algorithms: fixed window (simple, but allows bursts at the boundary), sliding window (smoother), token bucket (allows bursts) and leaky bucket (smooths output).
+- Keep rate limit counters in a shared store such as Redis when you run many servers.
+- API design: use nouns for resources (/users/42/orders), HTTP methods for actions, plural names, consistent error shapes, pagination and versioning.
+- Prefer cursor pagination (?after=id) over page numbers for large or changing lists. Offsets get slow and can skip or repeat items.
+- Health checks let a load balancer stop sending traffic to a broken server. Add a cheap liveness check and a deeper readiness check.
+
+## Deep dive: reliability and observability
+
+| Availability target | Downtime per year (approx.) |
+| --- | --- |
+| 99% | About 3.65 days |
+| 99.9% | About 8.8 hours |
+| 99.99% | About 53 minutes |
+| 99.999% | About 5 minutes |
+
+- Timeouts everywhere: a call with no timeout can hang a whole service. Set one on every network call.
+- Retries with exponential backoff and jitter. Retrying instantly in lockstep makes an outage worse. Retry only operations that are safe to repeat.
+- A circuit breaker stops calling a failing dependency for a while so it can recover and your service stays responsive.
+- Graceful degradation: when a part fails, show something useful, such as cached data or a simpler page, rather than an error.
+- Replication and backups: a backup you have never restored is only a hope. Practise the restore.
+- Logs say what happened, metrics say how much and how fast, traces show the path of one request. You want all three.
+- Track the four golden signals: latency, traffic, errors and saturation. Alert on symptoms users feel, not on every internal blip.
+- Define an SLO such as 99.9% of requests succeed in 300 ms. The remaining 0.1% is your error budget for risk and releases.
+
+## Worked example: design a news feed
+
+1. Clarify: users follow others and see a feed of recent posts. Ask about scale, freshness, ranking and media.
+2. Estimate: say 100 million users, 10 million daily posters, and each user opens the feed 10 times a day. Reads far outweigh writes.
+3. Choose a model. Fan-out on write: when someone posts, push the post ID into each follower's feed list. Reads are fast, writes are heavy for people with millions of followers.
+4. Fan-out on read: build the feed when the user opens it by pulling recent posts from everyone they follow. Writes are cheap, reads are heavy.
+5. Hybrid: fan-out on write for normal users, and fan-out on read for celebrity accounts, merging the two at read time.
+6. Store feed lists in a cache or fast store (a list of post IDs per user), and post content in a database, fetched by ID.
+7. Add pagination with a cursor, a ranking step if needed, and a CDN for images and video.
+8. Discuss failure: a queue absorbs bursts of posts, workers do the fan-out, and slow followers' feeds can be built lazily.
+
+## Worked example: design a chat system
+
+1. Clarify: one-to-one and group chat, online status, history, delivery receipts, media.
+2. Connection: use WebSockets for a long-lived two-way connection, with a fallback to long polling.
+3. Message flow: client sends to a chat server, the server stores the message, then delivers it to the recipient's connection, or to a push notification service if offline.
+4. Storage: messages by conversation ID and time in a store good at appends and range reads. Keep users, groups and settings in a relational database.
+5. Ordering: give each message an ID that increases within a conversation, so clients can sort and detect gaps.
+6. Delivery guarantees: clients acknowledge messages, the server retries until acknowledged, and duplicates are removed by message ID.
+7. Scale: many connection servers behind a load balancer, with a registry (such as Redis) that says which server holds which user's connection.
+8. Presence: heartbeats update a 'last seen' value. Show 'online' only if it is recent, and avoid broadcasting every change to everyone.
 
 ---
 
@@ -684,6 +2055,35 @@ Do DSA for everyone. After the basics, go deep in one track instead of sampling 
 - Write a README with a screenshot, a description, the tech stack and how to run it.
 - Be ready to explain why you made each design choice.
 
+## What to build in each year
+
+| Year | Projects that fit | What they prove |
+| --- | --- | --- |
+| 1 | Calculator, to-do list, quiz game, personal portfolio, a small command-line tool | You can write, run and share working code. |
+| 2 | Blog or notes app with login, expense tracker, weather dashboard, a small REST API | You can use a database, authentication and an external API. |
+| 3 | A full product for real users, a clone of a known app with your own twist, a project for your target role | You can design, build, test and deploy something larger. |
+| 4 | Final-year project, an open-source contribution series, a deployed side project with users | You can finish and maintain real work. |
+
+## A path from idea to deployed app
+
+1. Write one sentence: who it helps and what it does.
+2. List the smallest set of features that makes it useful, and cut the rest for later.
+3. Sketch the screens on paper and list the data you will store.
+4. Set up the repository, a README and a simple folder structure.
+5. Build the data layer first, then the API, then the screens.
+6. Add validation and error handling before you add new features.
+7. Write tests for the parts that would hurt most if they broke.
+8. Deploy early, even if it is ugly, and fix what only shows up in production.
+9. Write the README with screenshots, setup steps and what you would improve next.
+
+## From an SDE's desk
+
+The gap between a tutorial project and a job is the boring parts: error handling, logging, configuration, deployment and keeping it running.
+
+- Handle failure on purpose. What happens if the database is down, the input is empty, or the API is slow?
+- Keep configuration and secrets out of the code from day one. Leaked keys on GitHub are a very common mistake.
+- Commit small and often, with messages that explain why, not only what.
+- Deploy early. The first deployment always finds problems that your laptop hid.
 
 ---
 
@@ -796,6 +2196,23 @@ Pick one project from each level and finish it. A finished, deployed project wit
 - [Frontend Mentor](https://www.frontendmentor.io): Real design challenges to build
 - [CodeCrafters](https://codecrafters.io): Build real tools step by step, with tests
 
+## Project ideas by year
+
+| Year | Ideas | Skills they build |
+| --- | --- | --- |
+| 1 | Number guessing game, unit converter, tic-tac-toe, a typing speed test, a static portfolio | Loops, functions, DOM basics, Git |
+| 2 | Expense tracker, notes app with login, a URL shortener, a movie search using a public API | CRUD, SQL, authentication, API calls |
+| 3 | A student marketplace, a job-application tracker, a chat app, an online judge for small problems | System thinking, caching, real-time features, testing |
+| 4 | A tool for your college with real users, an open-source library, a tool for your target role | Ownership, documentation, users, maintenance |
+
+## From an SDE's desk
+
+When I read a student's resume, a project earns attention if it solves a real problem, runs somewhere I can click, and has a README that explains the decisions.
+
+- Depth beats count. Two projects you can defend for twenty minutes are better than six you cannot explain.
+- Add one hard part on purpose: auth, a background job, a search feature, or real-time updates.
+- Get at least five real users, even friends. Their confusion will teach you more than another feature.
+- Write down trade-offs in the README: what you chose, what you skipped and why.
 
 ---
 
@@ -1001,6 +2418,23 @@ Almost every server runs Linux, and most developer tools are made for the termin
 6. Create a GitHub profile README and pin one repository.
 7. Set up a notes folder and write down today's lesson.
 
+## Which tools to learn in each year
+
+| Year | Tools | Why now |
+| --- | --- | --- |
+| 1 | A good editor, the terminal, Git and GitHub, your language's compiler or runtime | Everything else builds on these. |
+| 2 | A debugger, a package manager, a database client, Postman or curl, basic Linux | You start building apps with a database and APIs. |
+| 3 | Docker, GitHub Actions, a testing framework, logging, a cloud account on a free tier | Interviews and internships ask how your work is built and shipped. |
+| 4 | Whatever your target team uses: Kubernetes basics, monitoring, an issue tracker, code review habits | You will use them in your first job. |
+
+## From an SDE's desk
+
+Tools do not make an engineer, but fluency with them saves hours every week.
+
+- Learn your debugger. Stepping through code finds bugs faster than adding print statements to every line.
+- Know Git well enough to recover from mistakes: reflog, stash, revert and interactive rebase on your own branch.
+- Learn to read logs and stack traces carefully. The answer is often in the first error, not the last.
+- Automate any chore you do three times: a script, an alias or a CI step.
 
 ---
 
@@ -1142,6 +2576,14 @@ Building apps with models and researching or training models are different jobs.
 - [AI SDK](https://ai-sdk.dev): A TypeScript toolkit for chat, streaming, tools and structured output
 - [OWASP Top 10 for LLM applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/): The main security risks when building with models
 
+## From an SDE's desk
+
+AI tools are part of daily work now. The people who benefit most are the ones who could do the task without the tool and use it to go faster.
+
+- Treat generated code as a pull request from a confident junior. Read it, run it and test it before it goes in.
+- Never paste secrets, customer data or private company code into a tool you have not been cleared to use.
+- Use AI to explain unfamiliar code, draft tests and list edge cases. Keep the design decisions with you.
+- If you cannot explain a line it wrote, do not commit it.
 
 ---
 
@@ -1178,6 +2620,30 @@ Start in your second year at the latest if you want GSoC or similar programmes. 
 - [MLH Fellowship](https://fellowship.mlh.io): Remote fellowship on open-source projects
 - [LFX Mentorship](https://lfx.linuxfoundation.org/tools/mentorship/): Linux Foundation mentorships
 
+## What to do each year
+
+- Year 1: learn Git and GitHub well. Read other people's code and README files. Fix a typo in a project's docs.
+- Year 2: send your first pull requests to beginner-friendly projects. Aim for 2–3 merged.
+- Year 3: work on a bigger issue in one project, join its chat, and apply to a programme that fits your timing.
+- Year 4: become a regular contributor to one project, mentor a newcomer, and cite your work in applications.
+
+## Good habits for contributors
+
+- Read the contributing guide and the code of conduct before you open anything.
+- Search existing issues and pull requests first, so you do not repeat work.
+- Comment on an issue to say you would like to take it, and wait for a reply.
+- Keep each pull request small and focused, with a clear description and tests when the project has them.
+- Be polite when reviewers ask for changes. Reply to every comment and push fixes quickly.
+- If a project is quiet, wait a week, nudge once, then move on without taking it personally.
+
+## From an SDE's desk
+
+Open source is the closest thing a student can get to a real engineering team: shared code, review, issues and releases.
+
+- Reading a mature codebase is a skill. Start by tracing one feature from request to response.
+- A merged one-line fix with a clear description beats an abandoned big pull request.
+- Maintainers are busy volunteers. Be brief, polite and patient, and follow the contributing guide.
+- Your contributions are public proof of how you communicate and respond to feedback.
 
 ---
 
@@ -1201,7 +2667,6 @@ Pick a direction, see what the job is, what to study, what to build and what a s
 | [UI/UX designer](roles/ui-ux.md) | Work out what people need, then shape a product that is easy and pleasant to use. | Figma, user research, prototyping, design systems, basic HTML and CSS |
 | [Product manager](roles/product.md) | Decide what to build and why, and keep the team pointed at the right problem. | Writing, SQL and analytics, user research, roadmaps, basic technical knowledge |
 | [Blockchain developer](roles/web3.md) | Build programs that run on a blockchain, where mistakes can be expensive and permanent. | Solidity, Foundry or Hardhat, TypeScript, ethers or viem, a wallet, a testnet |
-
 
 ---
 
@@ -1233,6 +2698,15 @@ You write the code that runs on servers: the APIs a website or app calls, the ru
 | Startups | Build the whole backend quickly with a small team. |
 | Fintech and e-commerce | Payments, orders and reliability matter most. |
 | Service companies | Build systems for clients across industries. |
+
+## Year by year
+
+| Year | Focus | Build | Milestone |
+| --- | --- | --- | --- |
+| Year 1 | One language, HTTP basics, Git, SQL basics | A command-line tool and a small HTTP server | Two projects online and easy problems solved alone |
+| Year 2 | REST APIs, a relational database, authentication, testing | A full CRUD API with login, deployed | A deployed API with docs and tests |
+| Year 3 | Caching, queues, Docker, system design, an internship | A project with a cache, a background job and metrics | An internship offer and a design you can explain |
+| Year 4 | Scale, reliability, security, interview loops | A final project with logs, monitoring and load tests | An offer for a backend role |
 
 ## Study plan
 
@@ -1318,6 +2792,14 @@ You write the code that runs on servers: the APIs a website or app calls, the ru
 - Skipping tests because 'it works on my machine'.
 - Copying a framework tutorial without knowing what the framework does for you.
 
+## Engineer's notes
+
+- Most production problems are data problems: bad migrations, missing indexes, and inconsistent state. Treat schema changes with care.
+- Log with request IDs so you can follow one request across services. You will thank yourself during an incident.
+- Never trust input from a client. Validate on the server, always.
+- Make writes idempotent where you can. Retries are normal and must not double-charge anyone.
+- Version your API. Changing a response field breaks someone you have never met.
+
 ## Mistakes juniors make
 
 - Building endpoints without thinking about who is allowed to call them.
@@ -1365,13 +2847,47 @@ You write the code that runs on servers: the APIs a website or app calls, the ru
 - What happens when you type a URL; how HTTPS works; how sessions differ from JWTs.
 - Walk through one of your projects, including a bug you fixed.
 
+## Interview questions and answers
+
+**Q: What is the difference between authentication and authorisation?**
+
+Authentication proves who you are (a login). Authorisation decides what you may do once known (permissions). Check both on every protected request.
+
+**Q: Why do we use database indexes, and what is the cost?**
+
+An index lets the database find rows without scanning the table, so reads get faster. The cost is extra storage and slower writes, because the index must be updated too.
+
+**Q: How would you make an endpoint safe to retry?**
+
+Make it idempotent: accept a client-supplied idempotency key, store the result of the first call, and return the same result for repeats.
+
+**Q: What is the N+1 query problem?**
+
+Running one query for a list and then one more query per item. Fix it with a join or by loading the related rows in a single batched query.
+
+**Q: How does a cache go wrong?**
+
+Stale data after a change, a stampede when a popular key expires, and memory growth. Use expiry, invalidate on writes, and protect hot keys.
+
+## Glossary
+
+| Term | Meaning |
+| --- | --- |
+| API | A set of endpoints other programs call to use your service. |
+| REST | A style of API using HTTP methods and resource URLs. |
+| Index | A database structure that speeds up lookups at the cost of slower writes. |
+| Transaction | A group of database changes that succeed or fail together. |
+| Cache | Fast storage for results you expect to need again. |
+| Idempotent | An operation that gives the same result if repeated. |
+| Queue | A buffer that lets work happen later, in order. |
+| Rate limit | A cap on how many requests a client can make in a time window. |
+
 ## Resources
 
 - [roadmap.sh: Backend](https://roadmap.sh/backend): A visual checklist of topics
 - [System Design Primer](https://github.com/donnemartin/system-design-primer): Design problems with worked answers
 - [Use The Index, Luke](https://use-the-index-luke.com): Free guide to SQL indexing
 - [OWASP Top 10](https://owasp.org/www-project-top-ten/): The risks every backend developer should know
-
 
 ---
 
@@ -1403,6 +2919,15 @@ You turn designs and ideas into pages that load fast, work on every screen size 
 | Agencies | Build many sites for different clients quickly. |
 | SaaS startups | Ship dashboards and tools with design and backend teams. |
 | E-commerce | Speed and accessibility directly affect sales. |
+
+## Year by year
+
+| Year | Focus | Build | Milestone |
+| --- | --- | --- | --- |
+| Year 1 | HTML, CSS, JavaScript, Git, responsive layout | A portfolio site and a small interactive page | Three small pages online |
+| Year 2 | A framework (React), state, fetching data, accessibility | A dashboard that loads live data | A deployed app with routing and forms |
+| Year 3 | TypeScript, testing, performance, Next.js, an internship | A real product UI with tests and good Lighthouse scores | An internship offer and a polished project |
+| Year 4 | Design systems, architecture, interview loops | A component library or a large app with a design system | An offer for a frontend role |
 
 ## Study plan
 
@@ -1487,6 +3012,14 @@ You turn designs and ideas into pages that load fast, work on every screen size 
 - Designing only for your own laptop screen.
 - Chasing every new framework instead of mastering one.
 
+## Engineer's notes
+
+- Test with a slow network and a small phone, not only your fast laptop.
+- Accessibility is part of done. Keyboard, labels and contrast are cheaper to build in than to bolt on.
+- Keep state as local as you can. Global state grows into a hard-to-follow tangle.
+- Measure before optimising. The slow part is rarely where you guess.
+- Design and engineering disagree less when you show a working prototype early.
+
 ## Mistakes juniors make
 
 - Fixing a layout with magic numbers instead of understanding the cause.
@@ -1534,13 +3067,47 @@ You turn designs and ideas into pages that load fast, work on every screen size 
 - React: hooks, why keys matter, how to avoid unnecessary renders.
 - How you would make a page fast and accessible.
 
+## Interview questions and answers
+
+**Q: What happens when you type a URL and press enter?**
+
+The browser resolves the domain through DNS, opens a TCP and TLS connection, sends an HTTP request, receives HTML, parses it into the DOM, fetches CSS and JavaScript, builds the render tree, then lays out and paints the page.
+
+**Q: What is the difference between var, let and const?**
+
+var is function-scoped and hoisted. let and const are block-scoped. const stops reassignment of the binding, but an object it holds can still change.
+
+**Q: What is a closure?**
+
+A function that remembers the variables of the scope where it was created, even after that scope has finished.
+
+**Q: How do you make a page faster?**
+
+Send less JavaScript, compress and size images, cache static files, load non-critical code later, and avoid layout shifts. Measure with Lighthouse first.
+
+**Q: How do you make a button accessible?**
+
+Use a real button element, give it a clear label, make it focusable with visible focus styling, and check contrast and keyboard use.
+
+## Glossary
+
+| Term | Meaning |
+| --- | --- |
+| DOM | The tree of elements the browser builds from HTML. |
+| Responsive design | Layouts that adapt to different screen sizes. |
+| Component | A reusable piece of UI with its own markup and logic. |
+| State | Data that changes over time and drives what the UI shows. |
+| Hydration | Attaching JavaScript behaviour to HTML that the server already rendered. |
+| Accessibility (a11y) | Making the UI usable with keyboards, screen readers and other aids. |
+| Bundle | The JavaScript files shipped to the browser. |
+| Core Web Vitals | Google's measures of loading speed, responsiveness and visual stability. |
+
 ## Resources
 
 - [roadmap.sh: Frontend](https://roadmap.sh/frontend): A visual checklist of topics
 - [web.dev Learn](https://web.dev/learn): Google's courses on CSS, accessibility and performance
 - [JavaScript.info](https://javascript.info): The modern JavaScript tutorial
 - [React documentation](https://react.dev/learn): Learn React from the official docs
-
 
 ---
 
@@ -1571,6 +3138,15 @@ You build both sides of an application: the pages people use and the server behi
 | Product teams | Own features from database to screen. |
 | Freelance and agencies | Deliver full websites and apps for clients. |
 | Internal tools teams | Build dashboards and admin tools for a company. |
+
+## Year by year
+
+| Year | Focus | Build | Milestone |
+| --- | --- | --- | --- |
+| Year 1 | HTML, CSS, JavaScript, one backend language, Git | A static site and a tiny API | Three small projects online |
+| Year 2 | A frontend framework, a database, authentication | A full app with login and a database, deployed | A deployed full-stack app |
+| Year 3 | Testing, Docker, CI, system design, an internship | A larger product with tests and a pipeline | An internship offer and one strong product |
+| Year 4 | Performance, security, scaling, interview loops | A real product with users and monitoring | An offer for a full-stack role |
 
 ## Study plan
 
@@ -1652,6 +3228,14 @@ You build both sides of an application: the pages people use and the server behi
 - Skipping deployment. 'It works locally' is not finished.
 - Rewriting things for fun that already work.
 
+## Engineer's notes
+
+- Own the whole flow for a feature, from the click to the database and back, so you can find where it breaks.
+- Agree on the API shape first and write it down. Most frontend-backend bugs are mismatched assumptions.
+- Watch the cost of each layer: one extra query per row can freeze a page.
+- Deploys, environment variables and migrations are part of your job, not someone else's.
+- Do not try to be an expert in everything. Be solid across the stack and deep in one part.
+
 ## Mistakes juniors make
 
 - Using a different new tool in every project.
@@ -1699,13 +3283,47 @@ You build both sides of an application: the pages people use and the server behi
 - Explain a project you shipped, including a trade-off you made.
 - Authentication flows and common security mistakes.
 
+## Interview questions and answers
+
+**Q: Where would you store a login session, and why?**
+
+Either a server-side session with an httpOnly, secure cookie, or a signed token. Cookies marked httpOnly resist theft by scripts. Avoid local storage for sensitive tokens.
+
+**Q: What is CORS, and why does it exist?**
+
+Browsers block a page from reading responses from another origin unless the server allows it with CORS headers. It protects users from malicious sites reading their data.
+
+**Q: SSR, SSG or client rendering: how do you choose?**
+
+SSG for content that rarely changes, SSR for pages that depend on each request, and client rendering for highly interactive parts behind a login. Mix them per page.
+
+**Q: How do you validate input?**
+
+On the server always, since the client can be bypassed. Use a schema, reject bad data early, and escape output.
+
+**Q: How do you deploy a small full-stack app?**
+
+Build the frontend, run the API with a managed database, keep secrets in environment variables, set up HTTPS, and add a CI check before deploy.
+
+## Glossary
+
+| Term | Meaning |
+| --- | --- |
+| Monolith | One codebase and deployment that holds the whole app. |
+| ORM | A library that maps database rows to objects in code. |
+| JWT | A signed token that carries identity between client and server. |
+| CORS | Browser rules about which sites may call your API. |
+| SSR | Rendering HTML on the server for each request. |
+| SSG | Rendering pages at build time into static files. |
+| Migration | A versioned change to the database schema. |
+| Environment variable | A setting kept outside the code, such as a secret or URL. |
+
 ## Resources
 
 - [The Odin Project](https://www.theodinproject.com): A free full-stack curriculum
 - [Full Stack Open](https://fullstackopen.com/en/): University of Helsinki's free course
 - [Learn Next.js](https://nextjs.org/learn): The official interactive tutorial
 - [roadmap.sh: Full Stack](https://roadmap.sh/full-stack): A visual checklist of topics
-
 
 ---
 
@@ -1736,6 +3354,15 @@ You build apps for Android, iPhone or both. You work with touch input, small scr
 | Fintech and banks | Secure apps used by millions. |
 | Startups | Mobile-first products built by tiny teams. |
 | Agencies | Build apps for many brands. |
+
+## Year by year
+
+| Year | Focus | Build | Milestone |
+| --- | --- | --- | --- |
+| Year 1 | A language (Kotlin, Swift, Dart or JavaScript), Git, UI basics | A simple app with two screens | Two small apps that run on a device |
+| Year 2 | Navigation, lists, local storage, calling an API | An app that loads data and works offline | A published or installable app |
+| Year 3 | Architecture, testing, performance, release, an internship | An app with login, push notifications and tests | An internship offer and one polished app |
+| Year 4 | Scale, accessibility, store release, interview loops | A store-ready app with analytics and crash reports | An offer for a mobile role |
 
 ## Study plan
 
@@ -1819,6 +3446,14 @@ You build apps for Android, iPhone or both. You work with touch input, small scr
 - Building for the newest phone only.
 - Ignoring the app store rules until the review fails.
 
+## Engineer's notes
+
+- Your app runs on thousands of device and OS combinations. Test on at least a low-end phone.
+- Users go offline, switch apps and rotate the screen. Handle all three.
+- App store review and staged rollouts mean you cannot hot-fix quickly. Test harder before release.
+- Battery, memory and data use are features. Users uninstall apps that drain them.
+- Crash reports are your best teacher. Read them every week.
+
 ## Mistakes juniors make
 
 - Only testing on a fast emulator.
@@ -1866,13 +3501,47 @@ You build apps for Android, iPhone or both. You work with touch input, small scr
 - How you would build an offline-first feed or chat screen.
 - Walk through your published or demo app.
 
+## Interview questions and answers
+
+**Q: Native or cross-platform: how do you choose?**
+
+Native gives the best access to platform features and performance. Cross-platform saves effort for one team and one codebase. Choose by team skills, the features needed and the budget.
+
+**Q: Why does the app lifecycle matter?**
+
+The system can pause or kill your app at any moment. You must save state and release resources at the right points, or users lose data and the app leaks memory.
+
+**Q: How do you keep a list smooth with many items?**
+
+Use a recycling list view, load images lazily and at the right size, avoid heavy work on the main thread, and paginate data.
+
+**Q: How would you support offline use?**
+
+Store data locally in a database, show it first, sync with the server in the background, and handle conflicts with timestamps or versions.
+
+**Q: How do you handle sensitive data on a device?**
+
+Use the system keystore or keychain for secrets, encrypt local data, use HTTPS, and never log tokens.
+
+## Glossary
+
+| Term | Meaning |
+| --- | --- |
+| Activity / ViewController | A screen, or the controller that manages one. |
+| Lifecycle | The states an app or screen passes through (created, visible, paused, destroyed). |
+| State management | How an app stores and shares data that drives the UI. |
+| Native | Built with the platform's own language and tools. |
+| Cross-platform | One codebase for both iOS and Android (Flutter, React Native). |
+| Push notification | A message sent to a device from a server. |
+| APK / IPA | The packaged app file for Android / iOS. |
+| Deep link | A link that opens a specific screen in an app. |
+
 ## Resources
 
 - [roadmap.sh: Android](https://roadmap.sh/android): A visual checklist of topics
 - [Android Basics with Compose](https://developer.android.com/courses/android-basics-compose/course): Google's free beginner course
 - [Expo documentation](https://docs.expo.dev): React Native with the fastest start
 - [100 Days of SwiftUI](https://www.hackingwithswift.com/100/swiftui): A free structured course for iOS
-
 
 ---
 
@@ -1904,6 +3573,15 @@ You turn data into working predictions or language features. Much of the job is 
 | AI startups | Build products on top of language and vision models. |
 | Research labs | Usually need a master's degree or a PhD. |
 | Healthcare and finance | Predictive models with strict quality rules. |
+
+## Year by year
+
+| Year | Focus | Build | Milestone |
+| --- | --- | --- | --- |
+| Year 1 | Python, maths (linear algebra, probability), Git | Small scripts, NumPy and a plotting notebook | Python fluency and a few notebooks online |
+| Year 2 | Pandas, scikit-learn, classic models, evaluation | Two end-to-end models on public datasets | Two notebooks with clear write-ups |
+| Year 3 | Deep learning, PyTorch, deployment, LLM apps, an internship | A model served through an API, and an LLM app with retrieval | An internship offer and one deployed project |
+| Year 4 | MLOps, evaluation, research habits, interview loops | A final project with data, a model, an API and monitoring | An offer for an ML or AI engineer role |
 
 ## Study plan
 
@@ -1989,6 +3667,14 @@ You turn data into working predictions or language features. Much of the job is 
 - Using a huge model where a small one would do.
 - Shipping a demo as if it were a product.
 
+## Engineer's notes
+
+- Most of the work is data: cleaning, labelling, checking leaks and building a trustworthy test set.
+- Start with a simple baseline. If a simple model is close, the complex one may not be worth it.
+- A model that works in a notebook is not a product. Plan for serving, monitoring and retraining.
+- Track experiments: data version, code version, settings and results. You will forget otherwise.
+- Evaluate with real examples from your users, not only a public benchmark.
+
 ## Mistakes juniors make
 
 - Tuning the model before looking at the data.
@@ -2036,13 +3722,47 @@ You turn data into working predictions or language features. Much of the job is 
 - SQL and data manipulation questions.
 - How you would evaluate a language-model feature.
 
+## Interview questions and answers
+
+**Q: What is overfitting, and how do you reduce it?**
+
+The model learns noise in the training set and does poorly on new data. Reduce it with more data, simpler models, regularisation, dropout, early stopping and cross-validation.
+
+**Q: Why is accuracy a poor metric for imbalanced data?**
+
+A model that always predicts the majority class can score high accuracy while finding none of the rare cases. Use precision, recall, F1 or PR-AUC.
+
+**Q: What is the bias-variance trade-off?**
+
+Bias is error from too-simple assumptions, and variance is error from sensitivity to the training data. Better fit lowers bias but can raise variance, so you tune for the best total.
+
+**Q: How does retrieval-augmented generation work?**
+
+Split documents into chunks, embed them, store them in a vector index, retrieve the closest chunks for a question, and give them to the model as context to answer from.
+
+**Q: How do you know an LLM feature works?**
+
+Build an evaluation set of realistic questions with expected answers, score outputs with checks or a rubric, track results over time, and test again after each change.
+
+## Glossary
+
+| Term | Meaning |
+| --- | --- |
+| Overfitting | A model that memorises training data and fails on new data. |
+| Train/validation/test split | Separate data for learning, tuning and the final honest check. |
+| Precision / recall | How many predicted positives are right / how many real positives were found. |
+| Embedding | A vector that captures the meaning of text, an image or other data. |
+| RAG | Retrieval-augmented generation: fetch relevant documents and give them to the model. |
+| Fine-tuning | Training an existing model further on your own data. |
+| Hallucination | A confident answer from a model that is not true. |
+| Gradient descent | A way to train by repeatedly nudging parameters to lower the loss. |
+
 ## Resources
 
 - [Machine Learning Specialization](https://www.coursera.org/specializations/machine-learning-introduction): Andrew Ng's course, a gentle start
 - [fast.ai Practical Deep Learning](https://course.fast.ai): A free, project-first course
 - [Kaggle Learn](https://www.kaggle.com/learn): Short courses and datasets to practise on
 - [roadmap.sh: AI and Data Scientist](https://roadmap.sh/ai-data-scientist): A visual checklist of topics
-
 
 ---
 
@@ -2074,6 +3794,15 @@ Analysts answer business questions with data and show the answers clearly. Data 
 | Banks and insurers | Reporting, risk and customer analysis. |
 | Consulting firms | Analyse data for many clients. |
 | Tech companies | Build the pipelines and platforms other teams rely on. |
+
+## Year by year
+
+| Year | Focus | Build | Milestone |
+| --- | --- | --- | --- |
+| Year 1 | Excel or Sheets, basic statistics, SQL basics, Git | Clean and chart a small dataset | A first dashboard |
+| Year 2 | SQL in depth, Python and Pandas, visualisation | An analysis with a clear question and a written finding | Two analyses and a dashboard online |
+| Year 3 | Statistics, a BI tool, data modelling, pipelines, an internship | A dashboard fed by a scheduled pipeline | An internship offer and a portfolio of three analyses |
+| Year 4 | Warehousing, orchestration, experiments, interview loops | An end-to-end data project from raw data to decision | An offer for an analyst or data engineer role |
 
 ## Study plan
 
@@ -2157,6 +3886,14 @@ Analysts answer business questions with data and show the answers clearly. Data 
 - Averaging when the median tells the truth.
 - Building for big data when a spreadsheet would do.
 
+## Engineer's notes
+
+- Check the data before you analyse it: duplicates, nulls, time zones and units cause wrong answers.
+- A number without a definition is not useful. Write down exactly how each metric is calculated.
+- Start with the question the business is asking. A beautiful chart for the wrong question is wasted.
+- Reproducibility matters. Keep queries and notebooks in version control.
+- Explain results in plain language and say how sure you are.
+
 ## Mistakes juniors make
 
 - Joining tables without checking for duplicates.
@@ -2204,13 +3941,47 @@ Analysts answer business questions with data and show the answers clearly. Data 
 - Pipeline design: how to load, test and monitor daily data.
 - A project walk-through with the business question and result.
 
+## Interview questions and answers
+
+**Q: What is the difference between WHERE and HAVING?**
+
+WHERE filters rows before grouping. HAVING filters groups after aggregation.
+
+**Q: How do you handle missing data?**
+
+First find out why it is missing. Then drop, fill with a sensible value (mean, median, a flag) or model it, and always say what you did.
+
+**Q: Explain a join, with the main types.**
+
+A join combines rows from two tables on a key. Inner keeps matches only, left keeps all rows from the left table, right does the reverse, and full outer keeps everything.
+
+**Q: How do you check that a dashboard number is right?**
+
+Reproduce it with a separate query, compare with a known total, check filters and time zones, and look for duplicates from joins.
+
+**Q: When is a result statistically meaningful?**
+
+When the sample is large enough, the groups were fairly assigned, the effect size matters in practice, and the p-value or interval supports it. Statistical significance alone is not business value.
+
+## Glossary
+
+| Term | Meaning |
+| --- | --- |
+| ETL / ELT | Extract, transform and load data into a store, in one order or the other. |
+| Data warehouse | A database designed for analysis across large amounts of data. |
+| Dimension / fact table | Descriptive attributes versus measurable events in a data model. |
+| Window function | A SQL calculation across related rows without collapsing them. |
+| A/B test | Comparing two versions with random groups to see which does better. |
+| P-value | The chance of seeing a result at least this extreme if nothing is really going on. |
+| Data quality | How accurate, complete and consistent the data is. |
+| Orchestration | Scheduling and ordering data jobs, for example with Airflow. |
+
 ## Resources
 
 - [Mode SQL Tutorial](https://mode.com/sql-tutorial): SQL for analysis, from basic to advanced
 - [Kaggle Learn: Pandas](https://www.kaggle.com/learn/pandas): A short, practical pandas course
 - [Data Engineering Zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp): A free, project-based data engineering course
 - [roadmap.sh: Data Analyst](https://roadmap.sh/data-analyst): A visual checklist of topics
-
 
 ---
 
@@ -2242,6 +4013,15 @@ You build the machinery that tests, packages, deploys and monitors software, and
 | Fintech and e-commerce | High uptime is a business requirement. |
 | Managed service providers | Operate infrastructure for clients. |
 | Startups | Often one person sets up everything. |
+
+## Year by year
+
+| Year | Focus | Build | Milestone |
+| --- | --- | --- | --- |
+| Year 1 | Linux, the terminal, networking basics, Git | Shell scripts and a home-lab server | Comfort in the Linux shell |
+| Year 2 | Docker, a CI pipeline, a cloud account on a free tier | A containerised app with automatic tests | A deployed app with a pipeline |
+| Year 3 | Kubernetes basics, infrastructure as code, monitoring, an internship | An app on a cloud service defined in Terraform | An internship offer and a documented project |
+| Year 4 | Reliability, security, cost, on-call habits, interview loops | A project with metrics, alerts and a runbook | An offer for a DevOps or cloud role |
 
 ## Study plan
 
@@ -2323,6 +4103,14 @@ You build the machinery that tests, packages, deploys and monitors software, and
 - Giving everything admin access to save time.
 - Blaming people after an incident instead of fixing the process.
 
+## Engineer's notes
+
+- Automate what you do twice. Manual steps are where mistakes and midnight pages come from.
+- Every alert should need an action. If an alert is ignored, fix or delete it.
+- Practise recovery: restore a backup, roll back a release. An untested backup is a hope.
+- Keep environments as similar as possible. 'Works on my machine' is a sign of drift.
+- Watch cost. A forgotten cloud resource can be an expensive surprise.
+
 ## Mistakes juniors make
 
 - Making changes on a server by hand and not recording them.
@@ -2370,13 +4158,47 @@ You build the machinery that tests, packages, deploys and monitors software, and
 - Scenario: the site is down, what do you check first?
 - Scripting, plus DSA at an easy to medium level.
 
+## Interview questions and answers
+
+**Q: What is the difference between a container image and a container?**
+
+An image is a read-only template with the app and its dependencies. A container is a running instance of that image.
+
+**Q: How would you design a basic CI/CD pipeline?**
+
+On each push: check out the code, install dependencies, run lint and tests, build an artefact or image, scan it, and deploy to staging. Promote to production after approval or checks.
+
+**Q: What does a load balancer do?**
+
+It spreads incoming requests across servers, checks their health, and removes unhealthy ones. It can also end TLS.
+
+**Q: A site is slow. What do you check first?**
+
+Confirm the symptom, then look at recent changes, CPU, memory, disk, network, database latency and error rates, using the dashboards before logging in to machines.
+
+**Q: Why use infrastructure as code?**
+
+It makes environments repeatable, reviewable and versioned, and it lets you rebuild after a failure.
+
+## Glossary
+
+| Term | Meaning |
+| --- | --- |
+| CI/CD | Automatic build, test and release pipelines. |
+| Container | A packaged process with its dependencies, isolated from others. |
+| Kubernetes | A system that runs and manages containers across machines. |
+| IaC | Infrastructure as code: defining servers and networks in files. |
+| Observability | Logs, metrics and traces that show what a system is doing. |
+| SLO | A target for service reliability, such as 99.9% of requests succeed. |
+| Blue/green deploy | Running two environments and switching traffic to the new one. |
+| Runbook | A written guide for handling a known incident. |
+
 ## Resources
 
 - [roadmap.sh: DevOps](https://roadmap.sh/devops): A visual checklist of topics
 - [Docker getting started](https://docs.docker.com/get-started/): The official walkthrough
 - [Kubernetes basics](https://kubernetes.io/docs/tutorials/kubernetes-basics/): An interactive introduction
 - [Google SRE books](https://sre.google/books/): Free books on running reliable services
-
 
 ---
 
@@ -2408,6 +4230,15 @@ You protect software and systems. That can mean testing applications for flaws, 
 | Banks and fintech | Strict rules and high stakes. |
 | Security consultancies | Test many clients' systems, with permission. |
 | Bug bounty | Independent testing of programmes that invite it. |
+
+## Year by year
+
+| Year | Focus | Build | Milestone |
+| --- | --- | --- | --- |
+| Year 1 | Networking, Linux, one scripting language, how the web works | Capture-the-flag warm-ups and a home lab | A basic lab and a few CTF solves |
+| Year 2 | Web security (OWASP Top 10), cryptography basics, tools | Find and write up flaws in a deliberately vulnerable app | Public write-ups and CTF ranking |
+| Year 3 | Penetration testing methods, cloud security, defence basics, an internship | A report on a lab target with fixes | An internship offer and a portfolio of write-ups |
+| Year 4 | Specialise (appsec, cloud, blue team), certifications, interview loops | A project on detection or secure design | An offer for a security role |
 
 ## Study plan
 
@@ -2491,6 +4322,14 @@ You protect software and systems. That can mean testing applications for flaws, 
 - Reporting every low-risk finding as critical.
 - Collecting tools instead of learning concepts.
 
+## Engineer's notes
+
+- Security is about trade-offs and risk, not perfection. Fix the biggest risks first.
+- Work with developers, not against them. The best fixes are easy to adopt.
+- Only test systems you have written permission to test. Keep clear records.
+- Write findings so a busy engineer can act: what, where, impact and how to fix.
+- Assume breach. Plan how you will detect and respond, not only how you will prevent.
+
 ## Mistakes juniors make
 
 - Testing something without clear permission.
@@ -2538,13 +4377,47 @@ You protect software and systems. That can mean testing applications for flaws, 
 - Threat-model a simple login page.
 - Python scripting and DSA at an easy level.
 
+## Interview questions and answers
+
+**Q: How do you prevent SQL injection?**
+
+Use parameterised queries or an ORM, never build SQL by joining strings, validate input and give the database user minimal rights.
+
+**Q: How should passwords be stored?**
+
+Hash them with a slow, salted algorithm such as bcrypt, scrypt or Argon2. Never store them in plain text or with a fast hash.
+
+**Q: What is the difference between symmetric and asymmetric encryption?**
+
+Symmetric uses one shared key and is fast. Asymmetric uses a public and private key pair, and is used for key exchange and signatures.
+
+**Q: What does HTTPS protect against?**
+
+Eavesdropping and tampering on the network, and it proves the server's identity through a certificate. It does not make the app itself secure.
+
+**Q: Walk through what you would do after finding a vulnerability.**
+
+Confirm it, record minimal proof, assess impact, report it responsibly to the owner with steps and a fix suggestion, and test the fix. Only test systems you have permission to test.
+
+## Glossary
+
+| Term | Meaning |
+| --- | --- |
+| Threat model | A structured list of what can go wrong, who attacks and how. |
+| XSS | Injecting script into a page that other users then run. |
+| SQL injection | Tricking an app into running attacker-supplied SQL. |
+| CSRF | Making a user's browser send an unwanted request to a site they are logged in to. |
+| Hash vs encryption | A hash is one-way. Encryption can be reversed with a key. |
+| Least privilege | Giving each person or process only the access it needs. |
+| CVE | A public ID for a known vulnerability. |
+| Red team / blue team | Attackers testing defences / defenders detecting and responding. |
+
 ## Resources
 
 - [PortSwigger Web Security Academy](https://portswigger.net/web-security): Free labs for web security
 - [picoCTF](https://picoctf.org): Beginner-friendly capture-the-flag practice
 - [TryHackMe](https://tryhackme.com): Guided learning paths
 - [OWASP Juice Shop](https://owasp.org/www-project-juice-shop/): A deliberately vulnerable app to practise on
-
 
 ---
 
@@ -2576,6 +4449,15 @@ You find problems early. You plan what to test, write automated tests that run o
 | Service and testing firms | Test software for many clients. |
 | Fintech and healthcare | Testing is part of compliance. |
 | Game studios | Playtesting and automation for builds. |
+
+## Year by year
+
+| Year | Focus | Build | Milestone |
+| --- | --- | --- | --- |
+| Year 1 | Programming basics, how software is built, Git | Manual test cases for a small app | A bug report you are proud of |
+| Year 2 | Test design, SQL, an automation tool (Selenium, Playwright, Cypress) | An automated suite for a demo site | A suite that runs on every push |
+| Year 3 | API testing, CI, performance basics, an internship | UI, API and load tests for one product | An internship offer and a reported-bug record |
+| Year 4 | Test strategy, quality in the team, interview loops | A test framework with reports and flaky-test handling | An offer for a QA or SDET role |
 
 ## Study plan
 
@@ -2659,6 +4541,14 @@ You find problems early. You plan what to test, write automated tests that run o
 - Treating testing as a final stage after development ends.
 - Blaming developers. You are on the same team.
 
+## Engineer's notes
+
+- Think like a curious user and like a careful attacker. Both find different bugs.
+- Automate stable, repeated checks. Spend human time on exploring and judging.
+- A good bug report saves hours: steps, expected, actual, environment and evidence.
+- Fix flaky tests quickly. A suite nobody trusts gets ignored.
+- Join design and planning early. Asking 'how will we test this?' improves the design.
+
 ## Mistakes juniors make
 
 - Writing tests that depend on each other's order.
@@ -2706,13 +4596,47 @@ You find problems early. You plan what to test, write automated tests that run o
 - Explain how you would design an automation framework and avoid flaky tests.
 - Differences between severity and priority, regression and retesting, smoke and sanity tests.
 
+## Interview questions and answers
+
+**Q: Severity versus priority: what is the difference?**
+
+Severity is the impact of a defect on the system. Priority is how soon it must be fixed. A typo on the home page is low severity but may be high priority.
+
+**Q: How do you write a good bug report?**
+
+A clear title, steps to reproduce, expected and actual results, environment details and evidence such as a screenshot or log.
+
+**Q: What would you automate, and what would you leave manual?**
+
+Automate stable, repeated, high-value checks such as regression and API tests. Keep exploratory, usability and one-off checks manual.
+
+**Q: How do you deal with flaky tests?**
+
+Find the cause (timing, shared data, environment), add proper waits or isolation, quarantine the test if needed, and fix it rather than rerunning.
+
+**Q: How would you test a login page?**
+
+Valid and invalid credentials, empty fields, locked accounts, password rules, session expiry, injection attempts, accessibility and different browsers.
+
+## Glossary
+
+| Term | Meaning |
+| --- | --- |
+| Test case | Steps, inputs and expected results for one check. |
+| Regression test | A test that confirms old features still work after a change. |
+| Flaky test | A test that passes and fails without code changes. |
+| Smoke test | A quick check that the main features work at all. |
+| Test pyramid | Many unit tests, fewer integration tests, few end-to-end tests. |
+| Boundary value | A test input at the edge of an allowed range. |
+| Severity vs priority | How bad a bug is versus how soon it should be fixed. |
+| Mock | A stand-in for a real dependency in tests. |
+
 ## Resources
 
 - [Playwright documentation](https://playwright.dev/docs/intro): Modern browser automation, with good guides
 - [Test Automation University](https://testautomationu.com): Free courses on automation tools and techniques
 - [Ministry of Testing](https://www.ministryoftesting.com): Articles and a community for testers
 - [k6 documentation](https://grafana.com/docs/k6/latest/): Performance testing with code
-
 
 ---
 
@@ -2744,6 +4668,15 @@ You program the small computers inside things: sensors, watches, cars, routers, 
 | Consumer electronics | Wearables, speakers and smart-home devices. |
 | Medical and industrial | Reliable devices with strict safety rules. |
 | Telecom and networking | Routers and radio equipment. |
+
+## Year by year
+
+| Year | Focus | Build | Milestone |
+| --- | --- | --- | --- |
+| Year 1 | C, digital electronics, number systems, Git | Blink an LED and read a button on a board | A few working circuits and programs in C |
+| Year 2 | Microcontrollers (Arduino, STM32), timers, interrupts, serial | A sensor project with a display | Two hardware projects with code on GitHub |
+| Year 3 | Communication protocols (I2C, SPI, UART), RTOS basics, an internship | A battery-powered device that logs data | An internship offer and a documented build |
+| Year 4 | Low-power design, debugging with tools, interview loops | A final product with firmware, a PCB and testing | An offer for an embedded role |
 
 ## Study plan
 
@@ -2827,6 +4760,14 @@ You program the small computers inside things: sensors, watches, cars, routers, 
 - Copying library code you cannot debug.
 - Shipping without a way to update the device.
 
+## Engineer's notes
+
+- Read the datasheet and errata. Many bugs are in the details you skimmed.
+- Measure with a scope or logic analyser. Do not guess what the signals look like.
+- Memory and timing are limited. Know your stack, heap and interrupt budget.
+- Build a way to update and recover devices in the field. Bricked devices are expensive.
+- Write hardware-independent logic separately so you can test it on your computer.
+
 ## Mistakes juniors make
 
 - Skipping the datasheet and copying a library.
@@ -2874,13 +4815,47 @@ You program the small computers inside things: sensors, watches, cars, routers, 
 - Design a state machine for a simple device, such as a washing machine.
 - Walk through a hardware bug you debugged and how you found it.
 
+## Interview questions and answers
+
+**Q: What does volatile do in C?**
+
+It tells the compiler a variable can change outside normal flow (by hardware or an interrupt), so it must read it from memory each time and not optimise it away.
+
+**Q: What should an interrupt handler do?**
+
+Be very short: set a flag, copy data, then return. Do the heavy work in the main loop. Avoid blocking calls.
+
+**Q: Compare I2C, SPI and UART.**
+
+UART is asynchronous, two wires, point to point. I2C uses two shared wires with addresses for many devices at lower speed. SPI uses extra select lines but is faster.
+
+**Q: How do you debug a board that does not respond?**
+
+Check power and clock first, then reset lines, then use a debugger or serial output, and a logic analyser or scope on the signals.
+
+**Q: Why use a watchdog timer?**
+
+If software hangs, the watchdog resets the device so it recovers without a person, which matters for remote or safety-related devices.
+
+## Glossary
+
+| Term | Meaning |
+| --- | --- |
+| Microcontroller | A small computer on one chip with memory and input/output pins. |
+| GPIO | General-purpose input/output pins you control in code. |
+| Interrupt | A signal that makes the processor pause and run a handler. |
+| ISR | Interrupt service routine: the handler code. |
+| RTOS | A real-time operating system that schedules tasks with timing guarantees. |
+| I2C / SPI / UART | Common serial protocols between chips. |
+| Firmware | The software that runs on a device. |
+| Watchdog timer | A timer that resets the device if the code hangs. |
+
 ## Resources
 
 - [Arduino documentation](https://docs.arduino.cc): Tutorials for your first sensors and circuits
 - [FreeRTOS documentation](https://www.freertos.org/Documentation/00-Overview): The most common real-time operating system
 - [ESP-IDF programming guide](https://docs.espressif.com/projects/esp-idf/en/latest/): Professional development for the ESP32
 - [KiCad](https://www.kicad.org): Free tool for schematics and circuit boards
-
 
 ---
 
@@ -2912,6 +4887,15 @@ You write the code that makes games run: movement, physics, enemy behaviour, men
 | Mobile game companies | Casual and free-to-play titles. |
 | Simulation and training | Games engines for education, defence and architecture. |
 | Indie and freelance | Build and sell your own games. |
+
+## Year by year
+
+| Year | Focus | Build | Milestone |
+| --- | --- | --- | --- |
+| Year 1 | C# or C++, maths for games (vectors), Git | Pong or a platformer clone | Two playable games |
+| Year 2 | An engine (Unity or Godot), physics, input, animation | A complete small game with menus and sound | A game on itch.io |
+| Year 3 | Game design, AI, optimisation, game jams, an internship | A game jam entry and a polished vertical slice | An internship offer and a demo reel |
+| Year 4 | Specialise (gameplay, graphics, tools), playtesting, interview loops | A final game with feedback from real players | An offer for a game developer role |
 
 ## Study plan
 
@@ -2995,6 +4979,14 @@ You write the code that makes games run: movement, physics, enemy behaviour, men
 - Allocating memory every frame, which causes stutter.
 - Ignoring the business side: the market is crowded and finishing counts.
 
+## Engineer's notes
+
+- Make it playable early, then make it good. A fun prototype beats a perfect plan.
+- Profile before optimising. Frame drops often come from one unexpected place.
+- Playtest with people who did not build it. They find problems you cannot see.
+- Keep game logic and engine details separate so changes are less painful.
+- Finish small games. Shipping teaches things that unfinished big games never will.
+
 ## Mistakes juniors make
 
 - Starting a huge project and never finishing it.
@@ -3042,13 +5034,47 @@ You write the code that makes games run: movement, physics, enemy behaviour, men
 - Design a system, such as an inventory or an enemy AI.
 - Show a playable build and explain a technical problem you solved in it.
 
+## Interview questions and answers
+
+**Q: What is a game loop?**
+
+A loop that repeats each frame: process input, update game state, then render. Using delta time keeps motion the same on fast and slow machines.
+
+**Q: How does A* pathfinding work?**
+
+It searches a graph using the cost so far plus a heuristic estimate of the remaining distance, always expanding the most promising node. It finds the shortest path if the heuristic never overestimates.
+
+**Q: How do you optimise a game that drops frames?**
+
+Profile first. Common fixes: reduce draw calls, pool objects, avoid allocations in the update loop, simplify physics and lower texture sizes.
+
+**Q: Why use object pooling?**
+
+Creating and destroying many objects causes garbage collection spikes. Reusing a pool avoids allocation during gameplay.
+
+**Q: How do you detect a collision between two circles?**
+
+Compare the distance between their centres with the sum of the radii. If it is smaller, they overlap. Compare squared values to avoid a square root.
+
+## Glossary
+
+| Term | Meaning |
+| --- | --- |
+| Game loop | The cycle of reading input, updating the world and drawing a frame. |
+| Delta time | The time since the last frame, used to keep speed steady. |
+| Collision detection | Finding when objects overlap or touch. |
+| Sprite | A 2D image used for characters and objects. |
+| Shader | A small program that runs on the GPU to draw pixels. |
+| Frame rate | How many frames are drawn each second. |
+| Vertical slice | A small, fully polished piece of the final game. |
+| Pathfinding | Finding a route for a character, often with A*. |
+
 ## Resources
 
 - [Unity Learn](https://learn.unity.com): Free official courses and pathways
 - [Godot documentation](https://docs.godotengine.org): A free, open-source engine with a friendly start
 - [itch.io game jams](https://itch.io/jams): Find a jam and finish a game
 - [Game Programming Patterns](https://gameprogrammingpatterns.com): A free book on structuring game code
-
 
 ---
 
@@ -3080,6 +5106,15 @@ You study how people use a product, find where they get stuck, and design the sc
 | Design and digital agencies | Varied client work with fast learning. |
 | Startups | Broad roles: research, design and sometimes front-end code. |
 | In-house teams at banks and large firms | Complex tools and internal products. |
+
+## Year by year
+
+| Year | Focus | Build | Milestone |
+| --- | --- | --- | --- |
+| Year 1 | Design basics (layout, colour, type), Figma, observing users | Redesign a screen of an app you use | A small case study |
+| Year 2 | User research, wireframes, prototypes, design systems | A full case study from research to prototype | Two case studies in a portfolio |
+| Year 3 | Usability testing, accessibility, working with developers, an internship | A tested prototype and a handoff file | An internship offer and a polished portfolio |
+| Year 4 | Product thinking, design critique, interview loops | A design for a real client or product with measured results | An offer for a UI/UX role |
 
 ## Study plan
 
@@ -3163,6 +5198,14 @@ You study how people use a product, find where they get stuck, and design the sc
 - Defending a design instead of listening to what testing showed.
 - A portfolio of pretty screens with no problem, process or outcome.
 
+## Engineer's notes
+
+- Watch real people use your design. Five sessions reveal most major problems.
+- Design with real content, not lorem ipsum. Real text and data break layouts in useful ways.
+- Work with engineers early to know what is cheap and what is hard.
+- Document decisions and the reason for them, so the next person does not undo them.
+- Measure the change: did the new design help people finish the task?
+
 ## Mistakes juniors make
 
 - Showing final screens without the problem or the process.
@@ -3210,6 +5253,41 @@ You study how people use a product, find where they get stuck, and design the sc
 - Critique an existing app: what works, what does not, and what you would change.
 - Questions on accessibility, design systems and working with developers.
 
+## Interview questions and answers
+
+**Q: How do you start a design project?**
+
+Define the problem and the user, talk to users or review data, list needs, sketch options, test the best one with a prototype and refine.
+
+**Q: What makes a design accessible?**
+
+Enough colour contrast, text alternatives for images, keyboard use, clear focus states, readable type sizes and not relying on colour alone.
+
+**Q: How do you handle feedback you disagree with?**
+
+Ask what problem it is solving, tie the decision back to user needs or data, test if unsure, and stay open to changing your mind.
+
+**Q: UX versus UI: what is the difference?**
+
+UX is the whole experience: research, flows and how well it works. UI is the visual layer: layout, colour, type and components.
+
+**Q: How do you measure whether a design worked?**
+
+Task success, time on task, error rate, satisfaction scores, and product metrics such as conversion or retention before and after.
+
+## Glossary
+
+| Term | Meaning |
+| --- | --- |
+| Wireframe | A rough layout of a screen without final visuals. |
+| Prototype | A clickable model used to test an idea. |
+| Design system | Shared components, styles and rules for consistent design. |
+| Persona | A fictional user based on research. |
+| Information architecture | How content is organised and labelled. |
+| Usability test | Watching real users try tasks to find problems. |
+| Contrast ratio | A measure of how readable text is against its background. |
+| Heuristic evaluation | Reviewing a design against known usability rules. |
+
 ## Resources
 
 - [Laws of UX](https://lawsofux.com): Short, clear principles of how people use interfaces
@@ -3219,7 +5297,6 @@ You study how people use a product, find where they get stuck, and design the sc
 - [Material Design](https://m3.material.io): A real design system to study, with guidelines
 - [Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/): How a well-known platform thinks about design
 - [WCAG quick reference](https://www.w3.org/WAI/WCAG22/quickref/): The accessibility rules, searchable
-
 
 ---
 
@@ -3251,6 +5328,15 @@ You do not write the code or draw the screens. You work out which problems are w
 | Large tech firms | Structured programmes and specialised product areas. |
 | Fintech, e-commerce and edtech | Fast-growing teams that need product thinking. |
 | Consulting and internal tools teams | Product work for a business or for staff. |
+
+## Year by year
+
+| Year | Focus | Build | Milestone |
+| --- | --- | --- | --- |
+| Year 1 | Pick apps you use and write what you would change | A one-page product review | Curiosity and a habit of writing |
+| Year 2 | Basics of design, data and code, user research | A small product you ship with friends | A product with a few real users |
+| Year 3 | Product sense, metrics, roadmaps, an internship or product club | A product requirements document and a prototype | An internship offer or leadership role in a club |
+| Year 4 | Strategy, prioritisation, stakeholder skills, interview loops | A case study with a metric you moved | An offer for an associate product role |
 
 ## Study plan
 
@@ -3334,6 +5420,14 @@ You do not write the code or draw the screens. You work out which problems are w
 - Hiding behind data you have not looked at carefully, or ignoring data that disagrees with you.
 - Writing a long roadmap that no one believes.
 
+## Engineer's notes
+
+- Spend time with users every week. Opinions in a meeting are weaker than a conversation with a customer.
+- Say no often and kindly. A focused product beats a crowded one.
+- Write clearly. A short, sharp document does more than a long meeting.
+- Define the metric before you build, and check it after you ship.
+- Respect engineering time. Clear goals and stable priorities help the team ship more.
+
 ## Mistakes juniors make
 
 - Writing long documents nobody reads.
@@ -3381,6 +5475,41 @@ You do not write the code or draw the screens. You work out which problems are w
 - A behavioural question about influencing a team or handling a disagreement.
 - A teardown of a product you know well, with a clear opinion.
 
+## Interview questions and answers
+
+**Q: How would you improve a product you use?**
+
+Name the user and the problem, back it with evidence, list a few ideas, pick one with a clear reason, define the metric you expect to move and how you would test it.
+
+**Q: How do you prioritise features?**
+
+Score each by impact, effort, reach and confidence, check against the goal, and be open about what you are not doing.
+
+**Q: How do you choose success metrics?**
+
+Tie them to the user's goal and the business goal. Pick one main metric, a few supporting ones and a guardrail so you do not harm something else.
+
+**Q: What do you do when engineering says it cannot be done in time?**
+
+Ask what drives the estimate, reduce scope to the core value, look for a simpler version and agree on the trade-off with the team.
+
+**Q: How do you say no to a stakeholder?**
+
+Acknowledge the need, explain the trade-off with data, offer an alternative or a later slot, and stay respectful.
+
+## Glossary
+
+| Term | Meaning |
+| --- | --- |
+| PRD | A product requirements document describing what to build and why. |
+| MVP | The smallest version that tests whether the idea is useful. |
+| North-star metric | The single number that best shows delivered value. |
+| Backlog | The ordered list of work waiting to be done. |
+| Prioritisation | Choosing what to do first, for example with impact versus effort. |
+| Roadmap | A plan of what you intend to build and roughly when. |
+| Stakeholder | Anyone affected by or interested in the product. |
+| A/B test | Comparing two versions with random users. |
+
 ## Resources
 
 - [Lenny's Newsletter](https://www.lennysnewsletter.com): Practical product advice from people doing the job
@@ -3388,7 +5517,6 @@ You do not write the code or draw the screens. You work out which problems are w
 - [Shape Up (Basecamp)](https://basecamp.com/shapeup): A free book on scoping and shipping work
 - [Mind the Product](https://www.mindtheproduct.com): Articles and talks from the product community
 - [Mode SQL Tutorial](https://mode.com/sql-tutorial/): Learn the SQL a product manager uses to answer questions
-
 
 ---
 
@@ -3420,6 +5548,15 @@ You write smart contracts, programs that run on a blockchain and often handle mo
 | Security and audit firms | Review other teams' contracts for a living. |
 | Fintech and payments | Settlement, tokenisation and cross-border payments. |
 | Open-source and grants | Many contributors work on public goods and are funded by grants. |
+
+## Year by year
+
+| Year | Focus | Build | Milestone |
+| --- | --- | --- | --- |
+| Year 1 | Programming, data structures, how the web and cryptography work | A simple hash chain in code | Strong basics and a blockchain mini-project |
+| Year 2 | Ethereum basics, Solidity, a wallet, testing with Hardhat or Foundry | A token and a simple voting contract on a testnet | Two contracts on a testnet |
+| Year 3 | Security patterns, frontends with ethers or viem, an internship | A full dApp with a contract and a UI | An internship offer and an audited-style review |
+| Year 4 | Auditing, gas optimisation, protocol design, interview loops | A project with tests, a security review and docs | An offer for a blockchain developer role |
 
 ## Study plan
 
@@ -3503,6 +5640,14 @@ You write smart contracts, programs that run on a blockchain and often handle mo
 - Chasing hype instead of learning fundamentals.
 - Promising returns to users. Build tools, not get-rich-quick schemes.
 
+## Engineer's notes
+
+- Code is law and mistakes are permanent. Test far more than you would for a normal app.
+- Get an independent audit before holding real funds, and still assume bugs remain.
+- Gas costs are a real constraint. Design data and loops with them in mind.
+- Never put private keys or seed phrases in code, chats or screenshots.
+- Understand the economics and incentives. Many exploits are design flaws, not coding bugs.
+
 ## Mistakes juniors make
 
 - Deploying without enough tests, and with real funds.
@@ -3550,6 +5695,41 @@ You write smart contracts, programs that run on a blockchain and often handle mo
 - Describe how you would test and secure a contract that holds user funds.
 - General coding and data structures, since many teams test them first.
 
+## Interview questions and answers
+
+**Q: What is a reentrancy attack, and how do you prevent it?**
+
+An external call lets an attacker call back into your function before state is updated, draining funds. Update state before external calls, use a reentrancy guard and prefer pull payments.
+
+**Q: Why is gas important when writing contracts?**
+
+Each operation costs gas, and storage is costly. Efficient code lowers fees for users and avoids hitting limits.
+
+**Q: How is a blockchain different from a normal database?**
+
+It is shared and replicated across many parties, append-only and secured by cryptography and consensus, so no single party can rewrite history. It is slower and costlier than a database.
+
+**Q: What does immutable mean for contract bugs?**
+
+A deployed contract cannot be edited, so bugs are hard to fix. Test heavily, get audits, use upgradeable patterns with care and add emergency stops.
+
+**Q: How do you keep private keys safe?**
+
+Never put them in code or a repository, use hardware wallets or secure key stores, and keep separate keys for testing and for real funds.
+
+## Glossary
+
+| Term | Meaning |
+| --- | --- |
+| Smart contract | A program stored and run on a blockchain. |
+| Gas | The fee for computation on a blockchain. |
+| Wallet | A tool that holds keys and signs transactions. |
+| Consensus | How nodes agree on the state of the chain. |
+| ABI | A description of a contract's functions for other programs. |
+| Reentrancy | A bug where a call back into a contract happens before it updates its state. |
+| Testnet | A practice network with no real money. |
+| Oracle | A service that brings outside data onto a chain. |
+
 ## Resources
 
 - [Solidity documentation](https://docs.soliditylang.org): The official language guide
@@ -3559,7 +5739,6 @@ You write smart contracts, programs that run on a blockchain and often handle mo
 - [CryptoZombies](https://cryptozombies.io): Learn Solidity by building a small game
 - [Ethernaut](https://ethernaut.openzeppelin.com): Hacking challenges that teach contract security
 - [Cyfrin Updraft](https://updraft.cyfrin.io): Free courses on Solidity, testing and security
-
 
 ---
 
@@ -3637,3 +5816,185 @@ A message that works is specific. 'Hi, I am a third-year student and I built a l
 - Designing Data-Intensive Applications, by Martin Kleppmann, for backend and system design.
 - The Pragmatic Programmer, by Hunt and Thomas.
 - Competitive Programmer's Handbook, by Antti Laaksonen (free PDF).
+
+## A career timeline by year
+
+| Year | Career goals | Proof to collect |
+| --- | --- | --- |
+| 1 | Explore roles and choose a direction to try. Join a club. | A GitHub profile and a first portfolio page |
+| 2 | Pick a role and build toward it. Try a hackathon. | Two projects and your first open-source pull request |
+| 3 | Apply for internships. Prepare the resume and mocks. | A strong resume, a big project and a coding profile |
+| 4 | Get placed, finish your final project and plan your first job. | Offers, a demo and references from mentors |
+
+## On the day of an interview
+
+- The night before: test your laptop, internet, charger and the meeting link. Sleep properly.
+- Keep a pen, paper and water close. Have your resume open.
+- Join five minutes early, and greet the interviewer by name.
+- For coding: repeat the problem, ask about inputs and limits, talk through a plan, then write.
+- If you are stuck, say what you have tried and ask for a small hint. Silence helps nobody.
+- At the end, ask two thoughtful questions about the team and the work.
+- Within a day, send a short thank-you note. Then write down what you were asked while it is fresh.
+
+## Understanding an offer
+
+- CTC is the total cost to the company. In-hand pay is lower after deductions, and some parts may be variable.
+- Ask what is fixed and what is variable or tied to performance, and when bonuses are paid.
+- Check the joining date, the location or remote policy, the bond or service agreement, and the notice period.
+- Read the offer letter fully before you sign. It is fine to ask questions in writing.
+- Do not accept two offers you cannot honour. Tell a company early if your plans change.
+
+## Short email templates
+
+Cold email to a senior or recruiter: Hi [name], I am a [year] student at [college] and I built [one-line project]. I am interested in [role] at [company]. Could you refer me or tell me who to speak to? My resume and project link are attached. Thank you for your time.
+
+Thank-you after an interview: Hi [name], thank you for the conversation today. I enjoyed talking about [topic]. I am keen on the role and happy to share anything else you need.
+
+Asking for a referral: Hi [name], I saw the [role] opening at [company]. I have worked on [two relevant things]. Would you be willing to refer me? I understand if not, and thanks for reading.
+
+## Behavioural habits that employers notice
+
+- Reply to emails and messages within a day, even if the reply is only 'I will check and tell you by Friday'.
+- Arrive early to interviews and meetings, and tell people early if something changes.
+- Ask a clear question after trying for a reasonable time, and say what you have already tried.
+- Write short status updates: what you did, what is next, what is blocking you.
+- Accept feedback without arguing, thank the person, and show the change in your next piece of work.
+- Keep a short log of your wins each month. It makes your resume and performance reviews easy.
+
+## From an SDE's desk
+
+From the hiring side, the strongest candidates were not the ones with the longest resumes. They were clear, curious and honest about what they knew.
+
+- A one-page resume with two projects you can explain deeply beats a page of tool logos.
+- Your first job matters less than the team: pick one where you will be reviewed and mentored.
+- Keep learning after the offer. The first year at work is when your growth is fastest if you ask good questions.
+- Stay in touch with the people you meet. Many roles are filled through someone who remembers you.
+
+---
+
+# Working as a software engineer
+
+What the job is actually like once you join: a typical week, code review, debugging, estimating, on-call, communication and how people grow. Written from the point of view of an engineer on a product team.
+
+## A typical week
+
+These numbers vary a lot by team and level. Treat them as a feel for the job, not a rule.
+
+| Activity | Rough share of time | Notes |
+| --- | --- | --- |
+| Writing code | 30–40% | Less than most students expect. Most of the rest supports it. |
+| Reading code and docs | 15–20% | You will read far more than you write, especially in your first year. |
+| Code review | 10–15% | Reviewing others and responding to reviews on your work. |
+| Meetings and planning | 10–20% | Stand-ups, planning, design talks, one-to-ones. |
+| Debugging and support | 10–20% | Bugs, alerts, questions from other teams. |
+| Learning | 5–10% | New tools, the domain, the codebase. |
+
+## How work flows through a team
+
+1. A product need becomes a ticket with a clear goal and acceptance criteria.
+2. You or the team estimate it and break it into small pieces.
+3. You write a short plan for anything non-trivial and discuss it with a teammate.
+4. You make a branch, write code and tests, and open a pull request with a clear description.
+5. Automated checks run: build, lint, tests, sometimes security scans.
+6. Teammates review. You answer comments and push changes.
+7. The change merges, is deployed (often behind a feature flag) and is watched in production.
+8. You check metrics and logs, fix surprises and close the ticket.
+
+## Your first pull request
+
+- Pick a small, well-defined ticket. Your goal is to learn the process, not to impress anyone.
+- Read how others in the repo name branches, write commit messages and structure tests. Match them.
+- Run the full test suite and the linter locally before you push.
+- Describe the change: what, why, how you tested it, and anything you want the reviewer to look at.
+- Keep it small. A hundred lines is easy to review. A thousand will wait in a queue.
+- Expect comments. They are about the code, not about you.
+
+## Code review: giving and receiving
+
+- As an author: review your own diff first, point out the risky parts and reply to every comment.
+- As a reviewer: understand the goal first, then check correctness, tests, naming, error handling and security.
+- Ask questions instead of giving orders: 'What happens if this list is empty?'
+- Separate must-fix from preference. Label small style notes as 'nit'.
+- Approve when the change is good enough and safe, not when it matches how you would have written it.
+- Say what is good too. Specific praise teaches as well as criticism does.
+
+## A method for debugging
+
+1. Reproduce it. If you cannot make it fail on demand, you cannot know that you fixed it.
+2. Read the error message and stack trace fully, from the top.
+3. Shrink the problem: remove code, inputs or steps until the smallest failing case remains.
+4. Form a hypothesis and test it with one change at a time. Write down what you tried.
+5. Check recent changes. 'What changed?' solves many bugs.
+6. Use the right tool: the debugger, logs, a profiler or a network inspector.
+7. Fix the cause, not only the symptom, and add a test that would have caught it.
+8. If you are stuck for more than about thirty minutes, explain it to someone else. It often unlocks the answer.
+
+## Estimating work
+
+- Estimates are guesses with a range. Say 'two to four days' rather than 'three days'.
+- Break the task into pieces under a day each. Estimating small pieces is much more accurate.
+- Include testing, review, deployment and surprises, not only coding.
+- Say early when you are late and why. Surprises hurt more than slow progress.
+- Compare your guesses with what actually happened, and adjust next time.
+
+## Writing tickets and design notes
+
+A good ticket says what problem is being solved, who it affects, what 'done' looks like and what is out of scope. A good design note says the problem, the options, the choice and why, and what could go wrong. Both are short. Writing them is a senior habit that you can start now.
+
+- Lead with the why. Details are easier to follow when the goal is clear.
+- List alternatives you rejected, with a reason for each.
+- End with open questions so reviewers know where to focus.
+
+## Testing and quality in practice
+
+- Write tests for behaviour that would hurt if it broke: money, permissions, data loss, core flows.
+- Test the boundaries: empty, one, many, maximum, invalid and duplicate.
+- A test that fails randomly is a bug. Fix it or remove it quickly.
+- Use staging and feature flags to release safely and roll back fast.
+- Monitor after release: error rate, latency and the business number the change should move.
+
+## On-call and incidents
+
+Nobody expects a new engineer to run an incident alone. You will shadow first. Ask to be included early.
+
+1. Acknowledge the alert and tell the team you are looking.
+2. Check the impact: who is affected, since when, how badly.
+3. Stop the bleeding first: roll back, disable the flag, or scale up. Do not hunt for the perfect fix while users suffer.
+4. Communicate in one place with short updates every so often.
+5. Fix the root cause once the system is stable.
+6. Write a blameless post-incident review: timeline, cause, what went well, and actions with owners.
+
+## Reading an unfamiliar codebase
+
+- Start with the README, the folder layout and how to run the tests.
+- Pick one user-visible feature and trace it from the entry point to the database.
+- Use search and 'find usages' more than scrolling. Follow the data.
+- Read the tests. They show intended behaviour.
+- Read the history of a confusing file. Commit messages often explain why.
+- Draw a small diagram as you learn and share it. Someone will correct it, and you both learn.
+
+## Working with people
+
+- Ask good questions: say what you tried, what you expected and what happened.
+- Give updates before you are asked: done, next, blocked.
+- Disagree with ideas and not with people. Use evidence and offer an alternative.
+- Write down decisions so that nobody has to remember a meeting.
+- Be reliable. Doing what you said you would do is the quickest way to earn trust.
+- Help others. Answering a teammate's question is part of the job, and it builds your reputation.
+
+## Growth: from SDE 1 to senior
+
+| Level | What changes | How to grow into it |
+| --- | --- | --- |
+| SDE 1 (new grad) | You finish well-scoped tasks with guidance and learn the codebase. | Ship reliably, ask good questions, write tests, take feedback well. |
+| SDE 2 | You own features end to end and work with less guidance. | Break down ambiguous work, review others, improve the system you touch. |
+| Senior | You own larger problems across teams and make others better. | Write designs, mentor, make trade-offs clear, lead through influence. |
+| Staff and above | You shape direction across many teams. | Pick the right problems, align people, keep technical quality high. |
+
+## Habits that compound
+
+- Keep a work log of what you did and learned each week. It helps in reviews.
+- Read one good engineering blog post or one chapter a week.
+- Leave the code a little cleaner than you found it.
+- Take notes on mistakes, yours and others', and turn them into checklists.
+- Protect your time off. Tired engineers write more bugs.

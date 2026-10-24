@@ -27,6 +27,15 @@ You program the small computers inside things: sensors, watches, cars, routers, 
 | Medical and industrial | Reliable devices with strict safety rules. |
 | Telecom and networking | Routers and radio equipment. |
 
+## Year by year
+
+| Year | Focus | Build | Milestone |
+| --- | --- | --- | --- |
+| Year 1 | C, digital electronics, number systems, Git | Blink an LED and read a button on a board | A few working circuits and programs in C |
+| Year 2 | Microcontrollers (Arduino, STM32), timers, interrupts, serial | A sensor project with a display | Two hardware projects with code on GitHub |
+| Year 3 | Communication protocols (I2C, SPI, UART), RTOS basics, an internship | A battery-powered device that logs data | An internship offer and a documented build |
+| Year 4 | Low-power design, debugging with tools, interview loops | A final product with firmware, a PCB and testing | An offer for an embedded role |
+
 ## Study plan
 
 ### C and electronics basics (Months 1–3)
@@ -109,6 +118,14 @@ You program the small computers inside things: sensors, watches, cars, routers, 
 - Copying library code you cannot debug.
 - Shipping without a way to update the device.
 
+## Engineer's notes
+
+- Read the datasheet and errata. Many bugs are in the details you skimmed.
+- Measure with a scope or logic analyser. Do not guess what the signals look like.
+- Memory and timing are limited. Know your stack, heap and interrupt budget.
+- Build a way to update and recover devices in the field. Bricked devices are expensive.
+- Write hardware-independent logic separately so you can test it on your computer.
+
 ## Mistakes juniors make
 
 - Skipping the datasheet and copying a library.
@@ -155,6 +172,41 @@ You program the small computers inside things: sensors, watches, cars, routers, 
 - Compare UART, I2C and SPI.
 - Design a state machine for a simple device, such as a washing machine.
 - Walk through a hardware bug you debugged and how you found it.
+
+## Interview questions and answers
+
+**Q: What does volatile do in C?**
+
+It tells the compiler a variable can change outside normal flow (by hardware or an interrupt), so it must read it from memory each time and not optimise it away.
+
+**Q: What should an interrupt handler do?**
+
+Be very short: set a flag, copy data, then return. Do the heavy work in the main loop. Avoid blocking calls.
+
+**Q: Compare I2C, SPI and UART.**
+
+UART is asynchronous, two wires, point to point. I2C uses two shared wires with addresses for many devices at lower speed. SPI uses extra select lines but is faster.
+
+**Q: How do you debug a board that does not respond?**
+
+Check power and clock first, then reset lines, then use a debugger or serial output, and a logic analyser or scope on the signals.
+
+**Q: Why use a watchdog timer?**
+
+If software hangs, the watchdog resets the device so it recovers without a person, which matters for remote or safety-related devices.
+
+## Glossary
+
+| Term | Meaning |
+| --- | --- |
+| Microcontroller | A small computer on one chip with memory and input/output pins. |
+| GPIO | General-purpose input/output pins you control in code. |
+| Interrupt | A signal that makes the processor pause and run a handler. |
+| ISR | Interrupt service routine: the handler code. |
+| RTOS | A real-time operating system that schedules tasks with timing guarantees. |
+| I2C / SPI / UART | Common serial protocols between chips. |
+| Firmware | The software that runs on a device. |
+| Watchdog timer | A timer that resets the device if the code hangs. |
 
 ## Resources
 

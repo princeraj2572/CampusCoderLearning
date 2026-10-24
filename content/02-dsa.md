@@ -38,3 +38,45 @@ These are rough guides, not rules. About 150 LeetCode problems and a rating of 1
 - After each contest, upsolve: solve the problems you missed, even though the contest is over. This is where most of the improvement comes from.
 - Aim to solve problems A and B quickly and accurately before chasing C.
 - Read how top-rated people solved the problems you could not.
+
+## A year-wise DSA plan
+
+| Year | Cover | Problems (rough guide) |
+| --- | --- | --- |
+| 1 | Basics, arrays, strings, hashing, recursion, simple maths, Big-O | 150–200 easy |
+| 2 | Linked lists, stack, queue, binary search, trees, heaps, graphs, sorting, starter DP | 250–350, mostly medium |
+| 3 | Pattern practice, advanced DP, graphs, tries, union-find, timed mocks | 150+ medium, some hard |
+| 4 | Revision by pattern, company question lists, contests | Fewer new topics, more review |
+
+## Topic checklist
+
+- Arrays and strings: prefix sums, two pointers, sliding window, sorting, in-place edits.
+- Hashing: frequency counts, sets and maps, anagram and subarray-sum problems.
+- Recursion and backtracking: subsets, permutations, N-Queens style problems.
+- Linked lists: reversal, cycle detection, merging, fast and slow pointers.
+- Stacks and queues: monotonic stack, next greater element, parentheses, queue with two stacks.
+- Trees: traversals, height, diameter, lowest common ancestor, BST operations.
+- Heaps: top-k, merging sorted lists, running median.
+- Graphs: BFS, DFS, shortest path (Dijkstra), topological sort, union-find, minimum spanning tree.
+- Dynamic programming: 1D, 2D, knapsack, subsequences, strings, grids.
+- Binary search on answers, greedy choices, intervals, bit manipulation, tries.
+
+## Rough rating milestones
+
+Treat these as a loose guide, not a promise. Ratings differ by platform and by how often you take part.
+
+| Stage | Typical sign that you are on track |
+| --- | --- |
+| End of year 1 | You solve most easy problems alone and finish the first problems in a beginner contest. |
+| End of year 2 | You solve medium problems in 30–45 minutes and place in the upper half of weekly contests. |
+| End of year 3 | You solve most mediums in 25–30 minutes, try hards, and can explain trade-offs aloud. |
+| Year 4 | You keep the skill warm with contests and review, and your effort moves to interviews. |
+
+## From an SDE's desk
+
+On the job you will rarely write a red-black tree. You will pick the right structure, spot a hidden O(n²), and explain why a query is slow. That is what DSA practice buys you.
+
+- The most common real use: choose between a list, a set and a map. Knowing the cost of each avoids slow code before it is written.
+- A nested loop over two lists that grew is the classic production slowdown. Big-O thinking catches it in review.
+- Interviews test DSA because it is a fair, comparable signal. Treat it as a skill to build, not as the job itself.
+- Read other people's solutions after you have tried. The goal is to see a cleaner idea, not to copy a trick.

@@ -27,6 +27,15 @@ Analysts answer business questions with data and show the answers clearly. Data 
 | Consulting firms | Analyse data for many clients. |
 | Tech companies | Build the pipelines and platforms other teams rely on. |
 
+## Year by year
+
+| Year | Focus | Build | Milestone |
+| --- | --- | --- | --- |
+| Year 1 | Excel or Sheets, basic statistics, SQL basics, Git | Clean and chart a small dataset | A first dashboard |
+| Year 2 | SQL in depth, Python and Pandas, visualisation | An analysis with a clear question and a written finding | Two analyses and a dashboard online |
+| Year 3 | Statistics, a BI tool, data modelling, pipelines, an internship | A dashboard fed by a scheduled pipeline | An internship offer and a portfolio of three analyses |
+| Year 4 | Warehousing, orchestration, experiments, interview loops | An end-to-end data project from raw data to decision | An offer for an analyst or data engineer role |
+
 ## Study plan
 
 ### SQL and spreadsheets (Months 1–2)
@@ -109,6 +118,14 @@ Analysts answer business questions with data and show the answers clearly. Data 
 - Averaging when the median tells the truth.
 - Building for big data when a spreadsheet would do.
 
+## Engineer's notes
+
+- Check the data before you analyse it: duplicates, nulls, time zones and units cause wrong answers.
+- A number without a definition is not useful. Write down exactly how each metric is calculated.
+- Start with the question the business is asking. A beautiful chart for the wrong question is wasted.
+- Reproducibility matters. Keep queries and notebooks in version control.
+- Explain results in plain language and say how sure you are.
+
 ## Mistakes juniors make
 
 - Joining tables without checking for duplicates.
@@ -155,6 +172,41 @@ Analysts answer business questions with data and show the answers clearly. Data 
 - Statistics and probability basics.
 - Pipeline design: how to load, test and monitor daily data.
 - A project walk-through with the business question and result.
+
+## Interview questions and answers
+
+**Q: What is the difference between WHERE and HAVING?**
+
+WHERE filters rows before grouping. HAVING filters groups after aggregation.
+
+**Q: How do you handle missing data?**
+
+First find out why it is missing. Then drop, fill with a sensible value (mean, median, a flag) or model it, and always say what you did.
+
+**Q: Explain a join, with the main types.**
+
+A join combines rows from two tables on a key. Inner keeps matches only, left keeps all rows from the left table, right does the reverse, and full outer keeps everything.
+
+**Q: How do you check that a dashboard number is right?**
+
+Reproduce it with a separate query, compare with a known total, check filters and time zones, and look for duplicates from joins.
+
+**Q: When is a result statistically meaningful?**
+
+When the sample is large enough, the groups were fairly assigned, the effect size matters in practice, and the p-value or interval supports it. Statistical significance alone is not business value.
+
+## Glossary
+
+| Term | Meaning |
+| --- | --- |
+| ETL / ELT | Extract, transform and load data into a store, in one order or the other. |
+| Data warehouse | A database designed for analysis across large amounts of data. |
+| Dimension / fact table | Descriptive attributes versus measurable events in a data model. |
+| Window function | A SQL calculation across related rows without collapsing them. |
+| A/B test | Comparing two versions with random groups to see which does better. |
+| P-value | The chance of seeing a result at least this extreme if nothing is really going on. |
+| Data quality | How accurate, complete and consistent the data is. |
+| Orchestration | Scheduling and ordering data jobs, for example with Airflow. |
 
 ## Resources
 

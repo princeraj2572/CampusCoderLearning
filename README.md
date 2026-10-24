@@ -1,6 +1,6 @@
 # Student learning roadmap: content
 
-All the content from the CampusCoders roadmap, exported for reuse.
+All the content from the CampusCoders roadmap, exported for reuse. These files are generated from `data/roadmap.json` by `npm run export:md`, so edit the JSON and re-run the export instead of editing them by hand.
 
 ## Layout
 
@@ -24,6 +24,7 @@ All the content from the CampusCoders roadmap, exported for reuse.
 11. **Build and ship**: Open source
 12. **Jobs**: Roles and jobs
 13. **Jobs**: Placements and career
+14. **Jobs**: Working as a software engineer
 
 ## Roles (14)
 

@@ -1,4 +1,4 @@
-import type { Link as L, Section } from "../lib/data";
+import { slugify, type Link as L, type Section } from "../lib/data";
 
 export const List = ({ items, ordered }: { items: string[]; ordered?: boolean }) => {
   const Tag = ordered ? "ol" : "ul";
@@ -28,12 +28,18 @@ export const Links = ({ links }: { links: L[] }) => (
 export const Sections = ({ sections }: { sections: Section[] }) => (
   <>
     {sections.map((s) => (
-      <section key={s.heading}>
+      <section key={s.heading} id={slugify(s.heading)}>
         <h2>{s.heading}</h2>
         {s.paragraphs?.map((p) => <p key={p}>{p}</p>)}
         {s.steps && <List items={s.steps} ordered />}
-        {s.bullets && <List items={s.bullets} />}
         {s.table && <Table {...s.table} />}
+        {s.code?.map((c) => (
+          <figure key={c.text} className="code">
+            {c.title && <figcaption>{c.title}</figcaption>}
+            <pre><code>{c.text}</code></pre>
+          </figure>
+        ))}
+        {s.bullets && <List items={s.bullets} />}
         {s.qa?.map((x) => (
           <details key={x.q}><summary>{x.q}</summary><p>{x.a}</p></details>
         ))}

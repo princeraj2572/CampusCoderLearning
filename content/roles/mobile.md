@@ -26,6 +26,15 @@ You build apps for Android, iPhone or both. You work with touch input, small scr
 | Startups | Mobile-first products built by tiny teams. |
 | Agencies | Build apps for many brands. |
 
+## Year by year
+
+| Year | Focus | Build | Milestone |
+| --- | --- | --- | --- |
+| Year 1 | A language (Kotlin, Swift, Dart or JavaScript), Git, UI basics | A simple app with two screens | Two small apps that run on a device |
+| Year 2 | Navigation, lists, local storage, calling an API | An app that loads data and works offline | A published or installable app |
+| Year 3 | Architecture, testing, performance, release, an internship | An app with login, push notifications and tests | An internship offer and one polished app |
+| Year 4 | Scale, accessibility, store release, interview loops | A store-ready app with analytics and crash reports | An offer for a mobile role |
+
 ## Study plan
 
 ### Programming foundations (Months 1–2)
@@ -108,6 +117,14 @@ You build apps for Android, iPhone or both. You work with touch input, small scr
 - Building for the newest phone only.
 - Ignoring the app store rules until the review fails.
 
+## Engineer's notes
+
+- Your app runs on thousands of device and OS combinations. Test on at least a low-end phone.
+- Users go offline, switch apps and rotate the screen. Handle all three.
+- App store review and staged rollouts mean you cannot hot-fix quickly. Test harder before release.
+- Battery, memory and data use are features. Users uninstall apps that drain them.
+- Crash reports are your best teacher. Read them every week.
+
 ## Mistakes juniors make
 
 - Only testing on a fast emulator.
@@ -154,6 +171,41 @@ You build apps for Android, iPhone or both. You work with touch input, small scr
 - Architecture: MVVM or similar, and why.
 - How you would build an offline-first feed or chat screen.
 - Walk through your published or demo app.
+
+## Interview questions and answers
+
+**Q: Native or cross-platform: how do you choose?**
+
+Native gives the best access to platform features and performance. Cross-platform saves effort for one team and one codebase. Choose by team skills, the features needed and the budget.
+
+**Q: Why does the app lifecycle matter?**
+
+The system can pause or kill your app at any moment. You must save state and release resources at the right points, or users lose data and the app leaks memory.
+
+**Q: How do you keep a list smooth with many items?**
+
+Use a recycling list view, load images lazily and at the right size, avoid heavy work on the main thread, and paginate data.
+
+**Q: How would you support offline use?**
+
+Store data locally in a database, show it first, sync with the server in the background, and handle conflicts with timestamps or versions.
+
+**Q: How do you handle sensitive data on a device?**
+
+Use the system keystore or keychain for secrets, encrypt local data, use HTTPS, and never log tokens.
+
+## Glossary
+
+| Term | Meaning |
+| --- | --- |
+| Activity / ViewController | A screen, or the controller that manages one. |
+| Lifecycle | The states an app or screen passes through (created, visible, paused, destroyed). |
+| State management | How an app stores and shares data that drives the UI. |
+| Native | Built with the platform's own language and tools. |
+| Cross-platform | One codebase for both iOS and Android (Flutter, React Native). |
+| Push notification | A message sent to a device from a server. |
+| APK / IPA | The packaged app file for Android / iOS. |
+| Deep link | A link that opens a specific screen in an app. |
 
 ## Resources
 
